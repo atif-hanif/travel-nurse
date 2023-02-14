@@ -489,7 +489,7 @@ a {
 	list-style: none;
 }
 
-.main-menu li a {
+.ripple {
 	display: block;
 	padding: 12px 15px;
 	color: var(--secondary-color);
@@ -505,7 +505,7 @@ a {
 	text-align: center;
 }
 
-.main-menu li a:hover {
+.ripple:hover {
 	background: rgba(244,244,244,.3);
 }
 
