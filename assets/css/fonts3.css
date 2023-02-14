@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Scotch Display Condensed';
+    src: local('Scotch Display Condensed Fat'), local('Scotch-Display-Condensed-Fat'),
+        url('../fonts/ScotchDisplayCond-Ft.woff2') format('woff2'),
+        url('../ScotchDisplayCond-Ft.woff') format('woff'),
+        url('../ScotchDisplayCond-Ft.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
