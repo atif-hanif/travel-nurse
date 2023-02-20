@@ -22,7 +22,6 @@ a {
 
 /* Header */
 
-
 .site-navbar {
 	margin-bottom: 0px;
 	z-index: 1999;
@@ -626,6 +625,7 @@ button.owl-prev, button.owl-next {
 
 .membership-section span {
 	color: var(--primary-color);
+	font-weight: 600;
 }
 
 .plan-row {
@@ -638,6 +638,10 @@ button.owl-prev, button.owl-next {
 	border-color: var(--white-color);
 }
 
+.membership-section .card .card-body {
+	padding: 50px 47px 84px;
+}
+
 .plan-profile {
 	font-family: var(--font-family2);
 	font-weight: 900;
@@ -647,7 +651,7 @@ button.owl-prev, button.owl-next {
 .plan-company {
 	color: var(--primary-color);
 	font-weight: 500;
-	font-size: 20px;
+	line-height: 30px;
 }
 
 .plan-company span {
@@ -656,7 +660,14 @@ button.owl-prev, button.owl-next {
 
 .plan-btn {
 	background-color: var(--secondary-color);
-	border: 1px solid var(--secondary-color)
+	border: 1px solid var(--secondary-color);
+}
+
+.plan-rates {
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 30px;
+	margin-bottom: 0px;
 }
 
 .membership-join {
@@ -682,6 +693,71 @@ button.owl-prev, button.owl-next {
 	padding: 10px;
 	margin-right: 30px;
 	margin-top: 30px;
+}
+
+/* Contact Us*/
+
+.contact-banner {
+	background-image: url(../images/contact-us-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 313px 0px;
+}
+
+.contact-banner h1 {
+	color: var(--white-color);
+	font-size: 100px;
+	font-family: var(--font-family2);
+}
+
+.contact-banner p {
+	color: var(--white-color);
+}
+
+.contact-us-section {
+	padding-bottom: 120px;
+}
+
+.contact-us-section .card {
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	border-color: var(--white-color);
+}
+
+.contact-us-section .card .card-body {
+	padding: 85px 60px;
+}
+
+.contact-us-section {
+	margin-top: -170px;
+}
+
+.contact-us-section h2 {
+	font-weight: 900;
+	font-family: var(--font-family2);
+	text-align: center;
+	color: var(--primary-color);
+}
+
+.contact-us-section form {
+	padding-top: 80px;
+}
+
+.contact-us-section input, .contact-us-section textarea {
+	background: #F2F2F2;
+	border-radius: 5px;
+}
+
+.attach-btn {
+	border: 1px solid #686868;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.contact-us-section .btn-primary {
+	background-color: var(--secondary-color);
+	border: 1px solid var(--secondary-color);
+	text-transform: uppercase;
 }
 
 /* Footer */

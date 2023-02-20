@@ -11,3 +11,15 @@
 		padding-bottom: 30px !important;
 	}
 }
+
+@media only screen and (min-width:1400px) {
+
+	.plan-profile {
+		font-size: 59px;
+		line-height: 60px;
+	}
+
+	.contact-us-section h2 {
+		font-size: 80px;
+	}
+}
