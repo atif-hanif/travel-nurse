@@ -14,6 +14,14 @@
 
 @media only screen and (min-width:1400px) {
 
+	.welcome {
+		font-size: 100px;
+	}
+	
+	.tnn {
+		font-size: 130px;
+	}
+
 	.plan-profile {
 		font-size: 59px;
 		line-height: 60px;
@@ -21,5 +29,9 @@
 
 	.contact-us-section h2 {
 		font-size: 80px;
+	}
+
+	.home-events h2 {
+		font-size: 90px;
 	}
 }

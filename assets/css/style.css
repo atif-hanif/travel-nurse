@@ -3,6 +3,8 @@
 	--secondary-color: #1977CC;
 	--tertiary-color: #024F96;
 	--fourth-color: #35A7E6;
+	--fifth-color: #292929;
+	--sixth-color: #686868;
     --black-color: #000;
     --white-color: #fff;
     --font-family: 'Poppins';
@@ -563,14 +565,12 @@ a {
 
 .welcome {
 	color: var(--white-color);
-	font-size: 100px;
 	margin-bottom: 0px;
 	font-family: var(--font-family2);
 }
 
 .tnn {
 	color: var(--white-color);
-	font-size: 130px;
 	font-family: var(--font-family3);
 }
 
@@ -598,6 +598,60 @@ button.owl-prev, button.owl-next {
 	color: var(--white-color);
 	font-size: 50px;
 	padding-top: 100px;
+}
+
+.home-events {
+	padding: 120px 0px 82px;
+}
+
+.home-events .card .card-body {
+	padding: 72px 105px;
+}
+
+.home-events h2 {
+	color: var(--primary-color);
+	font-weight: 900;
+	font-family: var(--font-family2);
+}
+
+.event-img {
+	float: left;
+}
+
+.event-dates {
+	float: left;
+	padding: 27.5px 30px 27.5px 15px;
+}
+
+.event-date {
+	font-weight: 700;
+	font-size: 30px;
+	color: var(--fifth-color);
+}
+
+.event-time {
+	font-weight: 700;
+	color: var(--sixth-color);
+}
+
+.event-names {
+	float: left;
+	padding: 27.5px 0px;
+}
+
+.event-name {
+	font-weight: 700;
+	font-size: 30px;
+	color: var(--fifth-color);
+}
+
+.event-place {
+	font-weight: 700;
+	color: var(--sixth-color);
+}
+
+hr {
+	padding-bottom: 20px;
 }
 
 /* Membership Form */
