@@ -86,3 +86,30 @@ $('.owl-carousel').owlCarousel({
 		}
 	}
 })
+
+$('.companies-carousel').owlCarousel({
+	loop: true,
+	margin: 10,
+	nav: true,
+	dots: false,
+	responsiveClass:true,
+	stagePadding: 0,
+    items: 4,
+	autoWidth:true,
+	navText: [
+        '<i class="fa-solid fa-chevron-left"></i>',
+        '<i class="fa-solid fa-chevron-right"></i>'
+    ],
+    navContainer: '.main-content .custom-nav',
+	responsive:{
+		0:{
+			items: 1
+		},
+		600:{
+			items: 1
+		},
+		1000:{
+			items: 4
+		}
+	}
+})

@@ -654,6 +654,127 @@ hr {
 	padding-bottom: 20px;
 }
 
+.destination {
+	padding-bottom: 120px;
+}
+
+.choose-destination {
+	padding-top: 43px;
+	text-align: center;
+	color: var(--primary-color);
+	font-family: var(--font-family2);
+	font-weight: 900;
+	line-height: 1;
+}
+
+.and {
+	text-align: center;
+	color: var(--primary-color);
+	font-family: var(--font-family2);
+	font-weight: 900;
+	line-height: 1;
+}
+
+.adventure {
+	text-align: center;
+	color: var(--primary-color);
+	font-family: var(--font-family3);
+	font-weight: 400;
+}
+
+.map {
+	font-weight: 400;
+	text-align: center;
+}
+
+.company {
+	background-image: url(../images/company-background.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 107px 0px 78px;
+}
+
+.company h2 {
+	color: var(--white-color);
+	font-family: var(--font-family2);
+	font-weight: 900;
+}
+
+.btn-filter {
+	background-color: var(--white-color);
+	color: var(--secondary-color);
+	border-color: var(--white-color);
+	padding: 15px 35px;
+}
+
+.companies {
+	padding: 60px 0px;
+}
+
+.companies h2 {
+	text-align: center;
+	color: var(--primary-color);
+	font-weight: 900;
+	font-family: var(--font-family2);
+}
+
+.companies .row {
+	padding-top: 50px;
+}
+
+.main-content .item img {
+	width: auto;
+}
+
+/* .main-content .owl-item {
+	width: auto !important;
+}
+
+.owl-item.cloned {
+    width: 200px !important;
+}
+
+.owl-item.active {
+    width: 200px !important;
+} */
+
+.main-content .owl-dots {
+	display: none;
+}
+
+.main-content {
+	position: relative;
+}
+
+.main-content .owl-theme .custom-nav {
+	position: absolute;
+	top: 20%;
+	left: 0;
+	right: 0;
+}
+
+.main-content .owl-theme .custom-nav .owl-prev, .main-content .owl-theme .custom-nav .owl-next {
+	position: absolute;
+	height: 100px;
+	color: inherit;
+	background: none;
+	border: none;
+	z-index: 100;
+}
+
+.main-content .owl-theme .custom-nav .owl-prev i, .main-content .owl-theme .custom-nav .owl-next i {
+	font-size: 2.5rem;
+	color: #000;
+}
+
+.main-content .owl-theme .custom-nav .owl-prev {
+	left: 0;
+}
+
+.main-content .owl-theme .custom-nav .owl-next {
+	right: 0;
+}
+
 /* Membership Form */
 
 .membership-banner {

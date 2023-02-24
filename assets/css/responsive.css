@@ -34,4 +34,24 @@
 	.home-events h2 {
 		font-size: 90px;
 	}
+
+	.choose-destination {
+		font-size: 90px;
+	}
+
+	.and {
+		font-size: 100px;
+	}
+
+	.adventure {
+		font-size: 130px;
+	}
+
+	.company h2 {
+		font-size: 100px;
+	}
+
+	.companies h2 {
+		font-size: 100px;
+	}
 }
