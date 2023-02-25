@@ -935,6 +935,85 @@ hr {
 	text-transform: uppercase;
 }
 
+/* Join The Network */
+
+.join-network-banner {
+	background-image: url(../images/join-the-network.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 313px 0px;
+}
+
+.join-network-banner h1 {
+	color: var(--white-color);
+	font-size: 100px;
+	font-family: var(--font-family2);
+}
+
+.join-network-banner p {
+	color: var(--white-color);
+}
+
+.join-network-section {
+	padding-bottom: 120px;
+}
+
+.join-network-section .card {
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+	border-color: var(--white-color);
+}
+
+.join-network-section .card .card-body {
+	padding: 85px 60px;
+}
+
+.join-network-section {
+	margin-top: -170px;
+}
+
+.join-network-section h2 {
+	font-weight: 900;
+	font-family: var(--font-family2);
+	text-align: center;
+	color: var(--primary-color);
+}
+
+.join-network-section form {
+	padding-top: 80px;
+}
+
+.join-network-section input, .join-network-section textarea {
+	background: #F2F2F2;
+	border-radius: 5px;
+}
+
+.attach-btn {
+	border: 1px solid #686868;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.join-network-section .btn-primary {
+	background-color: var(--secondary-color);
+	border: 1px solid var(--secondary-color);
+	text-transform: uppercase;
+}
+
+.file-upload input[type='file'] {
+	display: none;
+}
+
+.custom-file {
+	border: 1px dashed var(--sixth-color);
+	padding: 36px;
+}
+
+.custom-file i {
+	font-size: 36px;
+	color: var(--sixth-color);
+}
+
 /* Footer */
 
 footer {

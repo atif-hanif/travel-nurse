@@ -12,7 +12,7 @@
 	}
 }
 
-@media only screen and (min-width:1400px) {
+@media only screen and (min-width:1200px) {
 
 	.welcome {
 		font-size: 100px;
@@ -20,15 +20,6 @@
 	
 	.tnn {
 		font-size: 130px;
-	}
-
-	.plan-profile {
-		font-size: 59px;
-		line-height: 60px;
-	}
-
-	.contact-us-section h2 {
-		font-size: 80px;
 	}
 
 	.home-events h2 {
@@ -53,5 +44,20 @@
 
 	.companies h2 {
 		font-size: 100px;
+	}
+
+
+	.plan-profile {
+		font-size: 59px;
+		line-height: 60px;
+	}
+
+	.contact-us-section h2 {
+		font-size: 80px;
+	}
+
+	
+	.join-network-section h2 {
+		font-size: 80px;
 	}
 }
