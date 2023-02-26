@@ -7,6 +7,7 @@
 	--sixth-color: #686868;
     --black-color: #000;
     --white-color: #fff;
+	--border-color: #BCBCBC;
     --font-family: 'Poppins';
 	--font-family2: 'Scotch Display Condensed Fat';
 	--font-family3: 'Billy Ohio Regular';
@@ -938,7 +939,7 @@ hr {
 /* Join The Network */
 
 .join-network-banner {
-	background-image: url(../images/join-the-network.png);
+	background-image: url(../images/join-the-network-banner.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 313px 0px;
@@ -1013,6 +1014,106 @@ hr {
 	font-size: 36px;
 	color: var(--sixth-color);
 }
+
+/* Events Page */
+
+.events-banner {
+	background-image: url(../images/events-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 313px 0px;
+}
+
+.events-banner h1 {
+	color: var(--white-color);
+	font-size: 100px;
+	font-family: var(--font-family2);
+}
+
+.events-banner p {
+	color: var(--white-color);
+}
+
+.events-section {
+	padding: 120px 0px;
+}
+
+.events-section .btn {
+	text-transform: uppercase;
+}
+
+.btn-basic {
+	border: 1px solid var(--border-color);
+}
+
+.events-section .btn.active {
+	background-color: var(--primary-color);
+	color: var(--white-color);
+}
+
+.events-row {
+	padding-top: 60px;
+}
+
+.demo__main {
+	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+
+#calendar {
+	padding: 20px 16px;
+}
+
+.events-section .event-img {
+	width: 120px;
+}
+
+.events-section  .event-dates {
+	float: left;
+	padding: 13.5px 30px 13.5px 15px;
+}
+
+.events-section  .event-date {
+	font-weight: 700;
+	font-size: 16px;
+	color: var(--fifth-color);
+}
+
+.events-section .event-time {
+	font-weight: 500;
+	font-size: 12px;
+	color: var(--sixth-color);
+}
+
+.events-section .event-names {
+	float: left;
+	padding: 13.5px 0px;
+}
+
+.events-section .event-name {
+	font-weight: 700;
+	font-size: 16px;
+	color: var(--fifth-color);
+}
+
+.events-section .event-place {
+	font-weight: 500;
+	font-size: 12px;
+	color: var(--sixth-color);
+}
+
+.events-section hr {
+	margin: 27px 0px;
+	padding-bottom: 0px;
+}
+
+.filterDiv {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+  
 
 /* Footer */
 
