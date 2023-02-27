@@ -193,9 +193,12 @@ $('.button-group').each(function(i, buttonGroup) {
 
 var itemSelector = ".item";
 var $checkboxes = $('.filter-item');
-var $container = $('.isotop-grid').isotope({
-	itemSelector: itemSelector
-});
+var $container = $('.isotop-grid');
+
+// var $container = $('.isotop-grid').isotope({
+// 	itemSelector: itemSelector
+// });
+
 //Ascending order
 var responsiveIsotope = [
 	[480, 4],
@@ -293,6 +296,7 @@ function setPagination() {
 		var item = 1;
 		var page = 1;
 		var selector = itemSelector;
+		selector += ( currentFilter != '*' ) ? '['+filterAttribute+'="'+currentFilter+'"]' : '';
 		var exclusives = [];
 		// for each box checked, add its value and push to array
 		$checkboxes.each(function(i, elem) {
@@ -301,6 +305,7 @@ function setPagination() {
 				exclusives.push(selector);
 			}
 		});
+
 		// smash all values back together for 'and' filtering
 		filterValue = exclusives.length ? exclusives.join('') : '*';
 		// find each child element with current filter values
@@ -325,26 +330,65 @@ function setPagination() {
 				// if there was no page number, add it
 				$(this).addClass(wordPage);
 			}
+			$(this).attr(pageAttribute, page);
 			item++;
 		});
 		currentNumberPages = page;
 	}();
+
 	// create page number navigation
 	var CreatePagers = function() {
-		var $isotopePager = ($('.' + pagerClass).length == 0) ? $('<div class="' + pagerClass + '"></div>') : $('.' + pagerClass);
+		var $isotopePager = ($('.' + pagerClass).length == 0) ? $('<div class="' + pagerClass + ' text-center"></div>') : $('.' + pagerClass);
 		$isotopePager.html('');
+		var $page_prev_btn=$('<a type="button" class="btn previous_btn"><i class="fa-solid fa-chevron-left"></i></a>');
+		var $page_next_btn=$('<a type="button" class="btn next_btn"><i class="fa-solid fa-chevron-right"></i></a>');
+		$page_prev_btn.appendTo($isotopePager);
 		if(currentNumberPages > 1) {
 			for(var i = 0; i < currentNumberPages; i++) {
 				var $pager = $('<a href="javascript:void(0);" class="pager" ' + pageAttribute + '="' + (i + 1) + '"></a>');
 				$pager.html(i + 1);
 				$pager.click(function() {
 					var page = $(this).eq(0).attr(pageAttribute);
+					$('.isotope-pager a').removeClass("active");
+					$(this).addClass("active");
 					goToPage(page);
 				});
 				$pager.appendTo($isotopePager);
+				$isotopePager.find('a.pager:first').addClass('active');
 			}
+			$page_next_btn.appendTo($isotopePager)
+			$container.after($isotopePager);
 		}
 		$container.after($isotopePager);
+		$page_prev_btn.click(function(){
+			if( currentPage > startPage)
+			{
+				$('.previous_btn').removeAttr('disabled');
+				var page=  currentPage - 1;
+				var page=currentPage - 1 < startPage
+				? startPage: currentPage - 1;
+				$('.isotope-pager a').removeClass("active");
+				$('.pager[data-page="'+page+'"]').addClass('active');
+				goToPage(page);
+			}
+			else {
+				$('.previous_btn').attr('disabled','disabled');
+			}
+		});
+		$page_next_btn.click(function(){
+			if( currentPage < currentNumberPages)
+			{
+				$('.next_btn').removeAttr('disabled');
+				var page=currentPage + 1 > currentNumberPages
+				? currentNumberPages : currentPage + 1;
+			   	$('.isotope-pager a').removeClass("active");
+			   	$('.pager[data-page="'+page+'"]').addClass('active');
+				goToPage(page);
+			}
+			 else {
+				$('.next_btn').attr('disabled','disabled');
+			}
+		});
 	}();
 }
 
@@ -355,13 +399,13 @@ goToPage(1);
 $checkboxes.change(function() {
 	var filter = $(this).attr(filterAttribute);
 	currentFilter = filter;
-	setPagination();
+	// setPagination();
 	goToPage(1);
 });
 
-$(window).resize(function() {
-	itemsPerPage = defineItemsPerPage();
-	setPagination();
-	goToPage(1);
-});
+// $(window).resize(function() {
+// 	itemsPerPage = defineItemsPerPage();
+// 	setPagination();
+// 	goToPage(1);
+// });
 
