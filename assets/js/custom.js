@@ -68,7 +68,7 @@ $(function() {
 	siteMenuClone();
 });
 
-$('.owl-carousel').owlCarousel({
+$('.banner-slider').owlCarousel({
 	loop:true,
 	margin:10,
 	nav:true,
@@ -87,29 +87,23 @@ $('.owl-carousel').owlCarousel({
 	}
 })
 
-$('.companies-carousel').owlCarousel({
+$('.companies-slider').owlCarousel({
 	loop: true,
 	margin: 10,
-	nav: true,
 	dots: false,
-	responsiveClass:true,
-	stagePadding: 0,
-    items: 4,
-	autoWidth:true,
-	navText: [
-        '<i class="fa-solid fa-chevron-left"></i>',
-        '<i class="fa-solid fa-chevron-right"></i>'
-    ],
-    navContainer: '.main-content .custom-nav',
-	responsive:{
-		0:{
+	nav: true,
+	navText: ['<span class="fas fa-chevron-left"></span><span class="fas fa-chevron-left"></span>','<span class="fas fa-chevron-right"></span><span class="fas fa-chevron-right"></span>'],
+	autoplay: true,
+	autoplayHoverPause: true,
+	responsive: {
+		0: {
 			items: 1
-		},
-		600:{
-			items: 1
-		},
-		1000:{
+	  	},
+	  	600: {
+			items: 2
+	  	},
+	  	1000: {
 			items: 4
-		}
+	  	}
 	}
 })
