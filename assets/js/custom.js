@@ -114,51 +114,7 @@ $('.companies-carousel').owlCarousel({
 	}
 })
 
-filterSelection("all")
-
-function filterSelection(c) {
-	var x, i;
-	x = document.getElementsByClassName("filterDiv");
-	if(c == "all") c = "";
-	for(i = 0; i < x.length; i++) {
-		w3RemoveClass(x[i], "show");
-		if(x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-	}
-}
-
-function w3AddClass(element, name) {
-	var i, arr1, arr2;
-	arr1 = element.className.split(" ");
-	arr2 = name.split(" ");
-	for(i = 0; i < arr2.length; i++) {
-		if(arr1.indexOf(arr2[i]) == -1) {
-			element.className += " " + arr2[i];
-		}
-	}
-}
-
-function w3RemoveClass(element, name) {
-	var i, arr1, arr2;
-	arr1 = element.className.split(" ");
-	arr2 = name.split(" ");
-	for(i = 0; i < arr2.length; i++) {
-		while(arr1.indexOf(arr2[i]) > -1) {
-			arr1.splice(arr1.indexOf(arr2[i]), 1);
-		}
-	}
-	element.className = arr1.join(" ");
-}
-
-// Add active class to the current button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("btn");
-for(var i = 0; i < btns.length; i++) {
-	btns[i].addEventListener("click", function() {
-		var current = document.getElementsByClassName("active");
-		current[0].className = current[0].className.replace(" active", "");
-		this.className += " active";
-	});
-}
+/* Calendar */
 
 document.addEventListener('DOMContentLoaded', function() {
 	var calendarEl = document.getElementById('calendar');
@@ -187,7 +143,225 @@ document.addEventListener('DOMContentLoaded', function() {
 			  start: '2023-01-12T14:00:00'
 		  },
 	  ]
-  });
+});
 
-  calendar.render();
-  });
+calendar.render();
+});
+
+/* Events Filter */
+
+// init Isotope
+var $grid = $('.grid').isotope({
+	itemSelector: '.element-item',
+	layoutMode: 'fitRows'
+});
+
+// filter functions
+var filterFns = {
+	// show if number is greater than 50
+	numberGreaterThan50: function() {
+		var number = $(this).find('.number').text();
+		return parseInt(number, 10) > 50;
+	},
+	// show if name ends with -ium
+	ium: function() {
+		var name = $(this).find('.name').text();
+		return name.match(/ium$/);
+	}
+};
+
+// bind filter button click
+$('.filters-button-group').on('click', 'button', function() {
+	var filterValue = $(this).attr('data-filter');
+	// use filterFn if matches value
+	filterValue = filterFns[filterValue] || filterValue;
+	$grid.isotope({
+		filter: filterValue
+	});
+});
+
+// change is-checked class on buttons
+$('.button-group').each(function(i, buttonGroup) {
+	var $buttonGroup = $(buttonGroup);
+	$buttonGroup.on('click', 'button', function() {
+		$buttonGroup.find('.is-checked').removeClass('is-checked');
+		$(this).addClass('is-checked');
+	});
+});
+  
+/* Healthcare Agencies Filter */
+
+var itemSelector = ".item";
+var $checkboxes = $('.filter-item');
+var $container = $('.isotop-grid').isotope({
+	itemSelector: itemSelector
+});
+//Ascending order
+var responsiveIsotope = [
+	[480, 4],
+	[720, 6]
+];
+var itemsPerPageDefault = 15;
+var itemsPerPage = defineItemsPerPage();
+var currentNumberPages = 1;
+var currentPage = 1;
+var startPage = 1;
+var currentFilter = '*';
+var filterAttribute = 'data-filter';
+var filterValue = "";
+var pageAttribute = 'data-page';
+var pagerClass = 'isotope-pager';
+var filters = {};
+var $filterCount = $('.filter-count');
+var $grid = $('.isotop-grid');
+var $filterContainer = $('.filter-container');
+
+$(function () {
+  
+    startFilterCount();
+	$filterContainer.on('change', function (jQEvent) {
+		updateFilterCount();
+	});
+});
+
+function updateFilterCount() {
+    var elems = $grid.isotope('getFilteredItemElements').length;
+    if (elems === 1) {
+        $filterCount.text(elems + ' Results');
+        $('.no-results').removeClass('active');
+    }
+    else if (elems === 0) {
+        $filterCount.text(elems + ' Results');
+        $('.no-results').addClass('active');
+    }
+    else {
+        $filterCount.text(elems + ' Results');
+        $('.no-results').removeClass('active');
+    }
+}
+
+function startFilterCount() {
+    var elems = $('div.item-filter').length;
+    if (elems <= 1) {
+        $filterCount.text(elems + ' Results');
+    }
+    else {
+        $filterCount.text(elems + ' Results');
+    }
+}
+
+function changeFilter(selector) { 
+	$container.isotope({ filter: selector }); 
+}
+
+//grab all checked filters and goto page on fresh isotope output
+function goToPage(n) {
+	currentPage = n;
+	var selector = itemSelector;
+	var exclusives = [];
+	// for each box checked, add its value and push to array
+	$checkboxes.each(function(i, elem) {
+		if(elem.checked) {
+			selector += (currentFilter != '*') ? '.' + elem.value : '';
+			exclusives.push(selector);
+		}
+	});
+	// smash all values back together for 'and' filtering
+	filterValue = exclusives.length ? exclusives.join('') : '*';
+	// add page number to the string of filters
+	var wordPage = currentPage.toString();
+	filterValue += ('.' + wordPage);
+	changeFilter(filterValue);
+}
+
+// determine page breaks based on window width and preset values
+function defineItemsPerPage() {
+	var pages = itemsPerPageDefault;
+	for(var i = 0; i < responsiveIsotope.length; i++) {
+		if($(window).width() <= responsiveIsotope[i][0]) {
+			pages = responsiveIsotope[i][1];
+			break;
+		}
+	}
+	return pages;
+}
+
+function setPagination() {
+	var SettingsPagesOnItems = function() {
+		var itemsLength = $container.children(itemSelector).length;
+		var pages = Math.ceil(itemsLength / itemsPerPage);
+		var item = 1;
+		var page = 1;
+		var selector = itemSelector;
+		var exclusives = [];
+		// for each box checked, add its value and push to array
+		$checkboxes.each(function(i, elem) {
+			if(elem.checked) {
+				selector += (currentFilter != '*') ? '.' + elem.value : '';
+				exclusives.push(selector);
+			}
+		});
+		// smash all values back together for 'and' filtering
+		filterValue = exclusives.length ? exclusives.join('') : '*';
+		// find each child element with current filter values
+		$container.children(filterValue).each(function() {
+			// increment page if a new one is needed
+			if(item > itemsPerPage) {
+				page++;
+				item = 1;
+			}
+			// add page number to element as a class
+			wordPage = page.toString();
+			var classes = $(this).attr('class').split(' ');
+			var lastClass = classes[classes.length - 1];
+			// last class shorter than 4 will be a page number, if so, grab and replace
+			if(lastClass.length < 4) {
+				$(this).removeClass();
+				classes.pop();
+				classes.push(wordPage);
+				classes = classes.join(' ');
+				$(this).addClass(classes);
+			} else {
+				// if there was no page number, add it
+				$(this).addClass(wordPage);
+			}
+			item++;
+		});
+		currentNumberPages = page;
+	}();
+	// create page number navigation
+	var CreatePagers = function() {
+		var $isotopePager = ($('.' + pagerClass).length == 0) ? $('<div class="' + pagerClass + '"></div>') : $('.' + pagerClass);
+		$isotopePager.html('');
+		if(currentNumberPages > 1) {
+			for(var i = 0; i < currentNumberPages; i++) {
+				var $pager = $('<a href="javascript:void(0);" class="pager" ' + pageAttribute + '="' + (i + 1) + '"></a>');
+				$pager.html(i + 1);
+				$pager.click(function() {
+					var page = $(this).eq(0).attr(pageAttribute);
+					goToPage(page);
+				});
+				$pager.appendTo($isotopePager);
+			}
+		}
+		$container.after($isotopePager);
+	}();
+}
+
+setPagination();
+goToPage(1);
+
+//event handlers
+$checkboxes.change(function() {
+	var filter = $(this).attr(filterAttribute);
+	currentFilter = filter;
+	setPagination();
+	goToPage(1);
+});
+
+$(window).resize(function() {
+	itemsPerPage = defineItemsPerPage();
+	setPagination();
+	goToPage(1);
+});
+

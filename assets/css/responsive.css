@@ -56,8 +56,27 @@
 		font-size: 80px;
 	}
 
-	
 	.join-network-section h2 {
 		font-size: 80px;
+	}
+
+	.events-banner h1 {
+		font-size: 100px;
+	}
+	
+	.tnnh-row h2 {
+		font-size: 35px;
+	}
+
+	.healthcare-banner h1 {
+		font-size: 100px;
+	}
+
+	.healthcare-section .card .card-header h3 {
+		font-size: 45px;
+	}
+
+	.healthcare-section h4 {
+		font-size: 24px;
 	}
 }

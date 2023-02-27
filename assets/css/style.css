@@ -1026,7 +1026,6 @@ hr {
 
 .events-banner h1 {
 	color: var(--white-color);
-	font-size: 100px;
 	font-family: var(--font-family2);
 }
 
@@ -1038,15 +1037,21 @@ hr {
 	padding: 120px 0px;
 }
 
-.events-section .btn {
+.events-section .button {
 	text-transform: uppercase;
-}
-
-.btn-basic {
 	border: 1px solid var(--border-color);
+	background-color: var(--white-color);
+	border-radius: 5px;
+	padding: 5px 10px;
 }
 
-.events-section .btn.active {
+.events-section .button:hover {
+	background-color: var(--primary-color);
+	color: var(--white-color);
+}
+  
+.events-section .button:active,
+.events-section .button.is-checked {
 	background-color: var(--primary-color);
 	color: var(--white-color);
 }
@@ -1056,7 +1061,9 @@ hr {
 }
 
 .demo__main {
-	box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+	background: #FFFFFF;
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
 }
 
 #calendar {
@@ -1113,7 +1120,82 @@ hr {
 .show {
 	display: block;
 }
-  
+
+.tnnh {
+	padding-top: 60px;
+}
+
+.tnnh-row {
+	background-color: var(--primary-color);
+	padding: 32px 29px;
+	border-radius: 5px;
+}
+
+.tnnh-row h2 {
+	font-family: var(--font-family2);
+	font-weight: 900;
+	color: var(--white-color);
+}
+
+.tnnh-row p {
+	font-weight: 400;
+	color: var(--white-color);
+}
+
+/* Healthcare Agencies Page */
+
+.healthcare-banner {
+	background-image: url(../images/healthcare-agencies-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 313px 0px;
+}
+
+.healthcare-banner h1 {
+	color: var(--white-color);
+	font-family: var(--font-family2);
+}
+
+.healthcare-banner p {
+	color: var(--white-color);
+}
+
+.healthcare-section {
+	padding: 120px 0px;
+}
+
+.healthcare-section .card .card-header {
+	background-color: var(--secondary-color);
+	padding: 28px 34px;
+}
+
+.healthcare-section .card .card-header h3 {
+	color: var(--white-color);
+	font-weight: 900;
+	margin-bottom: 0px;
+}
+
+.filter-card .card-body {
+	padding: 50px 35px;
+}
+
+.isotope-pager {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.pager {
+    margin: 0px 5px;
+	border: 1px solid var(--border-color);
+	padding: 5px 10px;
+}
+
+.healthcare-section h4 {
+	font-weight: 600;
+	color: var(--primary-color);
+	padding: 30px 0 20px;
+	margin-bottom: 0px;
+}
 
 /* Footer */
 
