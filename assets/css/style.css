@@ -1143,6 +1143,10 @@ hr {
 	color: var(--white-color);
 }
 
+.events-section .isotope-pager {
+	display: none;
+}
+
 /* Healthcare Agencies Page */
 
 .healthcare-banner {
@@ -1208,6 +1212,69 @@ hr {
 .isotope-pager .pager.active {
 	background: var(--secondary-color);
 	color: #fff;
+}
+
+/* Blogs */
+
+.blogs-banner {
+	background-image: url(../images/blogs-banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 313px 0px;
+}
+
+.blogs-banner h1 {
+	color: var(--white-color);
+	font-family: var(--font-family2);
+}
+
+.blogs-banner p {
+	color: var(--white-color);
+}
+
+.blogs1-row {
+	padding: 80px 0px 120px;
+	position: relative;
+}
+
+.blogs2-row {
+	padding-bottom: 120px;
+}
+
+.image-blog1 {
+	position: relative;
+}
+
+.content-blog1 {
+	position: absolute;
+    left: 825px;
+    top: 149px;
+}
+
+.content-blog1 .card .card-body {
+	padding: 69px 45px;
+}
+
+.content-blog h3 {
+	color: var(--primary-color);
+	font-weight: 900;
+	font-family: var(--font-family2);
+	margin-bottom: 0px;
+	padding-bottom: 30px;
+}
+
+.content-blog p {
+	font-weight: 400;
+	margin-bottom: 0px;
+	padding-bottom: 40px;
+}
+
+.card-img-top {
+	width: 100%;
+}
+
+.blogs2-row .card .card-body {
+	padding: 40px 44px 55px;
 }
 
 /* Footer */
