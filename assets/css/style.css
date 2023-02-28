@@ -28,7 +28,7 @@ a {
 
 .site-navbar {
 	margin-bottom: 0px;
-	z-index: 1999;
+	z-index: 1;
 	position: relative;
 	top: 0;
 	width: 100%;
@@ -788,7 +788,50 @@ hr {
 	color: var(--secondary-color);
 }
 
-/* Membership Form */
+.login-body {
+	padding: 84px 74px;
+}
+
+.login-body h2 {
+	font-weight: 900;
+	color: var(--primary-color);
+	font-family: var(--font-family2);
+}
+
+.login-body p {
+	padding-top: 20px;
+}
+
+.login-body form {
+	padding-top: 30px;
+}
+
+button#toggle-password {
+	position: absolute;
+	top: 3px;
+	right: 4px;
+	z-index: 9;
+	width: 28px;
+	height: 30px;
+	background: 0;
+	border: 0;
+}
+  
+button#toggle-password:active,
+button#toggle-password:focus,
+button#toggle-password:hover {
+	cursor: pointer;
+}
+  
+  button#toggle-password:focus {
+	outline: none !important;
+}
+
+.form-recovery {
+	float: right;
+}
+
+/* Membership Page */
 
 .membership-banner {
 	background-image: url(../images/membership-banner.png);
