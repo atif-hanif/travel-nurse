@@ -937,7 +937,6 @@ button#toggle-password:hover {
 
 .contact-banner h1 {
 	color: var(--white-color);
-	font-size: 100px;
 	font-family: var(--font-family2);
 }
 
@@ -957,10 +956,6 @@ button#toggle-password:hover {
 
 .contact-us-section .card .card-body {
 	padding: 85px 60px;
-}
-
-.contact-us-section {
-	margin-top: -170px;
 }
 
 .contact-us-section h2 {
@@ -1002,7 +997,6 @@ button#toggle-password:hover {
 
 .join-network-banner h1 {
 	color: var(--white-color);
-	font-size: 100px;
 	font-family: var(--font-family2);
 }
 
@@ -1022,10 +1016,6 @@ button#toggle-password:hover {
 
 .join-network-section .card .card-body {
 	padding: 85px 60px;
-}
-
-.join-network-section {
-	margin-top: -170px;
 }
 
 .join-network-section h2 {
@@ -1062,7 +1052,7 @@ button#toggle-password:hover {
 
 .custom-file {
 	border: 1px dashed var(--sixth-color);
-	padding: 36px;
+	padding: 32px;
 }
 
 .custom-file i {
