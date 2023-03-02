@@ -69,11 +69,12 @@ $(function() {
 });
 
 $('.banner-slider').owlCarousel({
-	loop:true,
-	margin:10,
-	nav:true,
-	dot:true,
-	responsiveClass:true,
+	loop: true,
+	margin: 10,
+	nav: true,
+	dot: true,
+    navText: ['<span class="fas fa-chevron-left"></span><span class="fas fa-chevron-left"></span>','<span class="fas fa-chevron-right"></span><span class="fas fa-chevron-right"></span>'],
+	responsiveClass: true,
 	responsive:{
 		0:{
 			items:1
