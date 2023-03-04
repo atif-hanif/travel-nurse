@@ -18,67 +18,47 @@
 
 <body>
 
-    <div class="site-mobile-menu site-navbar-target">
-        <div class="site-mobile-menu-header">
-            <div class="site-mobile-menu-close mt-3">
-                <i class="fa-solid fa-xmark js-menu-toggle"></i>
-            </div>
-        </div>
-        <div class="site-mobile-menu-body"></div>
-    </div>
-
-    <header class="site-navbar site-navbar-target bg-white" role="banner">
+    <header class="site-navbar site-navbar-target bg-white">
         <div class="container">
-            <div class="row align-items-center position-relative">
-                <div class="col-lg-6 col-xxl-5">
-                    <nav class="site-navigation text-right ml-auto " role="navigation">
-                        <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                            <li class="active">
-                                <a href="index.html" class="nav-link">Home</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav-link">Resource Directory</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav-link">Community</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav-link">Rental Services</a>
-                            </li>
-                        </ul>
-                    </nav>
+            <nav class="navbar navbar-expand-xl">
+                <img src="assets/images/logo.png" alt="Logo" class="img-fluid d-xl-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="active">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link">Resource Directory</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link">Community</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link">Rental Services</a>
+                        </li>   
+                    </ul>
                 </div>
-                <div class="col-lg-2 col-xxl-3 text-center">
-                    <div class="site-logo">
-                        <a href="index.html">
-                            <img src="assets/images/logo.png" alt="Logo" class="img-fluid">
-                        </a>
-                    </div>
-                    <div class="ml-auto toggle-button d-inline-block d-lg-none">
-                        <a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black">
-                            <i class="fa-solid fa-bars"></i>
-                        </a>
-                    </div>
+                <img src="assets/images/logo.png" alt="Logo" class="img-fluid d-none d-xl-block">
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="events.html" class="nav-link">Events</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-regular fa-user pe-2"></i>Join / Login</button>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass ps-3 pt-1"></i>
+                        </li> 
+                    </ul>
                 </div>
-                <div class="col-lg-4 col-xxl-4">
-                    <nav class="site-navigation text-left mr-auto" role="navigation">
-                        <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                            <li>
-                                <a href="" class="nav-link">Events</a>
-                            </li>
-                            <li>
-                                <a href="" class="nav-link">Contact Us</a>
-                            </li>
-                            <li>
-                                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-regular fa-user pe-2"></i>Join / Login</button>
-                            </li>
-                            <li>
-                                <i class="fa-solid fa-magnifying-glass ps-2"></i>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+            </nav>
         </div>
     </header>
 
@@ -153,13 +133,13 @@
                         <div class="card mt-3">
                             <div class="card-header">
                                 <p class="mb-0 w-75 float-start pt-2"><span>Basic Profile</span> (Individual)</p>
-                                <a class="btn text-end w-25" data-bs-toggle="collapse" href="#collapseOne">
+                                <a class="btn text-end w-25" data-bs-toggle="collapse" href="#collapseFour">
                                     <input type="radio" class="form-check-input" id="radio4" name="optradio" value="option4">
                                     <label class="form-check-label" for="radio4"></label>
                                 </a>
                                 <p class="mb-0">Healthcare Staffing</p>
                             </div>
-                            <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseFour" class="collapse" data-bs-parent="#accordion">
                                 <div class="card-body">
                                     <ul>
                                         <li>Personalized Profiles</li>
@@ -172,13 +152,13 @@
                         <div class="card mt-3">
                             <div class="card-header">
                                 <p class="mb-0 w-75 float-start pt-2"><span>VIP Profile</span> (Business)</p>
-                                <a class="btn text-end w-25" data-bs-toggle="collapse" href="#collapseTwo">
+                                <a class="btn text-end w-25" data-bs-toggle="collapse" href="#collapseFive">
                                     <input type="radio" class="form-check-input" id="radio5" name="optradio" value="option5">
                                     <label class="form-check-label" for="radio5"></label>
                                 </a>
                                 <p class="mb-0">Non Healthcare</p>
                             </div>
-                            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                            <div id="collapseFive" class="collapse" data-bs-parent="#accordion">
                                 <div class="card-body"> 
                                     <ul>
                                         <li>Personalized Profiles</li>
@@ -212,6 +192,18 @@
                         <button type="button" class="btn btn-primary btn-block">CONTINUE</button>
                       </div>
                 </div>
+            </div>
+
+            <div class="row mt-4">
+                <h2>Why Join Us?</h2>
+                <ul>
+                    <li class="pb-3"><i class="fa-solid fa-circle-check pe-3"></i>Connect with Other Healthcare Travelers</li>
+                    <li class="pb-3"><i class="fa-solid fa-circle-check pe-3"></i>Manage and Track Credentials, Licensures, and even Personal documents</li>
+                    <li class="pb-3"><i class="fa-solid fa-circle-check pe-3"></i>Plan and Plot Upcoming Trips, Contracts, and Adventures with our Interactive Maps</li>
+                    <li class="pb-3"><i class="fa-solid fa-circle-check pe-3"></i>Utilize our Resume, Content, and Checklist Generators</li>
+                    <li class="pb-3"><i class="fa-solid fa-circle-check pe-3"></i>Keep Dates, Schedules, and Up Coming Events Organized on your profile Calendar</li>
+                    <li class="pb-3"><i class="fa-solid fa-circle-check pe-3"></i>VIP Members Receive our Monthly Newsletter, Lounge Access, with Discounts, and Exclusive Invites to Pop Up Events and Meet Ups</li>
+                </ul>
             </div>
         </div>
     </section>

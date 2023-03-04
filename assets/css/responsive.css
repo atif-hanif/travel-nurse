@@ -18,6 +18,41 @@
 	}
 }
 
+
+@media (max-width: 767px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-end.active,
+    .carousel-inner .carousel-item-next {
+        transform: translateX(33%);
+    }
+
+    .carousel-inner .carousel-item-start.active, 
+    .carousel-inner .carousel-item-prev {
+        transform: translateX(-33%);
+    }
+}
+
+.carousel-inner .carousel-item-end,
+.carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
 
 	.event-dates {
@@ -80,12 +115,26 @@
 
 @media only screen and (min-width: 1400px) {
 
+	.navbar-expand-xl .navbar-nav .nav-link {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
+	.fa-magnifying-glass {
+		font-size: 28px;
+		font-weight: 600;
+	}
+
 	.welcome {
 		font-size: 100px;
 	}
 	
 	.tnn {
 		font-size: 130px;
+	}
+
+	.home-events .card .card-body {
+		padding: 72px 105px;
 	}
 
 	.home-events h2 {
@@ -98,7 +147,7 @@
 	}
 
 	.event-names {
-		padding: 27.5px 0px;
+		padding: 27.5px 0px 15px;
 	}
 
 	.event-date {
@@ -134,6 +183,10 @@
 		line-height: 60px;
 	}
 
+	.membership-section .card .card-body {
+		padding: 50px 47px 84px;
+	}
+	
 	.contact-banner h1 {
 		font-size: 100px;
 	}
@@ -186,6 +239,10 @@
 		font-size: 100px;
 	}
 
+	.blogs2-row .card .card-body {
+		padding: 40px 44px 55px;
+	}
+
 	.content-blog h3 {
 		font-size: 45px;
 	}
@@ -201,4 +258,9 @@
 	.membership-tiers h1 {
 		font-size: 80px;
 	}
+
+	.membership-tiers h2 {
+		font-size: 60px;
+	}
+	
 }

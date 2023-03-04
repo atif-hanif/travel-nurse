@@ -35,7 +35,7 @@ a {
 	padding: 1rem 0rem;
 }
 
-.site-navbar .toggle-button {
+/* .site-navbar .toggle-button {
 	position: absolute;
 	right: 0px;
 }
@@ -421,7 +421,7 @@ a {
 	padding-left: 15px !important;
 }
 
-/* .sticky-wrapper {
+.sticky-wrapper {
 	position: relative;
 	z-index: 100;
 	width: 100%;
@@ -556,6 +556,13 @@ a {
 	transition: 0s;
 }
 
+.form-check-input:focus {
+    border-color: #0d6efd;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    background: #0d6efd;
+}
+
 /* Home */
 
 .banner {
@@ -657,10 +664,6 @@ button.owl-prev, button.owl-next {
 
 .home-events {
 	padding: 120px 0px 82px;
-}
-
-.home-events .card .card-body {
-	padding: 72px 105px;
 }
 
 .home-events h2 {
@@ -772,68 +775,30 @@ hr {
 	padding-top: 50px;
 }
 
-.companies img {
-	width: 125px !important;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.companies .item {
-	background: #FFFFFF;
-	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
-	padding: 40px;
-}
-
-.carousel-wrap {
-	/*margin: 90px auto;
-	padding: 0 5%; */
-	width: 100%;
-	position: relative;
-}
-
-.owl-carousel .item {
-	position: relative;
-	z-index: 100; 
-	-webkit-backface-visibility: hidden; 
-}
-  
-.companies-slider .owl-nav button.owl-prev, .companies-slider .owl-nav button.owl-prev, .companies-slider button.owl-dot.owl-nav {
-    position: absolute;
-    left: 30px;
-    top: 50%;
-    background-color: var(--border-color);
-    display: block;
-    padding: 0 .3em !important;
-    font-size: 3em;
-    margin: 0;
-    cursor: pointer;
-    color: var(--secondary-color) !important;
-    transform: translate(-50%, -50%);
-	width: 60px;
-    height: 60px;
+div.carousel-nav-icon {
+	background-color: var(--border-color);
 	border-radius: 50%;
-}
-
-.companies-slider .owl-nav button.owl-next, .companies-slider .owl-nav button.owl-next, .companies-slider button.owl-dot.owl-nav {
-    position: absolute;
-    right: -30px;
-    top: 50%;
-    background-color: var(--border-color);
-    display: block ;
-    padding: 0 .3em !important;
-    font-size: 3em ;
-    margin: 0;
-    cursor: pointer;
-    color: var(--secondary-color) !important;
-    transform: translate(-50%, -50%);
 	width: 60px;
-    height: 60px;
-	border-radius: 50%;
+	height: 60px;
+	padding: 18px 22px;
 }
 
-.companies-slider .fa-chevron-left, .companies-slider .fa-chevron-right {
+div.carousel-nav-icon > i {
+    font-size: 18px;
 	color: var(--secondary-color);
+	font-weight: 900;
+}
+
+.companiescarousel {
+	padding: 10px 0;
+}
+
+.carousel-item .card {
+	/* margin-left: 5px;
+	margin-right: 5px; */
+	background: var(--white-color);
+	/* box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15); */
+	border: 1px solid var(--white-color)
 }
 
 .login-body {
@@ -911,7 +876,23 @@ button#toggle-password:hover {
 	color: var(--primary-color);
 	font-family: var(--font-family2);
 	font-weight: 900;
-	margin-bottom: 20xp;
+	margin-bottom: 20px;
+}
+
+.membership-tiers h2 {
+	color: var(--primary-color);
+	font-family: var(--font-family2);
+	font-weight: 900;
+	margin-bottom: 20px;
+}
+
+.membership-tiers ul li {
+	list-style: none;
+}
+
+.membership-tiers ul li i {
+	color: var(--secondary-color);
+	font-size: 24px;
 }
 
 /* Membership Page */
@@ -950,10 +931,6 @@ button#toggle-password:hover {
 	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
 	border-color: var(--white-color);
-}
-
-.membership-section .card .card-body {
-	padding: 50px 47px 84px;
 }
 
 .plan-profile {
@@ -1398,10 +1375,6 @@ button#toggle-password:hover {
 
 .card-img-top {
 	width: 100%;
-}
-
-.blogs2-row .card .card-body {
-	padding: 40px 44px 55px;
 }
 
 /* Footer */

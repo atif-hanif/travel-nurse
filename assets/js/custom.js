@@ -88,26 +88,22 @@ $('.banner-slider').owlCarousel({
 	}
 })
 
-$('.companies-slider').owlCarousel({
-	loop: true,
-	margin: 10,
-	dots: false,
-	nav: true,
-	navText: ['<span class="fas fa-chevron-left"></span><span class="fas fa-chevron-left"></span>','<span class="fas fa-chevron-right"></span><span class="fas fa-chevron-right"></span>'],
-	autoplay: true,
-	autoplayHoverPause: true,
-	responsive: {
-		0: {
-			items: 1
-	  	},
-	  	600: {
-			items: 2
-	  	},
-	  	1000: {
-			items: 4
-	  	}
-	}
+let items = document.querySelectorAll('.carousel .carousel-item')
+
+items.forEach((el) => {
+    const minPerSlide = 4
+    let next = el.nextElementSibling
+    for (var i=1; i<minPerSlide; i++) {
+        if (!next) {
+            // wrap carousel by using first child
+        	next = items[0]
+      	}
+        let cloneChild = next.cloneNode(true)
+        el.appendChild(cloneChild.children[0])
+        next = next.nextElementSibling
+    }
 })
+
 
 var ShowPasswordToggle = document.querySelector("[type='password']");
 ShowPasswordToggle.onclick = function() {
@@ -204,6 +200,7 @@ ShowPasswordToggle.onclick = function() {
 
         chart: {
             animation: true,
+            height: 800
         },
 
         accessibility: {
@@ -362,71 +359,4 @@ ShowPasswordToggle.onclick = function() {
             chart.redraw();
         };
     });
-
-    // Add the pies after chart load, optionally with offset and connectors
-    chart.series[0].points.forEach(state => {
-        // Add the pie for this state
-        chart.addSeries({
-            type: '',
-            name: state.id,
-            zIndex: 6, // Keep pies above connector lines
-            minSize: 15,
-            maxSize: 55,
-            onPoint: {
-                id: state.id,
-                z: (() => {
-                    const mapView = chart.mapView,
-                        zoomFactor = mapView.zoom / mapView.minZoom;
-
-                    return Math.max(
-                        chart.chartWidth / 45 * zoomFactor, // Min size
-                        chart.chartWidth /
-                        11 * zoomFactor * state.sumVotes / maxVotes
-                    );
-                })()
-            },
-            states: {
-                inactive: {
-                    enabled: false
-                }
-            },
-            accessibility: {
-                enabled: false
-            },
-            tooltip: {
-                // Use the state tooltip for the pies as well
-                pointFormatter() {
-                    return state.series.tooltipOptions.pointFormatter.call({
-                        id: state.id,
-                        hoverVotes: this.name,
-                        licensInfo: state.licensInfo,
-                        housingInfo: state.housingInfo,
-                        travelingInfo: state.travelingInfo,
-                        accommInfo: state.accommInfo,
-                        sumVotes: state.sumVotes
-                    });
-                }
-            },
-            data: [{
-                name: 'Licensing',
-                y: state.licensInfo,
-                color: demColor
-            }, {
-                name: 'Housing',
-                y: state.housingInfo,
-                color: repColor
-            }, {
-                name: 'Traveling',
-                y: state.travelingInfo,
-                color: libColor
-            }, {
-                name: 'Accommodation',
-                y: state.accommInfo,
-                color: grnColor
-            }]
-        }, false);
-    });
-
-    // Only redraw once all pies and connectors have been added
-    chart.redraw();
 })();
