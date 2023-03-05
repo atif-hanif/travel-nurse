@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Sign Up - The Travel Nurse</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendors/font-awsome/all.css" rel="stylesheet">
+    <link href="assets/css/fonts1.css" rel="stylesheet">
+    <link href="assets/css/fonts2.css" rel="stylesheet">
+    <link href="assets/vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
+    <link href="assets/vendors/owl-carousel/owl.theme.default.min.css" rel="stylesheet">
+    <link href="assets/vendors/datepicker/bootstrap-datepicker.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="site-navbar site-navbar-target bg-white">
+        <div class="container">
+            <nav class="navbar navbar-expand-xl">
+                <img src="assets/images/logo.png" alt="Logo" class="img-fluid d-xl-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="active">
+                            <a href="index.html" class="nav-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link">Resource Directory</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link">Community</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav-link">Rental Services</a>
+                        </li>   
+                    </ul>
+                </div>
+                <img src="assets/images/logo.png" alt="Logo" class="img-fluid d-none d-xl-block">
+                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="events.html" class="nav-link">Events</a>
+                        </li>
+                        <li>
+                            <a href="contact-us.html" class="nav-link">Contact Us</a>
+                        </li>
+                        <li>
+                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#myModal"><i class="fa-regular fa-user pe-2"></i>Join / Login</button>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-magnifying-glass ps-3 pt-1"></i>
+                        </li> 
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="signup-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center">Complete Profile</h1>
+                    <p class="text-center">Please complete the detail to build platform resume</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="wizard-v1-content">
+                        <div class="wizard-form">
+                            <form class="form-register needs-validation" id="form-register" action="#" method="post" novalidate>
+                                <div id="form-total">
+                                    <!-- SECTION 1 -->
+                                    <h2>
+                                        <span class="step-icon">01</span>
+                                        <span class="step-text">Basic Info</span>
+                                    </h2>
+                                    <section>
+                                        <div class="inner">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <div class="picture">
+                                                        <img src="assets/images/profile-image.png" class="picture-src" id="wizardPicturePreview" title="Profile Picture">
+                                                    </div>
+                                                    <input type="file" id="wizard-picture" class="file-upload">
+                                                    <p class="mb-0 image-size">Max Size: 10MB</p>
+                                                </div>
+                                            </div>
+                                            <div class="row mt-5">
+                                                <div class="col-md-6">
+                                                    <label for="first_name_1" class="form-label">First Name *</label>
+                                                    <input type="text" placeholder="Enter your name" class="form-control" id="first_name_1" name="first_name_1" required>
+                                                </div>
+                                                <div class="col-md-6 mt-4 mt-md-0">
+                                                    <label for="last_name" class="form-label">Last Name *</label>
+                                                    <input type="text" placeholder="Enter your name" class="form-control" id="last_name" name="last_name_1" required>
+                                                </div>
+                                                <div class="col-md-6 mt-4">
+                                                    <label for="email_1" class="form-label">Email Address *</label>
+                                                    <input type="email" placeholder="Enter your email" class="form-control" id="email" name="email_1"  pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" required>
+                                                </div>
+                                                <div class="col-md-6 mt-4">
+                                                    <label for="mobile_number_1" class="form-label">Mobile Number *</label>
+                                                    <input type="tel" placeholder="Enter your number" class="form-control" id="mobile_number_1" name="mobile_number_1" required>
+                                                </div>
+                                                <div class="col-md-6 mt-4">
+                                                    <label for="password" class="form-label">Password *</label>
+                                                    <div class="show_hide_password">
+                                                        <input type="password" placeholder="xxxxxxx" class="form-control" id="password" name="password" required>
+                                                        <i class="fa-sharp fa-solid fa-eye-slash" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 mt-4">
+                                                    <label for="confirm_password" class="form-label">Confirm Password*</label>
+                                                    <div class="show_hide_password">
+                                                        <input type="password" placeholder="xxxxxxx" class="form-control" id="confirm_password" name="confirm_password" required>
+                                                        <i class="fa-sharp fa-solid fa-eye-slash" aria-hidden="true"></i>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 mt-4">
+                                                    <label for="job" class="form-label">Job Indetification *</label>
+                                                    <select class="form-select job-select" id="job" name="job" required>
+                                                        <option>Enter Your Job Title</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                      </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mt-5">
+                                            <p class="mb-0 text-center user-aggrement">By registering on The Travel Nurse website, you agree to our <span>User Agreement</span> and acknowledge reading our <span>Privacy Policy</span>.</p>
+                                        </div>
+                                    </section>
+                                    <!-- SECTION 2 -->
+                                    <h2>
+                                        <span class="step-icon">02</span>
+                                        <span class="step-text">Upload Resume</span>
+                                    </h2>
+                                    <section>
+                                        <div class="inner">
+                                            <div class="row">
+                                                <div class="col-12 text-center">
+                                                    <form class="form" method="post" action="/upload">
+                                                        <div id="demo_upload">
+                                                            <img src="assets/images/upload-cv.png" class="img-fluid d-block mx-auto" alt="CV">
+                                                            <h5>Upload your resume</h5>
+                                                            <div class="upload-btn-wrapper">
+                                                                <label class="uploadFile cv-upload-btn">
+                                                                    <i class="fa-solid fa-arrow-up-from-bracket pe-3"></i>
+                                                                    <span class="filename">Upload Resume</span>
+                                                                    <input type="file" id="myfile" name="myfile">
+                                                                </label>
+                                                                <p class="files-type">Word doc or PDF file under 5mb are accepted</p>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <!-- SECTION 3 -->
+                                    <h2>
+                                        <span class="step-icon">03</span>
+                                        <span class="step-text">Employment Records<br> and References</span>
+                                    </h2>
+                                    <section>
+                                        <div class="inner">
+                                            <div class="row">
+                                                <h3 class="mb-0 w-50">Employment Record</h3>
+                                                <p class="mb-0 text-end w-50">Minimum Two Past Experience Required *</p>
+                                            </div>
+                                            <div class="customer_records">
+                                                <div class="row mt-5">
+                                                    <div class="col-md-6">
+                                                        <label for="job_title_1" class="form-label">Job Title *</label>
+                                                        <input type="text" placeholder="Enter your job title" class="form-control" id="job_title_1" name="job_title_1" required>
+                                                    </div>
+                                                    <div class="col-md-6 mt-4 mt-md-0">
+                                                        <label for="company_1" class="form-label">Company *</label>
+                                                        <input type="text" placeholder="Enter your company" class="form-control" id="company_1" name="company_1" required>
+                                                    </div>
+                                                    <div class="col-md-6 mt-4">
+                                                        <label for="name_of_facility" class="form-label">Name of Facility *</label>
+                                                        <input type="name_of_facility" placeholder="Enter Facility" class="form-control" id="name_of_facility" name="name_of_facility" required>
+                                                    </div>
+                                                    <div class="col-md-6 mt-4">
+                                                        <label for="speciality" class="form-label">Speciality *</label>
+                                                        <input type="tel" placeholder="Enter speciality" class="form-control" id="speciality" name="speciality" required>
+                                                    </div>
+                                                    <div class="col-12 mt-4">
+                                                        <label for="location" class="form-label">Location *</label>
+                                                        <select class="form-select location-select" id="location" name="location" required>
+                                                            <option>Select</option>
+                                                            <option>2</option>
+                                                            <option>3</option>
+                                                            <option>4</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-6 mt-4">
+                                                        <label for="start-date" class="form-label">Start Date *</label>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <input type="text" placeholder="Month" class="form-control" id="start_month" name="start-date" required>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input type="text" placeholder="Year" class="form-control" id="start_year" name="start-date" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6 mt-4">
+                                                        <label for="end-date" class="form-label">End Date *</label>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <input type="text" placeholder="Month" class="form-control" id="end_month" name="end-date" required>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <input type="text" placeholder="Year" class="form-control" id="end_year" name="end-date" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-4">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
+                                                            <label class="form-check-label">Currently Working Here</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 mt-4">
+                                                        <label for="description" class="form-label">Description:</label>
+                                                        <textarea class="form-control" rows="5" id="description" name="text"></textarea>
+                                                    </div>
+                                                    <div class="col-12 mt-4">
+                                                        <a class="extra-fields-customer" href="#"><i class="fa-solid fa-circle-plus pe-3"></i>Add More Customer</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="customer_records_dynamic mt-4"></div>
+                                        </div>
+                                        <hr>
+                                        <div class="inner">
+                                            <div class="row">
+                                                <h3 class="mb-0 w-50">References</h3>
+                                                <div class=" text-end w-50">
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                                        <label class="form-check-label" for="inlineCheckbox1">Personal</label>
+                                                      </div>
+                                                      <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                        <label class="form-check-label" for="inlineCheckbox2">Professional</label>
+                                                      </div>
+                                                </div>
+                                            </div>
+                                            <div class="customer_records">
+                                                <div class="row mt-5">
+                                                    <div class="col-md-6">
+                                                        <label for="first_name_2" class="form-label">First Name *</label>
+                                                        <input type="text" placeholder="Enter your name" class="form-control" id="first_name_2" name="first_name_2" required>
+                                                    </div>
+                                                    <div class="col-md-6 mt-4 mt-md-0">
+                                                        <label for="last_name_2" class="form-label">Last Name *</label>
+                                                        <input type="text" placeholder="Enter your name" class="form-control" id="last_name_2" name="last_name_2" required>
+                                                    </div>
+                                                    <div class="col-md-6 mt-4">
+                                                        <label for="job_title_2" class="form-label">Job Title *</label>
+                                                        <input type="text" placeholder="Enter your job title" class="form-control" id="job_title_2" name="job_title_2" required>
+                                                    </div>
+                                                    <div class="col-md-6 mt-4">
+                                                        <label for="company_2" class="form-label">Company *</label>
+                                                        <input type="text" placeholder="Enter your company" class="form-control" id="company_2" name="company_2" required>
+                                                    </div>
+                                                    <div class="col-md-6 mt-4">
+                                                        <label for="email_2" class="form-label">Email Address *</label>
+                                                        <input type="email" placeholder="Enter your email" class="form-control" id="email_2" name="email_2"  pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" required>
+                                                    </div>
+                                                    <div class="col-md-6 mt-4">
+                                                        <label for="mobile_number_2" class="form-label">Mobile Number *</label>
+                                                        <input type="tel" placeholder="Enter your number" class="form-control" id="mobile_number_2" name="mobile_number_2" required>
+                                                    </div>
+                                                    <div class="col-12 mt-4">
+                                                        <a class="extra-fields-customer" href="#"><i class="fa-solid fa-circle-plus pe-3"></i>Add More Customer</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="customer_records_dynamic mt-4"></div>
+                                            <p class="note"><strong>NOTE: </strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                                        </div>
+                                    </section>
+                                    <!-- SECTION 4 -->
+                                    <h2>
+                                        <span class="step-icon">04</span>
+                                        <span class="step-text">Credientials</span>
+                                    </h2>
+                                    <section>
+                                        <div class="inner">
+                                            <h3>Add New Document</h3>
+                                            <div class="row">
+                                                <div class="col-12 mt-4">
+                                                    <label for="degree" class="form-label">Highest Degree Earned *</label>
+                                                    <select class="form-select degree-select" id="degree" name="degree" required>
+                                                        <option>Select</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-6 mt-4 mt-md-0">
+                                                    <label for="certifications" class="form-label">National Certifications *</label>
+                                                    <input type="text" placeholder="Enter Certifications" class="form-control" id="certifications" name="certifications" required>
+                                                </div>
+                                                <div class="col-12 mt-4">
+                                                    <label for="desingations" class="form-label">State Designations *</label>
+                                                    <input type="text" placeholder="Enter Desingations" class="form-control" id="desingations" name="desingations" required>
+                                                </div>
+                                                <div class="col-md-6 mt-4">
+                                                    <label for="awards" class="form-label">Awards and Honors *</label>
+                                                    <input type="text" placeholder="If Any" class="form-control" id="awards" name="awards" required>
+                                                </div>
+                                                <div class="col-md-6 mt-4">
+                                                    <label for="recognitions" class="form-label">Other Recognitions *</label>
+                                                    <input type="text" placeholder="If Any" class="form-control" id="recognitions" name="recognitions" required>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <h3><a href="">Home</a></h3>
+                    <h3><a href="">Resource Directory</a></h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="py-1 d-block">Join the Network!</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1 d-block">Apps and Features</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1 d-block">Blogs and News</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1 d-block">Checklist Central</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1 d-block">Company Search</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1 d-block">Discounts</a>
+                        </li>
+                        <li>
+                            <a href="#" class="py-1 d-block">Education</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <h3><a href="">Financial Advising Services</a></h3>
+                    <h3><a href="">Housing</a></h3>
+                    <h3><a href="">Insurance</a></h3>
+                    <h3><a href="">Taxes/CPA Services</a></h3>
+                    <h3><a href="">Market Place</a></h3>
+                    <h3><a href="">Pod Cast</a></h3>
+                    <h3 class="pt-5"><a href="">Contact Us</a></h3>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="py-1 d-block">Send Message</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3>About Us</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <p class="footer-heading">Follow Us</p>
+                            <ul class="ftco-footer-social p-0">
+                                <li class="ftco-animate"><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                <li class="ftco-animate"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li class="ftco-animate"><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <p class="footer-heading">Subscribe to our Newsletter</p>
+                            <form action="#" class="subscribe-form">
+                                <div class="form-group d-flex input-group">
+                                <input type="text" class="form-control rounded-left" placeholder="Email Address">
+                                <span class="input-group-text"><i class="fa-solid fa-paper-plane"></i></span>
+                                <!-- <input type="submit" value="Subscribe" class="form-control submit px-3 rounded-right"> -->
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 pt-4 border-top">
+                <div class="col-12">
+                    <img src="assets/images/footer-logo.png" alt="Footer Logo" class="img-fluid">
+                </div>
+            </div>
+            <div class="row pt-4">
+                <div class="col-md-6">
+                    <p class="copyright">Copyright &copy;<script>document.write(new Date().getFullYear());</script> The Travel Nurse. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0 list-unstyled">
+                        All Rights Reserved.
+                        <a class="link" href="#">Privacy Policy</a> &
+                        <a class="link" href="#">Terms &amp; Services</a>
+                    </p>
+                </div>
+    </div>
+        </div>
+    </footer>
+
+    <script src="assets/vendors/jquery/jquery-3.6.3.min.js"></script>
+    <script src="assets/js/jquery.validate.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/datepicker/bootstrap-datepicker.js"></script>
+    <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="assets/js/jquery.steps.js"></script>
+    <script src="assets/js/custom.js"></script>
+    
+</body>
+
+</html>
