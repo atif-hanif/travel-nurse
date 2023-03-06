@@ -108,25 +108,29 @@ items.forEach((el) => {
 
 $(function(){
     $("#form-register").validate({
-        // rules: {
-        //     password : {
-        //         required : true,
-        //     },
-        //     confirm_password: {
-        //         equalTo: "#password"
-        //     }
-        // },
+        rules: {
+            password : {
+                required : true,
+            },
+            confirm_password: {
+                required : true,
+                equalTo: "#password"
+            },
+            job : {
+                required : true,
+            }
+        },
         messages: {
-            first_name: {
+            first_name_1: {
                 required: "Enter First Name"
             },
-            last_name: {
+            last_name_1: {
                 required: "Enter Last Name"
             },
-            email: {
+            email_1: {
                 required: "Enter Email"
             },
-            mobile_number: {
+            mobile_number_1: {
                 required: "Enter Mobile Number"
             },
             password: {
@@ -156,21 +160,21 @@ $(function(){
             current : ''
         },
         onStepChanging: function (event, currentIndex, newIndex) { 
-            var username = $('#username').val();
-            var email = $('#email').val();
-            var cardtype = $('#card-type').val();
-            var cardnumber = $('#card-number').val();
-            var cvc = $('#cvc').val();
-            var month = $('#month').val();
-            var year = $('#year').val();
+            // var username = $('#username').val();
+            // var email = $('#email').val();
+            // var cardtype = $('#card-type').val();
+            // var cardnumber = $('#card-number').val();
+            // var cvc = $('#cvc').val();
+            // var month = $('#month').val();
+            // var year = $('#year').val();
 
-            $('#username-val').text(username);
-            $('#email-val').text(email);
-            $('#card-type-val').text(cardtype);
-            $('#card-number-val').text(cardnumber);
-            $('#cvc-val').text(cvc);
-            $('#month-val').text(month);
-            $('#year-val').text(year);
+            // $('#username-val').text(username);
+            // $('#email-val').text(email);
+            // $('#card-type-val').text(cardtype);
+            // $('#card-number-val').text(cardnumber);
+            // $('#cvc-val').text(cvc);
+            // $('#month-val').text(month);
+            // $('#year-val').text(year);
 
             $("#form-register").validate().settings.ignore = ":disabled,:hidden";
             return $("#form-register").valid();
