@@ -329,6 +329,20 @@
 		font-size: 100px;
 	}
 
+	.blogs1-row {
+		position: relative;
+	}
+	
+	.image-blog1 {
+		position: relative;
+	}
+	
+	.content-blog1 {
+		position: absolute;
+		left: 825px;
+		top: 149px;
+	}
+
 	.blogs2-row .card .card-body {
 		padding: 40px 44px 55px;
 	}
@@ -376,6 +390,20 @@
 
 	.signup-section h1 {
 		font-size: 80px;
+	}
+
+	.about-row {
+		position: relative;
+	}
+	
+	.about-img {
+		position: relative;
+	}
+	
+	.about-card {
+		position: absolute;
+		left: 710px;
+		top: 95px;
 	}
 
 	.about-banner .are {
@@ -437,6 +465,14 @@
 
 	.payment-section .form-check-label {
 		font-size: 20px;
+	}
+
+	.payment-section h3 {
+		font-size: 40px;
+	}
+	
+	.payment-section h4 {
+		font-size: 30px;
 	}
 	
 }

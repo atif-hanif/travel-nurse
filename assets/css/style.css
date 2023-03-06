@@ -1453,7 +1453,7 @@ button#toggle-password:hover {
 	background-color: #fff;
 }
 
-.extra-fields-customer {
+.add_employment_btn {
 	color: var(--secondary-color);
 }
 
@@ -1525,6 +1525,41 @@ button#toggle-password:hover {
 	font-family: var(--font-family2);
 }
 
+.code-row {
+	margin-top: 50px;
+}
+
+.payment-section h3 {
+	font-weight: 900;
+	font-family: var(--font-family2);
+}
+
+.payment-section h4 {
+	font-weight: 900;
+	font-family: var(--font-family2);
+}
+
+.code-row .form-group {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+input.form-control.coupon {
+    background: #F2F2F2;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.btn-apply {
+	background-color: var(--secondary-color);
+	border-radius: 5px;
+}
+
+.yearly-plan p {
+	margin-bottom: 0px;
+	color: var(--sixth-color);
+}
+
 /* About Us Page */
 
 .about-banner {
@@ -1552,20 +1587,6 @@ button#toggle-password:hover {
 
 .about-section {
 	margin: 80px 0px 120px;
-}
-
-.about-row {
-	position: relative;
-}
-
-.about-img {
-	position: relative;
-}
-
-.about-card {
-	position: absolute;
-	left: 710px;
-    top: 95px;
 }
 
 .about-card .card {
@@ -2152,21 +2173,10 @@ button#toggle-password:hover {
 
 .blogs1-row {
 	padding: 80px 0px 120px;
-	position: relative;
 }
 
 .blogs2-row {
 	padding-bottom: 120px;
-}
-
-.image-blog1 {
-	position: relative;
-}
-
-.content-blog1 {
-	position: absolute;
-    left: 825px;
-    top: 149px;
 }
 
 .content-blog1 .card .card-body {
