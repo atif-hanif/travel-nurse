@@ -10,7 +10,8 @@
     --white-color: #fff;
 	--red-color: #ff0000;
 	--border-color: #BCBCBC;
-	--bg-color: #f2f2f2;
+	--bg-color1: #f2f2f2;
+	--bg-color2: #efefef;
 	--upload-btn: #dfdfdf;
     --font-family: 'Poppins';
 	--font-family2: 'Scotch Display Condensed Fat';
@@ -959,6 +960,13 @@ button#toggle-password:hover {
 
 /* Sign Up Page */
 
+.signup-section h1 {
+	font-family: var(--font-family2);
+	font-weight: 900;
+	color: var(--primary-color);
+	margin-bottom: 20px;
+}
+
 .wizard-v1-content {
 	position: relative;
 }
@@ -1146,8 +1154,8 @@ button#toggle-password:hover {
 }
 
 .input-group-text {
-	background: var(--bg-color);
-	border: 1px solid var(--bg-color);
+	background: var(--bg-color1);
+	border: 1px solid var(--bg-color1);
 }
 
 .show_hide_password {
@@ -1165,20 +1173,20 @@ button#toggle-password:hover {
 }
 
 .eye-btn {
-	background: var(--bg-color);
-	border: 1px solid var(--bg-color);
+	background: var(--bg-color1);
+	border: 1px solid var(--bg-color1);
 }
 
 .eye-btn:hover, .eye-btn:focus, .eye-btn:active {
-	background: var(--bg-color) !important;
-	border: 1px solid var(--bg-color) !important;
+	background: var(--bg-color1) !important;
+	border: 1px solid var(--bg-color1) !important;
 }
 
 .inner input {
 	/* width: 100%; */
 	height: 50px;
-	background: var(--bg-color);
-	border: 1px solid var(--bg-color);
+	background: var(--bg-color1);
+	border: 1px solid var(--bg-color1);
 	border-radius: 5px;
 	-o-border-radius: 5px;
 	-ms-border-radius: 5px;
@@ -1205,8 +1213,8 @@ button#toggle-password:hover {
 .job-select, .location-select {
 	width: 100%;
 	height: 50px;
-	background-color: var(--bg-color);
-	border: 1px solid var(--bg-color);
+	background-color: var(--bg-color1);
+	border: 1px solid var(--bg-color1);
 	border-radius: 5px;
 	-o-border-radius: 5px;
 	-ms-border-radius: 5px;
@@ -1217,8 +1225,8 @@ button#toggle-password:hover {
 .degree-select {
 	width: 50%;
 	height: 50px;
-	background-color: var(--bg-color);
-	border: 1px solid var(--bg-color);
+	background-color: var(--bg-color1);
+	border: 1px solid var(--bg-color1);
 	border-radius: 5px;
 	-o-border-radius: 5px;
 	-ms-border-radius: 5px;
@@ -1470,6 +1478,53 @@ button#toggle-password:hover {
 	margin-top: 60px;
 }
 
+/* Payment Page */
+
+.payment-section h1 {
+	font-family: var(--font-family2);
+	font-weight: 900;
+	color: var(--primary-color);
+	margin-bottom: 20px;
+}
+
+.payment-row {
+	margin: 60px 120px ;
+}
+
+.payment-section .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+    border-color: transparent;
+	border-radius: 0px;
+}
+
+.payment-section .nav-tabs {
+	border-bottom: 1px solid transparent;
+}
+
+.payment-section .nav-tabs .nav-link {
+	border: 1px solid transparent;
+	border-radius: 0px;
+}
+
+.payment-section .nav-link {
+	color: var(--sixth-color);
+	background-color: var(--bg-color2);
+}
+
+.select-plan-card {
+	background: #FFFFFF;
+	box-shadow: 0px 15px 50px rgba(0, 0, 0, 0.1);
+	border-radius: 10px;
+	border: 1px solid transparent;
+	margin-top: 30px;
+}
+
+.payment-section .form-check-label {
+	font-weight: 900;
+	font-family: var(--font-family2);
+}
+
 /* About Us Page */
 
 .about-banner {
@@ -1496,7 +1551,7 @@ button#toggle-password:hover {
 }
 
 .about-section {
-	margin: 80px 120px;
+	margin: 80px 0px 120px;
 }
 
 .about-row {

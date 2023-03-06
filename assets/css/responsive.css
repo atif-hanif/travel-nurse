@@ -124,9 +124,9 @@
 		width: auto;
 	}
 
-	.form-register .content {
+	/* .form-register .content {
 		padding: 32px 30px 23px 30px;
-	}
+	} */
 
 	.form-register .steps li, .form-register .steps li.current {
 		padding-right: 5px;
@@ -374,6 +374,10 @@
 		font-size: 45px;
 	}
 
+	.signup-section h1 {
+		font-size: 80px;
+	}
+
 	.about-banner .are {
 		font-size: 100px;
 	}
@@ -425,6 +429,14 @@
 	
 	.our-team {
 		font-size: 100px;
+	}
+
+	.payment-section h1 {
+		font-size: 80px;
+	}
+
+	.payment-section .form-check-label {
+		font-size: 20px;
 	}
 	
 }
