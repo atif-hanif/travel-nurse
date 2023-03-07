@@ -74,7 +74,8 @@
 
         chart: {
             animation: true,
-            height: 800
+            height: 800,
+            zoomType: false
         },
 
         accessibility: {
@@ -114,7 +115,7 @@
         },
 
         mapNavigation: {
-            enabled: true
+            enabled: false
         },
 
         title: {
