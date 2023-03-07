@@ -6,7 +6,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendors/font-awsome/all.css" rel="stylesheet">
+    <link href="assets/vendors/font-awsome/all-free.css" rel="stylesheet">
+    <link href="assets/vendors/font-awsome/all-pro.css" rel="stylesheet">
     <link href="assets/vendors/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
     <link href="assets/css/fonts1.css" rel="stylesheet">
     <link href="assets/css/fonts2.css" rel="stylesheet">
@@ -132,7 +133,7 @@
                                     <div class="input-group">
                                         <input type="text" class="form-control coupon" name="" placeholder="Enter code">
                                         <span class="input-group-append">
-                                            <button class="btn btn-primary btn-apply coupon">Apply</button>
+                                            <button class="btn btn-primary btn-apply coupon">APPLY</button>
                                         </span>
                                     </div>
                                 </div>
@@ -199,36 +200,196 @@
                                                         </div>
                                                    </div>
                                                    <hr>
-                                                   <div class="row">
-                                                        <div class="col-md-6">
-                                                            <input type="text" class="form-control">
+                                                   <form class="ui payment form attached segment" id="payment-form" method="post">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <div class="col-md-6 mt-4 mt-lg-0">
+                                                                <input type="text" class="form-control">
+                                                            </div>
                                                         </div>
-                                                        <div class="col-md-6">
-                                                            <input type="text" class="form-control">
+                                                        <div class="row mt-2">
+                                                            <div class="col-12">
+                                                                <div class="payment-logo">
+                                                                    <img src="assets/images/american-express-logo.png" alt="American Express">
+                                                                    <img src="assets/images/unionpay-logo.png" alt="UnionPay">
+                                                                    <img src="assets/images/discover-logo.png" alt="Discover">
+                                                                    <img src="assets/images/visa-logo.png" alt="Visa">
+                                                                    <img src="assets/images/mastercard-logo.png" alt="Mastercard">
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                   </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <label for="cardno"></label>
+                                                                <input type="text" class="form-control" placeholder="9999 9999 9999 9999" id="cardno" name="cardno" minlength="18" maxlength="19" required onKeyup='addDashes(this)'>
+                                                                <!-- <span id="cardtype" class="cardtype"></span> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 mt-2">
+                                                                <label for="expiry_date">Expiry Date</label>
+                                                                <input type="text" placeholder="11/20" class="form-control" id="expiry_date" name="expiry_date" required>
+                                                            </div>
+                                                            <div class="col-md-6 mt-2">
+                                                                <label for="csc">CSC</label>
+                                                                <input type="tel" placeholder="111" class="form-control" id="csc" name="csc" required minlength="3" maxlength="3">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                   </form>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="row mt-5">
+                                        <div class="d-grid">
+                                            <button type="button" class="btn btn-primary btn-block">PAY</button>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div id="annually" class="container tab-pane fade p-0 m-0">
-                                    <div class="card select-plan-card">
+                                <div id="venmo" class="container tab-pane fade p-0 m-0">
+                                    <div class="card payment-card">
                                         <div class="card-body">
                                             <div class="row">
                                                 <div class="col-12">
-                                                    <div class="form-check w-75 float-start">
-                                                        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
-                                                        <label class="form-check-label" for="radio2">Basic Profile Individual</label>
-                                                    </div>
-                                                    <p class="w-25 float-end text-end"><span class="fw-bold">$2.99</span>/Mo.</p>
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <img src="assets/images/paypal-logo.png" alt="PayPal" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-md-6 text-end my-auto">
+                                                            <div class="payment-price">
+                                                                <i class="bi bi-cart d-inline-block w-25 float-start pt-2"></i>
+                                                                <select class="form-select w-75 d-inline-block float-end" id="sel1" name="sellist1">
+                                                                <option>$119.00 HKD</option>
+                                                                <option>$119.00 USD</option>
+                                                                <option>$119.00 CAD</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                                   <hr>
+                                                   <form class="ui payment form attached segment" id="payment-form" method="post">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <div class="col-md-6 mt-4 mt-lg-0">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <div class="col-12">
+                                                                <div class="payment-logo">
+                                                                    <img src="assets/images/american-express-logo.png" alt="American Express">
+                                                                    <img src="assets/images/unionpay-logo.png" alt="UnionPay">
+                                                                    <img src="assets/images/discover-logo.png" alt="Discover">
+                                                                    <img src="assets/images/visa-logo.png" alt="Visa">
+                                                                    <img src="assets/images/mastercard-logo.png" alt="Mastercard">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <label for="cardno"></label>
+                                                                <input type="text" class="form-control" placeholder="9999 9999 9999 9999" id="cardno" name="cardno" minlength="18" maxlength="19" required onKeyup='addDashes(this)'>
+                                                                <!-- <span id="cardtype" class="cardtype"></span> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 mt-2">
+                                                                <label for="expiry_date">Expiry Date</label>
+                                                                <input type="text" placeholder="11/20" class="form-control" id="expiry_date" name="expiry_date" required>
+                                                            </div>
+                                                            <div class="col-md-6 mt-2">
+                                                                <label for="csc">CSC</label>
+                                                                <input type="tel" placeholder="111" class="form-control" id="csc" name="csc" required minlength="3" maxlength="3">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                   </form>
                                                 </div>
                                             </div>
-                                            <p class="pt-3 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-5">
+                                        <div class="d-grid">
+                                            <button type="button" class="btn btn-primary btn-block">PAY</button>
                                         </div>
                                     </div>
                                 </div>
-                              </div>
+                                <div id="cashapp" class="container tab-pane fade p-0 m-0">
+                                    <div class="card payment-card">
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <img src="assets/images/paypal-logo.png" alt="PayPal" class="img-fluid">
+                                                        </div>
+                                                        <div class="col-md-6 text-end my-auto">
+                                                            <div class="payment-price">
+                                                                <i class="bi bi-cart d-inline-block w-25 float-start pt-2"></i>
+                                                                <select class="form-select w-75 d-inline-block float-end" id="sel1" name="sellist1">
+                                                                <option>$119.00 HKD</option>
+                                                                <option>$119.00 USD</option>
+                                                                <option>$119.00 CAD</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                                   <hr>
+                                                   <form class="ui payment form attached segment" id="payment-form" method="post">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                            <div class="col-md-6 mt-4 mt-lg-0">
+                                                                <input type="text" class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <div class="col-12">
+                                                                <div class="payment-logo">
+                                                                    <img src="assets/images/american-express-logo.png" alt="American Express">
+                                                                    <img src="assets/images/unionpay-logo.png" alt="UnionPay">
+                                                                    <img src="assets/images/discover-logo.png" alt="Discover">
+                                                                    <img src="assets/images/visa-logo.png" alt="Visa">
+                                                                    <img src="assets/images/mastercard-logo.png" alt="Mastercard">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <label for="cardno"></label>
+                                                                <input type="text" class="form-control" placeholder="9999 9999 9999 9999" id="cardno" name="cardno" minlength="18" maxlength="19" required onKeyup='addDashes(this)'>
+                                                                <!-- <span id="cardtype" class="cardtype"></span> -->
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 mt-2">
+                                                                <label for="expiry_date">Expiry Date</label>
+                                                                <input type="text" placeholder="11/20" class="form-control" id="expiry_date" name="expiry_date" required>
+                                                            </div>
+                                                            <div class="col-md-6 mt-2">
+                                                                <label for="csc">CSC</label>
+                                                                <input type="tel" placeholder="111" class="form-control" id="csc" name="csc" required minlength="3" maxlength="3">
+                                                            </div>
+                                                        </div>
+                                                        
+                                                   </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-5">
+                                        <div class="d-grid">
+                                            <button type="button" class="btn btn-primary btn-block">PAY</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -335,8 +496,9 @@
     <script src="assets/vendors/datepicker/bootstrap-datepicker.js"></script>
     <script src="assets/vendors/owl-carousel/owl.carousel.min.js"></script>
     <script src="assets/js/jquery.steps.js"></script>
+    <script src="assets/vendors/masked-input/jquery.maskedinput.min.js"></script>
     <script src="assets/js/custom.js"></script>
-    
+    <script src="assets/js/payment.js"></script>
 </body>
 
 </html>

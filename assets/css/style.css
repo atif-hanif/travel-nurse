@@ -6,6 +6,8 @@
 	--fifth-color: #292929;
 	--sixth-color: #686868;
 	--seventh-color: #9d9d9d;
+	--eight-color: #f2f3f5;
+	--ninth-color: #D1E4F5;
     --black-color: #000;
     --white-color: #fff;
 	--red-color: #ff0000;
@@ -535,6 +537,7 @@ a {
 	position: relative;
 	overflow: hidden;
 	transform: translate3d(0,0,0);
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
 }
 
 .ripple:after {
@@ -784,16 +787,16 @@ div.carousel-nav-icon {
 	border-radius: 50%;
 	width: 60px;
 	height: 60px;
-	padding: 18px 22px;
+	padding: 20px;
 }
 
 div.carousel-nav-icon > i {
-    font-size: 18px;
+    font-size: 20px;
 	color: var(--secondary-color);
 	font-weight: 900;
 }
 
-.companiescarousel {
+.companiescarousel, .companiescarousel .carousel-inner {
 	padding: 10px 0;
 }
 
@@ -801,8 +804,12 @@ div.carousel-nav-icon > i {
 	/* margin-left: 5px;
 	margin-right: 5px; */
 	background: var(--white-color);
-	/* box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15); */
-	border: 1px solid var(--white-color)
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	margin: 0px 5px;
+}
+
+.carousel-item .card .card-body {
+	padding: 55px;
 }
 
 .login-body {
@@ -821,6 +828,17 @@ div.carousel-nav-icon > i {
 
 .login-body form {
 	padding-top: 30px;
+}
+
+.login-body p span {
+	color: var(--secondary-color);
+	font-weight: 400;
+}
+
+.login-body i {
+	position: absolute;
+    right: 15px !important;
+    top: 12px !important;
 }
 
 button#toggle-password {
@@ -1033,7 +1051,7 @@ button#toggle-password:hover {
 .form-register .steps li::before {
 	position: absolute;
 	content: "";
-	background: #D1E4F5;
+	background: var(--ninth-color);
 	width: 168px;
 	height: 2px;
 	top: 20%;
@@ -1049,7 +1067,7 @@ button#toggle-password:hover {
 	content: "";
 	width: 45px;
 	height: 3px;
-	background: #D1E4F5;
+	background: var(--ninth-color);
 	top: 100%;
 	left: 25%;
 } */
@@ -1080,7 +1098,7 @@ button#toggle-password:hover {
 	-ms-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
-	background: #D1E4F5;
+	background: var(--ninth-color);
 	margin: 0 auto;
 	position: relative;
 	outline: none;
@@ -1563,7 +1581,7 @@ input.form-control.coupon {
 }
 
 .yearly-plan {
-	padding: 40px 0px;
+	padding: 30px 0px;
 	border-bottom: 1px dashed var(--border-color);
 }
 
@@ -1578,7 +1596,7 @@ input.form-control.coupon {
 }
 
 .discount-plan {
-	padding: 40px 0px;
+	padding: 30px 0px;
 	border-bottom: 1px dashed var(--border-color);
 }
 
@@ -1593,7 +1611,7 @@ input.form-control.coupon {
 }
 
 .total-plan {
-	padding-top: 40px;
+	padding-top: 30px;
 }
 
 .total-plan p {
@@ -1608,6 +1626,92 @@ input.form-control.coupon {
 
 .payment-card select {
 	border: 1px solid transparent;
+}
+
+.payment-logo {
+	background-color: var(--eight-color);
+	padding: 20px;
+}
+
+.payment-logo img {
+	width: 50px;
+	margin-right: 10px;
+}
+
+#cardno {
+	background-image: url(../images/payment-logo.png);
+    background-position: 98% 0%;
+    background-repeat: no-repeat;
+	display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#cardno.visa {
+	background-position: 98% 21.5%;
+}
+
+#cardno.amex {
+	background-position: 98% 40.5%;
+}
+
+#cardno.mastercard {
+	background-position: 98% 60%;
+}
+
+#cardno.unionpay {
+	background-position: 98% 79%;
+}
+
+#cardno.discover {
+	background-position: 98% 96%;
+}
+
+#cardno.valid.visa {
+	background-position: 98% 21.5%;
+}
+
+#cardno.valid.amex {
+	background-position: 98% 40.5%;
+}
+
+#cardno.valid.mastercard {
+	background-position: 98% 60%;
+}
+
+#cardno.valid.unionpay {
+	background-position: 98% 79%;
+}
+
+#cardno.valid.discover {
+	background-position: 98% 96%;
+}
+
+#csc {
+	background-image: url(../images/csc-img.png);
+    background-position: 98% 0%;
+    background-repeat: no-repeat;
+	background-size: 50px;
+}
+
+.payment-card {
+	margin-top: 30px
+}
+
+.payment-card .card-body {
+	padding: 40px 55px;
 }
 
 /* About Us Page */

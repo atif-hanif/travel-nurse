@@ -189,9 +189,41 @@
 		margin-left: 10px;
 		margin-right: 10px;
 	}
+
+	.site-navbar .nav-link {
+		font-size: 15px;
+	}
 	
 	.site-logo img {
 		width: 200px;
+	}
+
+	.welcome {
+		font-size: 100px;
+	}
+
+	.tnn {
+		font-size: 130px;
+	}
+
+	.home-events .card .card-body {
+		padding: 60px 74px;
+	}
+
+	.home-events h2 {
+		font-size: 90px;
+	}
+
+	.choose-destination {
+		font-size: 90px;
+	}
+
+	.and {
+		font-size: 100px;
+	}
+
+	.adventure {
+		font-size: 130px;
 	}
 
 	.event-dates {
@@ -200,6 +232,22 @@
 
 	.event-names {
 		padding: 27.5px 0px 0px;
+	}
+
+	.company h2 {
+		font-size: 85px;
+	}
+
+	.companies h2 {
+		font-size: 100px;
+	}
+
+	.event-date {
+		font-size: 24px;
+	}
+
+	.event-name {
+		font-size: 24px;
 	}
 }
 

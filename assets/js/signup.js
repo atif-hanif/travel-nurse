@@ -26,15 +26,63 @@ $(function(){
                 required: "Enter Mobile Number"
             },
             password: {
-                required: "Please provide a password"
+                required: "Enter Password"
             },
             confirm_password: {
-                required: "Please provide a password",
+                required: "Enter Password",
                 equalTo: "Please enter the same password"
             },
             job: {
                 required: "Select Job"
-            }
+            },
+            job_title_1: {
+                required: "Select Job Title"
+            },
+            company_1: {
+                required: "Select Compny"
+            },
+            name_of_facility: {
+                required: "Select Name of Facility"
+            },
+            speciality: {
+                required: "Select Speciality"
+            },
+            location: {
+                required: "Select Location"
+            },
+            start_month: {
+                required: "Select Start Month"
+            },
+            start_year: {
+                required: "Select Start Year"
+            },
+            end_month: {
+                required: "Select End Month"
+            },
+            end_year: {
+                required: "Select End Year"
+            },
+            job_title_1: {
+                required: "Select Job"
+            },
+            first_name_2: {
+                required: "Enter First Name"
+            },
+            last_name_2: {
+                required: "Enter Last Name"
+            },
+            email_2: {
+                required: "Enter Email"
+            },
+            mobile_number_2: {
+                required: "Enter Mobile Number"
+            },
+            job_title_2: {
+                required: "Select Job"
+            },
+            company_2: {
+                required: "Select Company"
+            },
         }
     });
     $("#form-total").steps({
