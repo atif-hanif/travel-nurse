@@ -818,10 +818,6 @@ div.carousel-nav-icon > i {
 	padding: 55px;
 }
 
-.login-body {
-	padding: 84px 74px;
-}
-
 .login-body h2 {
 	font-weight: 900;
 	color: var(--primary-color);
@@ -1392,6 +1388,7 @@ button#toggle-password:hover {
 	font-weight: 400;
 	cursor: pointer;
 }
+
 .picture {
     width: 150px;
     height: 150px;
@@ -2075,8 +2072,6 @@ input.form-control.coupon {
 
 .plan-rates {
 	font-weight: 600;
-	font-size: 30px;
-	line-height: 30px;
 	margin-bottom: 0px;
 }
 
@@ -2162,14 +2157,19 @@ input.form-control.coupon {
 }
 
 .attach-btn {
-	border: 1px solid #686868;
-	border-radius: 5px;
+    border: 1px solid var(--sixth-color);
+    border-radius: 5px;
+    padding: 15px 42px 15px 29px;
 }
 
 .contact-us-section .submit-btn {
 	background-color: var(--secondary-color);
 	border: 1px solid var(--secondary-color);
 	text-transform: uppercase;
+}
+
+.attach-btn input[type='file'] {
+	display: none
 }
 
 /* Join The Network */
@@ -2198,10 +2198,6 @@ input.form-control.coupon {
 	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
 	border-radius: 5px;
 	border-color: var(--white-color);
-}
-
-.join-network-section .card .card-body {
-	padding: 85px 60px;
 }
 
 .join-network-section h2 {
@@ -2236,16 +2232,16 @@ input.form-control.coupon {
 	text-transform: uppercase;
 }
 
-.file-upload input[type='file'] {
+.file-upload-btn input[type='file'] {
 	display: none;
 }
 
-.custom-file {
+.file-upload-btn {
 	border: 1px dashed var(--sixth-color);
 	padding: 32px;
 }
 
-.custom-file i {
+.file-upload-btn i {
 	font-size: 36px;
 	color: var(--sixth-color);
 }

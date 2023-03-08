@@ -353,6 +353,10 @@
 		flex-direction: row;
 	}
 
+	.login-body {
+		padding: 84px 74px;
+	}	
+
 	/* Home Page */
 
 	.welcome {
@@ -527,6 +531,11 @@
 	.membership-join h2 {
 		font-size: 60px;
 	}
+
+	.plan-rates {
+		font-size: 30px;
+		line-height: 30px;
+	}
 	
 	/* Contact Us Page */
 
@@ -555,6 +564,42 @@
 	.events-banner h1 {
 		font-size: 100px;
 	}
+
+	/* Join The Network Page */
+
+	.join-network-section {
+		margin-top: -170px;
+	}
+
+	.join-network-section button {
+		width: 25%;
+	}
+
+	.join-network-banner h1 {
+		font-size: 100px;
+	}
+
+	.join-network-section h2 {
+		font-size: 80px;
+	}
+
+	.join-network-section .card .card-body {
+		padding: 85px 60px;
+	}
+
+	/* Healthcare Agencies Page */
+
+	.healthcare-banner h1 {
+		font-size: 100px;
+	}
+
+	.healthcare-section .card .card-header h3 {
+		font-size: 45px;
+	}
+
+	.healthcare-section h4 {
+		font-size: 24px;
+	}
 }
 
 @media only screen and (min-width: 1400px) {
@@ -568,6 +613,10 @@
 		font-size: 28px;
 		font-weight: 600;
 	}
+
+	.login-body {
+		padding: 84px 74px;
+	}	
 
 	/* Home Page */
 
@@ -727,6 +776,11 @@
 	.membership-join h2 {
 		font-size: 60px;
 	}
+
+	.plan-rates {
+		font-size: 30px;
+		line-height: 30px;
+	}
 	
 	/* Contact Us Page */
 
@@ -768,6 +822,10 @@
 		font-size: 80px;
 	}
 
+	.join-network-section .card .card-body {
+		padding: 85px 60px;
+	}
+
 	/* Events Page */
 
 	.events-banner h1 {
@@ -777,6 +835,8 @@
 	.tnnh-row h2 {
 		font-size: 35px;
 	}
+
+	/* Healthcare Agencies Page */
 
 	.healthcare-banner h1 {
 		font-size: 100px;
@@ -789,6 +849,8 @@
 	.healthcare-section h4 {
 		font-size: 24px;
 	}
+
+	/* Blogs Pages */
 
 	.blogs-banner h1 {
 		font-size: 100px;
