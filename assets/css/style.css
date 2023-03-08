@@ -1714,6 +1714,21 @@ input.form-control.coupon {
 	padding: 40px 55px;
 }
 
+/* Profile Page */
+
+.profile-section {
+	margin: 60px 0 120px;
+}
+
+.profile-section .nav-link {
+	color: var(--seventh-color);
+}
+
+.profile-section .nav-link.active {
+	color: var(--primary-color);
+	font-weight: 600;
+}
+
 /* About Us Page */
 
 .about-banner {
