@@ -170,6 +170,95 @@
 	}
 }
 
+@media only screen and (max-width: 767px) {
+
+	.profile-menu-column {
+		justify-content: center!important;
+		display: flex;
+		-webkit-display: flex;
+	}
+
+	.mobile-info .fa-phone {
+		display: inline-block;
+		width: 10%;
+	}	
+	
+	.mobile-info .mobile {
+		display: inline-block;
+		width: 88%;
+	}
+
+	.mobile-info .fa-users-gear {
+		display: inline-block;
+		margin-top: 20px;
+	}	
+	
+	.mobile-info .edit-btn {
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	.email-info .fa-envelope {
+		display: inline-block;
+		width: 10%;
+	}	
+	
+	.email-info .email {
+		display: inline-block;
+		width: 88%;
+	}
+	
+	.email-info .fa-users-gear {
+		display: inline-block;
+		margin-top: 20px;
+	}	
+	
+	.email-info .edit-btn {
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	.birth-date-info .fa-cake-candles {
+		display: inline-block;
+		width: 15%;
+	}	
+	
+	.birth-date-info .birth-date {
+		display: inline-block;
+		width: 83%;
+	}
+	
+	.birth-date-info .fa-users-gear {
+		display: inline-block;
+		margin-top: 20px;
+	}	
+	
+	.birth-date-info .edit-btn {
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	.birth-year-info .fa-cake-candles {
+		display: inline-block;
+		width: 15%;
+	}	
+	
+	.birth-year-info .birth-year {
+		display: inline-block;
+		width: 83%;
+	}
+	
+	.birth-year-info .fa-users-gear {
+		display: inline-block;
+		margin-top: 20px;
+	}	
+	
+	.birth-year-info .edit-btn {
+		display: inline-block;
+		margin-top: 20px;
+	}
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1199px) {
 
 	.site-navbar .site-navigation .site-menu > li > a {
@@ -181,6 +270,21 @@
 	.site-navigation .btn {
 		font-size: 14px;
 	}
+
+	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.events-section .event-dates {
+		float: left;
+		padding: 0px 30px 0px 15px;
+	}
+
+	.events-section .event-names {
+		float: left;
+		padding: 3.5px 15px 0px;
+	}
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -190,78 +294,66 @@
 		margin-right: 10px;
 	}
 
+	.navbar-expand-xl .navbar-nav .nav-link {
+		padding-right: 13px;
+		padding-left: 13px;
+	}
+
 	.site-navbar .nav-link {
 		font-size: 15px;
 	}
 	
-	.site-logo img {
+	.site-navbar .logo {
 		width: 200px;
 	}
 
-	.welcome {
-		font-size: 100px;
+	.profile-section .nav-link {
+		font-size: 25px;
+		padding-bottom: 30px;
 	}
 
-	.tnn {
-		font-size: 130px;
+	.profile-section .nav-link i {
+		font-size: 20px;
 	}
 
-	.home-events .card .card-body {
-		padding: 60px 74px;
+	.user-profile h3 {
+		font-size: 60px;
 	}
 
-	.home-events h2 {
-		font-size: 90px;
+	.member-info {
+		margin-top: 70px;
 	}
 
-	.choose-destination {
-		font-size: 90px;
+	.member-info .card .card-body {
+		padding: 52px 47px;
 	}
 
-	.and {
-		font-size: 100px;
+	.member-info h4 {
+		font-size: 40px;
 	}
 
-	.adventure {
-		font-size: 130px;
+	.mobile-row p {
+		font-size: 22px;
 	}
 
-	.event-dates {
-		padding: 27.5px 10px 27.5px 10px;
+	.email-row p {
+		font-size: 22px;
 	}
 
-	.event-names {
-		padding: 27.5px 0px 0px;
+	.birth-date-row p {
+		font-size: 22px;
 	}
 
-	.company h2 {
-		font-size: 85px;
+	.birth-year-row p {
+		font-size: 22px;
 	}
 
-	.companies h2 {
-		font-size: 100px;
+	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
+		display: flex;
+		flex-direction: row;
 	}
 
-	.event-date {
-		font-size: 24px;
-	}
-
-	.event-name {
-		font-size: 24px;
-	}
-}
-
-@media only screen and (min-width: 1400px) {
-
-	.navbar-expand-xl .navbar-nav .nav-link {
-		padding-right: 1rem;
-		padding-left: 1rem;
-	}
-
-	.fa-magnifying-glass {
-		font-size: 28px;
-		font-weight: 600;
-	}
+	/* Home Page */
 
 	.welcome {
 		font-size: 100px;
@@ -308,11 +400,118 @@
 		font-size: 130px;
 	}
 
+	.banner p {
+		font-size: 22px;
+	}
+
+	.event-dates {
+		padding: 27.5px 10px 27.5px 10px;
+	}
+
+	.event-names {
+		padding: 27.5px 0px 0px;
+	}
+
 	.company h2 {
-		font-size: 100px;
+		font-size: 85px;
 	}
 
 	.companies h2 {
+		font-size: 100px;
+	}
+
+	.event-date {
+		font-size: 30px;
+	}
+
+	.event-time {
+		font-size: 30px;
+	}
+
+	.event-name {
+		font-size: 30px;
+	}
+
+	.event-place {
+		font-size: 30px;
+	}
+
+	.home-events ul li {
+		font-size: 30px;
+	}
+
+	/* About Us Page */
+	
+	.about-row {
+		position: relative;
+	}
+	
+	.about-img {
+		position: relative;
+	}
+	
+	.about-card {
+		position: absolute;
+		left: 710px;
+		top: 95px;
+	}
+
+	.about-banner .are {
+		font-size: 100px;
+	}
+
+	.about-banner .worker {
+		font-size: 130px;
+	}
+
+	.about-travel {
+		font-size: 70px;
+	}
+
+	.about-card .card .card-body {
+		padding: 100px 92px;
+	}
+
+	.about2 {
+		font-size: 90px;
+	}
+
+	.about3 {
+		font-size: 130px;
+	}
+
+	.mission-card {
+		width: 50%;
+		float: left;
+	}
+	
+	.mission-card .card-body {
+		padding: 78px 76px;
+	}
+	
+	.vision-card {
+		width: 50%;
+	}
+
+	.vision-card .card-body {
+		padding: 78px 76px;
+	}
+
+	.mission-card h3 {
+		font-size: 80px;
+	}
+
+	.vision-card h3 {
+		font-size: 80px;
+	}
+	
+	.our-team {
+		font-size: 100px;
+	}
+
+	/* Membership Page */
+
+	.membership-banner h1 {
 		font-size: 100px;
 	}
 
@@ -322,9 +521,15 @@
 	}
 
 	.membership-section .card .card-body {
-		padding: 50px 47px 84px;
+		padding: 50px 17px 84px;
+	}
+
+	.membership-join h2 {
+		font-size: 60px;
 	}
 	
+	/* Contact Us Page */
+
 	.contact-banner h1 {
 		font-size: 100px;
 	}
@@ -336,6 +541,216 @@
 	.contact-us-section {
 		margin-top: -170px;
 	}
+
+	.contact-us-section .submit-btn {
+		padding: 21px 106px;
+	}
+
+	.attach-btn {
+		padding: 15px 42px 15px 29px;
+	}
+
+	/* Events Page */
+
+	.events-banner h1 {
+		font-size: 100px;
+	}
+}
+
+@media only screen and (min-width: 1400px) {
+
+	.navbar-expand-xl .navbar-nav .nav-link {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
+	.fa-magnifying-glass {
+		font-size: 28px;
+		font-weight: 600;
+	}
+
+	/* Home Page */
+
+	.welcome {
+		font-size: 100px;
+	}
+	
+	.tnn {
+		font-size: 130px;
+	}
+
+	.home-events .card .card-body {
+		padding: 72px 105px;
+	}
+
+	.home-events h2 {
+		font-size: 90px;
+	}
+
+	.banner p {
+		font-size: 22px;
+	}
+
+	.event-dates {
+		float: left;
+		padding: 27.5px 30px 27.5px 15px;
+	}
+
+	.event-names {
+		padding: 27.5px 0px 15px;
+	}
+
+	.event-date {
+		font-size: 30px;
+	}
+
+	.event-time {
+		font-size: 30px;
+	}
+
+	.event-name {
+		font-size: 30px;
+	}
+
+	.event-place {
+		font-size: 30px;
+	}
+
+	.choose-destination {
+		font-size: 90px;
+	}
+
+	.and {
+		font-size: 100px;
+	}
+
+	.adventure {
+		font-size: 130px;
+	}
+
+	.company h2 {
+		font-size: 100px;
+	}
+
+	.companies h2 {
+		font-size: 100px;
+	}
+
+	.home-events ul li {
+		font-size: 30px;
+	}
+
+	/* About Us Page */
+	
+	.about-row {
+		position: relative;
+	}
+	
+	.about-img {
+		position: relative;
+	}
+	
+	.about-card {
+		position: absolute;
+		left: 710px;
+		top: 95px;
+	}
+
+	.about-banner .are {
+		font-size: 100px;
+	}
+
+	.about-banner .worker {
+		font-size: 130px;
+	}
+
+	.about-travel {
+		font-size: 70px;
+	}
+
+	.about-card .card .card-body {
+		padding: 100px 92px;
+	}
+
+	.about2 {
+		font-size: 90px;
+	}
+
+	.about3 {
+		font-size: 130px;
+	}
+
+	.mission-card {
+		width: 50%;
+		float: left;
+	}
+	
+	.mission-card .card-body {
+		padding: 78px 76px;
+	}
+	
+	.vision-card {
+		width: 50%;
+	}
+
+	.vision-card .card-body {
+		padding: 78px 76px;
+	}
+
+	.mission-card h3 {
+		font-size: 80px;
+	}
+
+	.vision-card h3 {
+		font-size: 80px;
+	}
+	
+	.our-team {
+		font-size: 100px;
+	}
+
+	/* Membership Page */
+
+	.membership-banner h1 {
+		font-size: 100px;
+	}
+
+	.plan-profile {
+		font-size: 59px;
+		line-height: 60px;
+	}
+
+	.membership-section .card .card-body {
+		padding: 50px 47px 84px;
+	}
+
+	.membership-join h2 {
+		font-size: 60px;
+	}
+	
+	/* Contact Us Page */
+
+	.contact-banner h1 {
+		font-size: 100px;
+	}
+
+	.contact-us-section h2 {
+		font-size: 80px;
+	}
+
+	.contact-us-section {
+		margin-top: -170px;
+	}
+
+	.contact-us-section .submit-btn {
+		padding: 21px 106px;
+	}
+
+	.attach-btn {
+		padding: 15px 42px 15px 29px;
+	}
+
+	/* Join The Network Page */
 
 	.join-network-section {
 		margin-top: -170px;
@@ -352,6 +767,8 @@
 	.join-network-section h2 {
 		font-size: 80px;
 	}
+
+	/* Events Page */
 
 	.events-banner h1 {
 		font-size: 100px;
@@ -440,73 +857,6 @@
 		font-size: 80px;
 	}
 
-	.about-row {
-		position: relative;
-	}
-	
-	.about-img {
-		position: relative;
-	}
-	
-	.about-card {
-		position: absolute;
-		left: 710px;
-		top: 95px;
-	}
-
-	.about-banner .are {
-		font-size: 100px;
-	}
-
-	.about-banner .worker {
-		font-size: 130px;
-	}
-
-	.about-travel {
-		font-size: 70px;
-	}
-
-	.about-card .card .card-body {
-		padding: 100px 92px;
-	}
-
-	.about2 {
-		font-size: 90px;
-	}
-
-	.about3 {
-		font-size: 130px;
-	}
-
-	.mission-card {
-		width: 50%;
-		float: left;
-	}
-	
-	.mission-card .card-body {
-		padding: 78px 76px;
-	}
-	
-	.vision-card {
-		width: 50%;
-	}
-
-	.vision-card .card-body {
-		padding: 78px 76px;
-	}
-
-	.mission-card h3 {
-		font-size: 80px;
-	}
-
-	.vision-card h3 {
-		font-size: 80px;
-	}
-	
-	.our-team {
-		font-size: 100px;
-	}
-
 	.payment-section h1 {
 		font-size: 80px;
 	}
@@ -522,5 +872,52 @@
 	.payment-section h4 {
 		font-size: 30px;
 	}
+
+	.profile-section .nav-link {
+		font-size: 25px;
+		padding-bottom: 30px;
+	}
+
+	.profile-section .nav-link i {
+		font-size: 20px;
+	}
 	
+	.user-profile h3 {
+		font-size: 60px;
+	}
+
+	.member-info {
+		margin-top: 70px !important;
+	}
+
+	.member-info .card .card-body {
+		padding: 52px 47px;
+	}
+
+	.member-info h4 {
+		font-size: 40px;
+	}
+
+	.mobile-row p {
+		font-size: 22px;
+	}
+
+	.email-row p {
+		font-size: 22px;
+	}
+
+	.birth-date-row p {
+		font-size: 22px;
+	}
+
+	.birth-year-row p {
+		font-size: 22px;
+	}
+
+	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
+		display: flex;
+		flex-direction: row;
+	}
+
+
 }
