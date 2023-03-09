@@ -75,6 +75,7 @@
 } */
 
 @media screen and (max-width: 991px) {
+
 	.inner .form-row {
 		flex-direction: column;
 		-o-flex-direction: column;
@@ -103,6 +104,7 @@
 }
 
 @media screen and (max-width: 575px) {
+
 	.wizard-v1-content .wizard-form {
 		padding: 40px 20px;
 		width: auto;
@@ -328,6 +330,35 @@
 	.our-team {
 		font-size: 40px;
 	}
+
+	/* Membership Page */
+
+	.membership-banner h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.membership-banner p {
+		text-align: center;
+	}
+
+	.membership-section .about {
+		text-align: center;
+	}
+
+	.plan-profile {
+		font-size: 25px;
+	}
+
+	.membership-join h2 {
+		font-size: 25px;
+	}
+
+	.check-img {
+		width: 35px;
+	}
+
+	/* Profile Page */
 
 	.profile-menu-column {
 		justify-content: center!important;
@@ -589,6 +620,33 @@
 		font-size: 50px;
 	}
 
+	/* Membership Page */
+
+	.membership-banner h1 {
+		font-size: 50px;
+		text-align: center;
+	}
+
+	.membership-banner p {
+		text-align: center;
+	}
+
+	.membership-section .about {
+		text-align: center;
+	}
+
+	.plan-profile {
+		font-size: 30px;
+	}
+
+	.membership-join h2 {
+		font-size: 30px;
+	}
+
+	.check-img {
+		width: 40px;
+	}
+
 	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
 		display: flex;
 		flex-direction: row;
@@ -773,6 +831,33 @@
 		font-size: 50px;
 	}
 
+	/* Membership Page */
+
+	.membership-banner h1 {
+		font-size: 60px;
+		text-align: center;
+	}
+
+	.membership-banner p {
+		text-align: center;
+	}
+
+	.membership-section .about {
+		text-align: center;
+	}
+
+	.plan-profile {
+		font-size: 35px;
+	}
+
+	.membership-join h2 {
+		font-size: 35px;
+	}
+
+	.check-img {
+		width: 45px;
+	}
+
 	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
 		display: flex;
 		flex-direction: row;
@@ -792,6 +877,10 @@
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
 
+	.ripple img {
+		width: 45px;
+	}
+
 	.site-navbar .site-navigation .site-menu > li > a {
 		margin-left: 10px;
 		margin-right: 10px;
@@ -809,57 +898,7 @@
 	.site-navbar .logo {
 		width: 200px;
 	}
-
-	.profile-section .nav-link {
-		font-size: 25px;
-		padding-bottom: 30px;
-	}
-
-	.profile-section .nav-link i {
-		font-size: 20px;
-	}
-
-	.user-profile h3 {
-		font-size: 60px;
-	}
-
-	.member-info {
-		margin-top: 70px;
-	}
-
-	.member-info .card .card-body {
-		padding: 52px 47px;
-	}
-
-	.member-info h4 {
-		font-size: 40px;
-	}
-
-	.mobile-row p {
-		font-size: 22px;
-	}
-
-	.email-row p {
-		font-size: 22px;
-	}
-
-	.birth-date-row p {
-		font-size: 22px;
-	}
-
-	.birth-year-row p {
-		font-size: 22px;
-	}
-
-	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
-		display: flex;
-		flex-direction: row;
-	}
-
-	.login-body {
-		padding: 84px 74px;
-	}	
-
+	
 	/* Home Page */
 
 	.welcome {
@@ -982,7 +1021,7 @@
 	}
 
 	.about-travel {
-		font-size: 70px;
+		font-size: 45px;
 	}
 
 	.about-card .card .card-body {
@@ -1015,25 +1054,25 @@
 	}
 
 	.mission-card h3 {
-		font-size: 80px;
+		font-size: 60px;
 	}
 
 	.vision-card h3 {
-		font-size: 80px;
+		font-size: 60px;
 	}
 	
 	.our-team {
-		font-size: 100px;
+		font-size: 80px;
 	}
 
 	/* Membership Page */
 
 	.membership-banner h1 {
-		font-size: 100px;
+		font-size: 80px;
 	}
 
 	.plan-profile {
-		font-size: 59px;
+		font-size: 40px;
 		line-height: 60px;
 	}
 
@@ -1046,8 +1085,16 @@
 	}
 
 	.plan-rates {
-		font-size: 30px;
+		font-size: 20px;
 		line-height: 30px;
+	}
+
+	.membership-join h2 {
+		font-size: 40px;
+	}
+
+	.check-img {
+		width: 45px;
 	}
 	
 	/* Contact Us Page */
@@ -1112,6 +1159,56 @@
 
 	.healthcare-section h4 {
 		font-size: 24px;
+	}
+
+	.profile-section .nav-link {
+		font-size: 25px;
+		padding-bottom: 30px;
+	}
+
+	.profile-section .nav-link i {
+		font-size: 20px;
+	}
+
+	.user-profile h3 {
+		font-size: 60px;
+	}
+
+	.member-info {
+		margin-top: 70px;
+	}
+
+	.member-info .card .card-body {
+		padding: 52px 47px;
+	}
+
+	.member-info h4 {
+		font-size: 40px;
+	}
+
+	.mobile-row p {
+		font-size: 22px;
+	}
+
+	.email-row p {
+		font-size: 22px;
+	}
+
+	.birth-date-row p {
+		font-size: 22px;
+	}
+
+	.birth-year-row p {
+		font-size: 22px;
+	}
+
+	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.login-body {
+		padding: 84px 74px;
 	}
 }
 
@@ -1228,27 +1325,27 @@
 	}
 
 	.about-banner .are {
-		font-size: 100px;
-	}
-
-	.about-banner .worker {
-		font-size: 130px;
-	}
-
-	.about-travel {
-		font-size: 70px;
-	}
-
-	.about-card .card .card-body {
-		padding: 100px 92px;
-	}
-
-	.about2 {
 		font-size: 90px;
 	}
 
+	.about-banner .worker {
+		font-size: 110px;
+	}
+
+	.about-travel {
+		font-size: 60px;
+	}
+
+	.about-card .card .card-body {
+		padding: 165px 92px;
+	}
+
+	.about2 {
+		font-size: 80px;
+	}
+
 	.about3 {
-		font-size: 130px;
+		font-size: 110px;
 	}
 
 	.mission-card {
@@ -1269,25 +1366,25 @@
 	}
 
 	.mission-card h3 {
-		font-size: 80px;
+		font-size: 70px;
 	}
 
 	.vision-card h3 {
-		font-size: 80px;
+		font-size: 70px;
 	}
 	
 	.our-team {
-		font-size: 100px;
+		font-size: 90px;
 	}
 
 	/* Membership Page */
 
 	.membership-banner h1 {
-		font-size: 100px;
+		font-size: 80px;
 	}
 
 	.plan-profile {
-		font-size: 59px;
+		font-size: 50px;
 		line-height: 60px;
 	}
 
@@ -1300,8 +1397,16 @@
 	}
 
 	.plan-rates {
-		font-size: 30px;
+		font-size: 25px;
 		line-height: 30px;
+	}
+
+	.membership-join h2 {
+		font-size: 50px;
+	}
+
+	.check-img {
+		width: 49px;
 	}
 	
 	/* Contact Us Page */
@@ -1503,7 +1608,6 @@
 		flex-direction: row;
 	}
 
-
 }
 
 @media only screen and (min-width: 1600px) {
@@ -1622,6 +1726,10 @@
 		font-size: 130px;
 	}
 
+	.about-banner p {
+		font-size: 22px;
+	}
+
 	.about-travel {
 		font-size: 70px;
 	}
@@ -1629,6 +1737,7 @@
 	.about-card .card .card-body {
 		padding: 100px 92px;
 	}
+
 
 	.about2 {
 		font-size: 90px;
