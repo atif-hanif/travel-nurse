@@ -12,29 +12,6 @@
 	}
 }
 
-@media only screen and (max-width: 767px) {
-	.event-names {
-		padding: 27.5px 0px 0px;
-	}
-}
-
-
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
-}
-
-.carousel-inner .carousel-item.active,
-.carousel-inner .carousel-item-next,
-.carousel-inner .carousel-item-prev {
-    display: flex;
-}
-
-
 @media (min-width: 768px) {
 
     .carousel-inner .carousel-item-end.active,
@@ -46,11 +23,18 @@
     .carousel-inner .carousel-item-prev {
         transform: translateX(-33%);
     }
-}
 
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start { 
-    transform: translateX(0);
+	.carousel-inner .carousel-item-end,
+	.carousel-inner .carousel-item-start { 
+		transform: translateX(0);
+	}
+
+	.carousel-inner .carousel-item.active,
+	.carousel-inner .carousel-item-next,
+	.carousel-inner .carousel-item-prev {
+		display: flex;
+	}
+
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -164,13 +148,186 @@
 	}
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width: 990px) {
 	.box{
 		margin-bottom: 30px !important;
 	}
 }
 
 @media only screen and (max-width: 767px) {
+
+	.ripple img {
+		width: 35px;
+	}
+
+	/* Home Page */
+
+	.welcome {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.tnn {
+		font-size: 45px;
+		text-align: center;
+	}
+
+	.banner p {
+		text-align: center;
+	}
+
+	.banner .custom-btn {
+		display: inline-block;
+		margin: 5px 10px;
+	}
+
+	.home-events h2 {
+		font-size: 35px;
+	}
+
+	.home-events .card .card-body {
+		padding: 16px 40px;
+	}
+
+	.event-img {
+		width: 100%;
+	}
+	
+	.event-dates {
+		width: 50%;
+		padding-top: 15px;
+	}
+
+	.event-names {
+		padding-top: 15px;
+		width: 50%;
+	}
+
+	.event-date {
+		font-size: 21px;
+	}
+
+	.event-time {
+		font-size: 16px;
+	}
+
+	.event-name {
+		font-size: 21px;
+	}
+
+	.event-place {
+		font-size: 16px;
+	}
+
+	.choose-destination {
+		font-size: 35px;
+	}
+
+	.and {
+		font-size: 40px;
+	}
+
+	.adventure {
+		font-size: 45px;
+	}
+
+	#mapchart {
+		height: 300px;
+	}
+
+	.company h2 {
+		font-size: 35px;
+		text-align: center;
+	}
+
+	.company p {
+		text-align: center;
+	}
+
+	.company button {
+		margin: 0 auto;
+		display: block;
+	}
+
+	.companies h2 {
+		font-size: 35px;
+	}
+
+	.carousel-inner .carousel-item > div {
+        display: none;
+    }
+
+	.carousel-inner .carousel-item > div:first-child {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.buttons {
+		justify-content: center;
+   	 	display: flex;
+	}
+
+	/* About Us */
+
+	.about-banner .are {
+		font-size: 40px;
+    	text-align: center;
+	}
+
+	.about-banner .worker {
+		font-size: 45px;
+    	text-align: center;
+	}
+
+	.about-banner p {
+    	text-align: center;
+	}
+
+	.about-card .card .card-body {
+		padding: 30px 20px;
+	}
+
+	.about-travel {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.about-card p {
+		text-align: center;
+	}	
+
+	.about-row-2 {
+		margin-top: 120px;
+	}
+
+	.about2 {
+		font-size: 35px;
+	}
+
+	.about3 {
+		font-size: 50px;
+	}
+
+	.about-img-row {
+		width: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.about-text-row h3 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.about-text-row p {
+		text-align: center;
+	}
+
+	.our-team {
+		font-size: 40px;
+	}
 
 	.profile-menu-column {
 		justify-content: center!important;
@@ -259,7 +416,11 @@
 	}
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1199px) {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+	.ripple img {
+		width: 40px;
+	}
 
 	.site-navbar .site-navigation .site-menu > li > a {
 		margin-left: 4px;
@@ -269,6 +430,163 @@
 
 	.site-navigation .btn {
 		font-size: 14px;
+	}
+
+	/* Home Page */
+
+	.welcome {
+		font-size: 50px;
+		text-align: center;
+	}
+
+	.tnn {
+		font-size: 60px;
+		text-align: center;
+	}
+
+	.banner p {
+		text-align: center;
+	}
+
+	.buttons {
+		justify-content: center;
+   	 	display: flex;
+	}
+
+	.banner .custom-btn {
+		display: inline-block;
+		margin: 5px 10px;
+	}
+
+	.home-events h2 {
+		font-size: 45px;
+	}
+
+	.home-events .card .card-body {
+		padding: 72px 105px;
+	}
+
+	.event-img {
+		width: 40%;
+	}
+	
+	.event-dates {
+		padding: 63px 19px;
+	}
+
+	.event-date {
+		font-size: 22px;
+	}
+
+	.event-time {
+		font-size: 17px;
+	}
+
+	.event-name {
+		font-size: 22px;
+	}
+
+	.event-place {
+		font-size: 17px;
+	}
+
+	.event-names {
+		padding: 63px 30px 63px 0px;
+	}
+
+	.choose-destination {
+		font-size: 45px;
+	}
+
+	.and {
+		font-size: 50px;
+	}
+
+	.adventure {
+		font-size: 60px;
+	}
+
+	#mapchart {
+		height: 400px;
+	}
+
+	.company h2 {
+		font-size: 45px;
+		text-align: center;
+	}
+
+	.company p {
+		text-align: center;
+	}
+
+	.company button {
+		margin: 0 auto;
+		display: block;
+	}
+
+	.companies h2 {
+		font-size: 45px;
+	}
+
+	/* About Us */
+
+	.about-banner .are {
+		font-size: 50px;
+    	text-align: center;
+	}
+
+	.about-banner .worker {
+		font-size: 60px;
+    	text-align: center;
+	}
+
+	.about-banner p {
+    	text-align: center;
+	}
+
+	.about-card .card .card-body {
+		padding: 40px 30px;
+	}
+
+	.about-travel {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.about-card p {
+		text-align: center;
+	}	
+
+	.about-row-2 {
+		margin-top: 120px;
+	}
+
+	.about2 {
+		font-size: 45px;
+	}
+
+	.about3 {
+		font-size: 60px;
+	}
+
+	.about-img-row {
+		width: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.about-text-row h3 {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.about-text-row p {
+		text-align: center;
+	}
+
+	.our-team {
+		font-size: 50px;
 	}
 
 	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
@@ -285,6 +603,191 @@
 		float: left;
 		padding: 3.5px 15px 0px;
 	}
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+
+	.ripple img {
+		width: 45px;
+	}
+
+	.site-navbar .site-navigation .site-menu > li > a {
+		margin-left: 4px;
+		margin-right: 4px;
+		font-size: 13px;
+	}
+
+	.site-navigation .btn {
+		font-size: 14px;
+	}
+
+	/* Home Page */
+
+	.welcome {
+		font-size: 60px;
+		text-align: center;
+	}
+
+	.tnn {
+		font-size: 70px;
+		text-align: center;
+	}
+
+	.banner p {
+		text-align: center;
+	}
+
+	.buttons {
+		justify-content: center;
+   	 	display: flex;
+	}
+
+	.banner .custom-btn {
+		display: inline-block;
+		margin: 5px 10px;
+	}
+
+	.home-events h2 {
+		font-size: 55px;
+	}
+
+	.home-events .card .card-body {
+		padding: 72px 155px;
+	}
+
+	.event-img {
+		width: 50%;
+	}
+	
+	.event-dates {
+		padding: 117px 32px;
+	}
+
+	.event-date {
+		font-size: 26px;
+	}
+
+	.event-time {
+		font-size: 18px;
+	}
+
+	.event-name {
+		font-size: 26px;
+	}
+
+	.event-place {
+		font-size: 18px;
+	}
+
+	.event-names {
+		padding: 117px 30px 117px 0px;
+	}
+
+	.choose-destination {
+		font-size: 55px;
+	}
+
+	.and {
+		font-size: 60px;
+	}
+
+	.adventure {
+		font-size: 70px;
+	}
+
+	#mapchart {
+		height: 500px;
+	}
+
+	.company h2 {
+		font-size: 55px;
+	}
+
+	.companies h2 {
+		font-size: 55px;
+	}
+
+	/* About Us */
+
+	.about-banner .are {
+		font-size: 60px;
+    	text-align: center;
+	}
+
+	.about-banner .worker {
+		font-size: 70px;
+    	text-align: center;
+	}
+
+	.about-banner p {
+    	text-align: center;
+	}
+
+	.about-card .card .card-body {
+		padding: 40px 50px;
+	}
+
+	.about-img img {
+		width: 100%;
+	}
+
+	.about-travel {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.about-card p {
+		text-align: center;
+	}	
+
+	.about-row-2 {
+		margin-top: 120px;
+	}
+
+	.about2 {
+		font-size: 50px;
+	}
+
+	.about3 {
+		font-size: 70px;
+	}
+
+	.about-img-row {
+		width: 100px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	.about-text-row h3 {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.about-text-row p {
+		text-align: center;
+	}
+
+	.our-team {
+		font-size: 50px;
+	}
+
+	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.events-section .event-dates {
+		float: left;
+		padding: 0px 30px 0px 15px;
+	}
+
+	.events-section .event-names {
+		float: left;
+		padding: 3.5px 15px 0px;
+	}
+
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -360,19 +863,19 @@
 	/* Home Page */
 
 	.welcome {
-		font-size: 100px;
+		font-size: 80px;
 	}
 	
 	.tnn {
-		font-size: 130px;
+		font-size: 100px;
 	}
 
 	.home-events .card .card-body {
-		padding: 72px 105px;
+		padding: 15px 105px;
 	}
 
 	.home-events h2 {
-		font-size: 90px;
+		font-size: 70px;
 	}
 
 	.event-dates {
@@ -393,55 +896,65 @@
 	}
 
 	.choose-destination {
-		font-size: 90px;
+		font-size: 70px;
 	}
 
 	.and {
-		font-size: 100px;
+		font-size: 80px;
 	}
 
 	.adventure {
-		font-size: 130px;
+		font-size: 90px;
 	}
 
 	.banner p {
 		font-size: 22px;
 	}
 
-	.event-dates {
-		padding: 27.5px 10px 27.5px 10px;
-	}
-
-	.event-names {
-		padding: 27.5px 0px 0px;
-	}
-
-	.company h2 {
-		font-size: 85px;
-	}
-
-	.companies h2 {
-		font-size: 100px;
+	.event-img {
+		width: 30%;
 	}
 
 	.event-date {
-		font-size: 30px;
+		font-size: 23px;
+	}
+
+	.event-dates {
+		padding: 20px 0px 20px 10px;
+		width: 25%;
+	}
+
+	.event-names {
+		padding: 20px 0px 0px;
+		width: 45%;
 	}
 
 	.event-time {
-		font-size: 30px;
+		font-size: 17px;
 	}
 
 	.event-name {
-		font-size: 30px;
+		font-size: 23px;
 	}
 
 	.event-place {
-		font-size: 30px;
+		font-size: 17px;
 	}
 
 	.home-events ul li {
-		font-size: 30px;
+		font-size: 25px;
+	}
+
+	.company h2 {
+		font-size: 65px;
+	}
+
+	.companies h2 {
+		font-size: 65px;
+	}
+
+	#mapchart {
+		height: 500px;
 	}
 
 	/* About Us Page */
@@ -461,11 +974,11 @@
 	}
 
 	.about-banner .are {
-		font-size: 100px;
+		font-size: 80px;
 	}
 
 	.about-banner .worker {
-		font-size: 130px;
+		font-size: 100px;
 	}
 
 	.about-travel {
@@ -473,15 +986,15 @@
 	}
 
 	.about-card .card .card-body {
-		padding: 100px 92px;
+		padding: 80px 65px;
 	}
 
 	.about2 {
-		font-size: 90px;
+		font-size: 80px;
 	}
 
 	.about3 {
-		font-size: 130px;
+		font-size: 90px;
 	}
 
 	.mission-card {
@@ -602,7 +1115,398 @@
 	}
 }
 
-@media only screen and (min-width: 1400px) {
+@media only screen and (min-width: 1400px) and (max-width: 1599px) {
+
+	.navbar-expand-xl .navbar-nav .nav-link {
+		padding-right: 1rem;
+		padding-left: 1rem;
+	}
+
+	.fa-magnifying-glass {
+		font-size: 28px;
+		font-weight: 600;
+	}
+
+	.login-body {
+		padding: 84px 74px;
+	}	
+
+	/* Home Page */
+
+	.welcome {
+		font-size: 100px;
+	}
+	
+	.tnn {
+		font-size: 130px;
+	}
+
+	.home-events .row {
+		padding-right: 1.2rem;
+		padding-left: 1.2rem
+	}
+
+	.home-events .card .card-body {
+		padding: 20px 105px;
+	}
+
+	.home-events h2 {
+		font-size: 90px;
+	}
+
+	.banner p {
+		font-size: 22px;
+	}
+
+	.event-dates {
+		float: left;
+		padding: 27.5px 13px 27.5px 13px;
+	}
+
+	.event-names {
+		padding: 27.5px 0px 15px;
+	}
+
+	.event-date {
+		font-size: 26px;
+	}
+
+	.event-time {
+		font-size: 17px;
+	}
+
+	.event-name {
+		font-size: 26px;
+	}
+
+	.event-place {
+		font-size: 17px;
+	}
+
+	.choose-destination {
+		font-size: 80px;
+	}
+
+	.and {
+		font-size: 90px;
+	}
+
+	.adventure {
+		font-size: 110px;
+	}
+
+	.company h2 {
+		font-size: 80px;
+	}
+
+	.companies h2 {
+		font-size: 80px;
+	}
+
+	.home-events ul li {
+		font-size: 28px;
+	}
+
+	#mapchart {
+		height: 500px;
+	}
+
+	/* About Us Page */
+	
+	.about-row {
+		position: relative;
+	}
+	
+	.about-img {
+		position: relative;
+	}
+	
+	.about-card {
+		position: absolute;
+		left: 710px;
+		top: 95px;
+	}
+
+	.about-banner .are {
+		font-size: 100px;
+	}
+
+	.about-banner .worker {
+		font-size: 130px;
+	}
+
+	.about-travel {
+		font-size: 70px;
+	}
+
+	.about-card .card .card-body {
+		padding: 100px 92px;
+	}
+
+	.about2 {
+		font-size: 90px;
+	}
+
+	.about3 {
+		font-size: 130px;
+	}
+
+	.mission-card {
+		width: 50%;
+		float: left;
+	}
+	
+	.mission-card .card-body {
+		padding: 78px 76px;
+	}
+	
+	.vision-card {
+		width: 50%;
+	}
+
+	.vision-card .card-body {
+		padding: 78px 76px;
+	}
+
+	.mission-card h3 {
+		font-size: 80px;
+	}
+
+	.vision-card h3 {
+		font-size: 80px;
+	}
+	
+	.our-team {
+		font-size: 100px;
+	}
+
+	/* Membership Page */
+
+	.membership-banner h1 {
+		font-size: 100px;
+	}
+
+	.plan-profile {
+		font-size: 59px;
+		line-height: 60px;
+	}
+
+	.membership-section .card .card-body {
+		padding: 50px 47px 84px;
+	}
+
+	.membership-join h2 {
+		font-size: 60px;
+	}
+
+	.plan-rates {
+		font-size: 30px;
+		line-height: 30px;
+	}
+	
+	/* Contact Us Page */
+
+	.contact-banner h1 {
+		font-size: 100px;
+	}
+
+	.contact-us-section h2 {
+		font-size: 80px;
+	}
+
+	.contact-us-section {
+		margin-top: -170px;
+	}
+
+	.contact-us-section .submit-btn {
+		padding: 21px 106px;
+	}
+
+	.attach-btn {
+		padding: 15px 42px 15px 29px;
+	}
+
+	/* Join The Network Page */
+
+	.join-network-section {
+		margin-top: -170px;
+	}
+
+	.join-network-section button {
+		width: 25%;
+	}
+
+	.join-network-banner h1 {
+		font-size: 100px;
+	}
+
+	.join-network-section h2 {
+		font-size: 80px;
+	}
+
+	.join-network-section .card .card-body {
+		padding: 85px 60px;
+	}
+
+	/* Events Page */
+
+	.events-banner h1 {
+		font-size: 100px;
+	}
+	
+	.tnnh-row h2 {
+		font-size: 35px;
+	}
+
+	/* Healthcare Agencies Page */
+
+	.healthcare-banner h1 {
+		font-size: 100px;
+	}
+
+	.healthcare-section .card .card-header h3 {
+		font-size: 45px;
+	}
+
+	.healthcare-section h4 {
+		font-size: 24px;
+	}
+
+	/* Blogs Pages */
+
+	.blogs-banner h1 {
+		font-size: 100px;
+	}
+
+	.blogs1-row {
+		position: relative;
+	}
+	
+	.image-blog1 {
+		position: relative;
+	}
+	
+	.content-blog1 {
+		position: absolute;
+		left: 825px;
+		top: 149px;
+	}
+
+	.blogs2-row .card .card-body {
+		padding: 40px 44px 55px;
+	}
+
+	.content-blog h3 {
+		font-size: 45px;
+	}
+	
+	.content-blog p {
+		font-size: 22px;
+	}
+
+	.login-body h2 {
+		font-size: 88px;
+	}
+
+	.membership-tiers h1 {
+		font-size: 80px;
+	}
+
+	.membership-tiers h2 {
+		font-size: 60px;
+	}
+
+	.membership-cost h1 {
+		font-size: 80px;
+	}
+	
+	.membership-cost h3 {
+		font-size: 40px;
+	}
+
+	.membership-cost p span {
+		font-size: 20px;
+	}
+
+	.continue-btn {
+		height: 70px;
+		width: 300px;
+	}	
+
+	.inner h3 {
+		font-size: 45px;
+	}
+
+	.signup-section h1 {
+		font-size: 80px;
+	}
+
+	.payment-section h1 {
+		font-size: 80px;
+	}
+
+	.payment-section .form-check-label {
+		font-size: 20px;
+	}
+
+	.payment-section h3 {
+		font-size: 40px;
+	}
+	
+	.payment-section h4 {
+		font-size: 30px;
+	}
+
+	.profile-section .nav-link {
+		font-size: 25px;
+		padding-bottom: 30px;
+	}
+
+	.profile-section .nav-link i {
+		font-size: 20px;
+	}
+	
+	.user-profile h3 {
+		font-size: 60px;
+	}
+
+	.member-info {
+		margin-top: 70px !important;
+	}
+
+	.member-info .card .card-body {
+		padding: 52px 47px;
+	}
+
+	.member-info h4 {
+		font-size: 40px;
+	}
+
+	.mobile-row p {
+		font-size: 22px;
+	}
+
+	.email-row p {
+		font-size: 22px;
+	}
+
+	.birth-date-row p {
+		font-size: 22px;
+	}
+
+	.birth-year-row p {
+		font-size: 22px;
+	}
+
+	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
+		display: flex;
+		flex-direction: row;
+	}
+
+
+}
+
+@media only screen and (min-width: 1600px) {
 
 	.navbar-expand-xl .navbar-nav .nav-link {
 		padding-right: 1rem;
@@ -629,11 +1533,12 @@
 	}
 
 	.home-events .card .card-body {
-		padding: 72px 105px;
+		padding: 25px 95px;
 	}
 
 	.home-events h2 {
-		font-size: 90px;
+		font-size: 100px;
+		line-height: 100px;
 	}
 
 	.banner p {
@@ -642,7 +1547,7 @@
 
 	.event-dates {
 		float: left;
-		padding: 27.5px 30px 27.5px 15px;
+		padding: 27.5px 13px 27.5px 13px;
 	}
 
 	.event-names {
@@ -654,7 +1559,7 @@
 	}
 
 	.event-time {
-		font-size: 30px;
+		font-size: 18px;
 	}
 
 	.event-name {
@@ -662,7 +1567,7 @@
 	}
 
 	.event-place {
-		font-size: 30px;
+		font-size: 18px;
 	}
 
 	.choose-destination {
@@ -687,6 +1592,10 @@
 
 	.home-events ul li {
 		font-size: 30px;
+	}
+
+	#mapchart {
+		height: 500px;
 	}
 
 	/* About Us Page */

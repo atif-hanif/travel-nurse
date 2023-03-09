@@ -74,7 +74,6 @@
 
         chart: {
             animation: true,
-            height: 800,
             zoomType: false
         },
 
@@ -89,6 +88,10 @@
 		exporting: {
 			enabled: false
 		},
+
+        legend: {
+            enabled: false
+        },
 
         colorAxis: {
             dataClasses: [{

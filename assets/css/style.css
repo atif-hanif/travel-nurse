@@ -44,7 +44,11 @@ a {
 	position: relative;
 	top: 0;
 	width: 100%;
-	padding: 1rem 0rem;
+	padding: 0.5rem 0rem;
+}
+
+.site-navbar .navbar {
+	padding: 0px;
 }
 
 /* .site-navbar .toggle-button {
@@ -543,7 +547,7 @@ a {
 	position: relative;
 	overflow: hidden;
 	transform: translate3d(0,0,0);
-	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.35);
 }
 
 .ripple:after {
@@ -583,6 +587,7 @@ a {
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-top: 180px;
+	padding-bottom: 60px;
 }
 
 .welcome {
@@ -602,7 +607,7 @@ a {
 
 .custom-btn {
 	background-color: var(--white-color);
-	border-color: var(--white-color);
+	border: 1px solid var(--white-color);
 	color: var(--secondary-color);
 	padding: 5px 35px;
 }
@@ -683,6 +688,7 @@ button.owl-prev, button.owl-next {
 	color: var(--primary-color);
 	font-weight: 900;
 	font-family: var(--font-family2);
+	margin-bottom: 20px;
 }
 
 .event-img {
@@ -700,6 +706,7 @@ button.owl-prev, button.owl-next {
 
 .event-time {
 	color: var(--sixth-color);
+	font-weight: 700;
 }
 
 .event-names {
@@ -1930,7 +1937,7 @@ input.form-control.coupon {
 	color: var(--primary-color);
 }
 
-.text-img-row {
+.about-text-row {
 	padding-top: 40px;
 }
 
