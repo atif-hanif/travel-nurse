@@ -113,7 +113,7 @@
                         </div>
                         <div class="col-lg-3 mb-3 mt-auto">
                             <div class="share-profile float-lg-end text-end me-4 me-md-0 text-md-center text-lg-end">
-                                <button type="button" class="btn btn-primary"><i class="fa-solid fa-paper-plane pe-2"></i>SHARE</button>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2"><i class="fa-solid fa-paper-plane pe-2"></i>SHARE</button>
                             </div>
                         </div>
                     </div>
@@ -286,6 +286,72 @@
         </div>
     </footer>
 
+    <div class="modal" id="myModal2">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Share Profile</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="float-start">Basic Information</h5>
+                                        <div class="float-end">
+                                            <input type="checkbox" class="form-check-input" id="select_all" name="option1" value="something"> Select All
+                                        </div>
+                                    <div class="basic-information"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="float-start">Resume</p>
+                                    <div class="float-end">
+                                        <input class="form-check-input checkbox" type="checkbox" name="check[]"> Select
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="float-start">Reference 01</p>
+                                    <div class="float-end">
+                                        <input class="form-check-input checkbox" type="checkbox" name="check[]"> Select
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="float-start">Reference 02</p>
+                                    <div class="float-end">
+                                        <input class="form-check-input checkbox" type="checkbox" name="check[]"> Select
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="float-start">Award and Honors</p>
+                                    <div class="float-end">
+                                        <input class="form-check-input checkbox" type="checkbox" name="check[]"> Select
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="float-start">Other Recognitions</p>
+                                    <div class="float-end">
+                                        <input class="form-check-input checkbox" type="checkbox" name="check[]"> Select
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="assets/vendors/jquery/jquery-3.6.3.min.js"></script>
     <script src="assets/js/jquery.validate.js"></script>
     <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
@@ -294,6 +360,25 @@
     <script src="assets/js/jquery.steps.js"></script>
     <script src="assets/vendors/masked-input/jquery.maskedinput.min.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script>
+        $("#select_all").change(function(){  //"select all" change 
+            $(".checkbox").prop('checked', $(this).prop("checked")); //change all ".checkbox" checked status
+        });
+
+        //".checkbox" change 
+        $('.checkbox').change(function(){ 
+            //uncheck "select all", if one of the listed checkbox item is unchecked
+            if(false == $(this).prop("checked")){ //if this item is unchecked
+                $("#select_all").prop('checked', false); //change "select all" checked status to false
+            }
+            //check "select all" if all checkbox items are checked
+            if ($('.checkbox:checked').length == $('.checkbox').length ){
+                $("#select_all").prop('checked', true);
+            }
+        });
+    </script>
+
 </body>
 
 </html>

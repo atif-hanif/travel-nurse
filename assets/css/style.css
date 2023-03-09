@@ -1842,6 +1842,10 @@ input.form-control.coupon {
 	color: var(--sixth-color);
 }
 
+.basic-information {
+	border-bottom: 1px solid var(--border-color);
+}
+
 /* About Us Page */
 
 .about-banner {
