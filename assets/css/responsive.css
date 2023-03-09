@@ -37,7 +37,7 @@
 
 }
 
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+/* @media only screen and (min-width: 992px) and (max-width: 1200px) {
 
 	.event-dates {
 		float: left;
@@ -47,9 +47,9 @@
 	.event-names {
 		padding: 0px 0px 0px 15px;
 	}
-}
+} */
 
-@media only screen and (max-width: 1199px) {
+/* @media only screen and (max-width: 1199px) {
 
 	.join-network-section {
 		margin-top: 120px;
@@ -62,7 +62,7 @@
 	.join-network-section button {
 		width: 100%;
 	}
-}
+} */
 
 /* @media screen and (max-width: 1199px) {
 	.wizard-v1-content {
@@ -358,6 +358,63 @@
 		width: 35px;
 	}
 
+	/* Contact Us Page */
+
+	.contact-banner h1 {
+		font-size: 40px;
+    	text-align: center;
+	}
+
+	.contact-banner p {
+		text-align: center;
+	}
+
+	.contact-us-section {
+		margin-top: -170px;
+	}
+
+	.contact-us-section h2 {
+		font-size: 25px;
+	}
+
+	.contact-us-section .submit-btn {
+		padding: 21px 52px;
+	}
+
+	/* Events Page */
+
+	.events-banner h1 {
+		font-size: 40px;
+    	text-align: center;
+	}
+
+	.events-banner p {
+		text-align: center;
+	}
+
+	.fc-toolbar-chunk {
+		width: 100%;
+	}
+
+	button.fc-today-button.fc-button.fc-button-primary {
+		margin: 0px auto 5px;
+		display: block;
+	}
+
+	.tnnh-row h2 {
+		text-align: center;
+	}
+
+	.tnnh-row p {
+		text-align: center;
+	}
+
+	.tnnh-row button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	/* Profile Page */
 
 	.profile-menu-column {
@@ -647,19 +704,77 @@
 		width: 40px;
 	}
 
-	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
-		display: flex;
-		flex-direction: row;
+	/* Contact Us Page */
+
+	.contact-banner h1 {
+		font-size: 50px;
+    	text-align: center;
+	}
+
+	.contact-banner p {
+		text-align: center;
+	}
+
+	.contact-us-section {
+		margin-top: -170px;
+	}
+
+	.contact-us-section h2 {
+		font-size: 35px;
+	}
+
+	.contact-us-section .submit-btn {
+		padding: 21px 70px;
+	}
+
+	/* Events Page */
+
+	.events-banner h1 {
+		font-size: 50px;
+    	text-align: center;
+	}
+
+	.events-banner p {
+		text-align: center;
+	}
+
+	.fc-toolbar-chunk {
+		width: 100%;
+	}
+
+	.tnnh-row h2 {
+		text-align: center;
+	}
+
+	.tnnh-row p {
+		text-align: center;
+	}
+
+	.tnnh-row button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 	.events-section .event-dates {
 		float: left;
-		padding: 0px 30px 0px 15px;
+		padding: 63px 10px;
+		width: 25%;
 	}
 
 	.events-section .event-names {
 		float: left;
-		padding: 3.5px 15px 0px;
+		padding: 63px 0px 63px 0px;
+		width: 35%;
+	}
+
+	.row.element-item.conventions.hosting.networking {
+		width: 100%;
+	}
+
+	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
+		display: flex;
+		flex-direction: row;
 	}
 
 }
@@ -858,19 +973,58 @@
 		width: 45px;
 	}
 
+	/* Contact Us Page */
+
+	.contact-banner h1 {
+		font-size: 60px;
+    	text-align: center;
+	}
+
+	.contact-banner p {
+		text-align: center;
+	}
+
+	.contact-us-section {
+		margin-top: -170px;
+	}
+
+	.contact-us-section h2 {
+		font-size: 45px;
+	}
+
+	.contact-us-section .submit-btn {
+		padding: 21px 70px;
+	}
+
+	.row.element-item.conventions.hosting.networking {
+		width: 100%;
+	}
+
+	.isotop-grid .element-item {
+		width: 100%;
+	}
+
+	.events-section img {
+		width: 45%;
+	}
+
+	.tnnh-row h2 {
+		text-align: center;
+	}
+
+	.tnnh-row p {
+		text-align: center;
+	}
+
+	.tnnh-row button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
 		display: flex;
 		flex-direction: row;
-	}
-
-	.events-section .event-dates {
-		float: left;
-		padding: 0px 30px 0px 15px;
-	}
-
-	.events-section .event-names {
-		float: left;
-		padding: 3.5px 15px 0px;
 	}
 
 }
@@ -1100,11 +1254,11 @@
 	/* Contact Us Page */
 
 	.contact-banner h1 {
-		font-size: 100px;
+		font-size: 80px;
 	}
 
 	.contact-us-section h2 {
-		font-size: 80px;
+		font-size: 55px;
 	}
 
 	.contact-us-section {
@@ -1122,7 +1276,12 @@
 	/* Events Page */
 
 	.events-banner h1 {
-		font-size: 100px;
+		font-size: 80px;
+	}
+
+	.events-section .event-names {
+		padding: 20px 0px;
+		width: 45%;
 	}
 
 	/* Join The Network Page */
@@ -1412,11 +1571,11 @@
 	/* Contact Us Page */
 
 	.contact-banner h1 {
-		font-size: 100px;
+		font-size: 90px;
 	}
 
 	.contact-us-section h2 {
-		font-size: 80px;
+		font-size: 65px;
 	}
 
 	.contact-us-section {

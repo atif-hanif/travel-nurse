@@ -2183,6 +2183,7 @@ input.form-control.coupon {
 	display: none
 }
 
+
 /* Join The Network */
 
 .join-network-banner {
@@ -2312,11 +2313,11 @@ input.form-control.coupon {
 	padding: 20px 16px;
 }
 
-.events-section .event-img {
+/* .events-section .event-img {
 	width: 120px;
-}
+} */
 
-.events-section  .event-dates {
+/* .events-section  .event-dates {
 	float: left;
 	padding: 13.5px 30px 13.5px 15px;
 }
@@ -2353,7 +2354,7 @@ input.form-control.coupon {
 .events-section hr {
 	margin: 27px 0px;
 	padding-bottom: 0px;
-}
+} */
 
 .filterDiv {
 	display: none;
