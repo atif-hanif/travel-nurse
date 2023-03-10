@@ -2191,14 +2191,21 @@ input.form-control.coupon {
 	display: none
 }
 
-
-/* Join The Network */
+/* Join The Network Page */
 
 .join-network-banner {
 	background-image: url(../images/join-the-network-banner.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 313px 0px;
+}
+
+.join-network-section {
+	margin-top: -170px;
+}
+
+.join-network-section .card .card-body {
+	padding: 85px 60px;
 }
 
 .join-network-banner h1 {
@@ -2419,6 +2426,10 @@ input.form-control.coupon {
 	padding: 120px 0px;
 }
 
+.healthcare-section .card {
+	margin-bottom: 40px;
+}
+
 .healthcare-section .card .card-header {
 	background-color: var(--secondary-color);
 	padding: 28px 34px;
@@ -2464,7 +2475,7 @@ input.form-control.coupon {
 	color: #fff;
 }
 
-/* Blogs */
+/* Blogs Pages */
 
 .blogs-banner {
 	background-image: url(../images/blogs-banner.png);
@@ -2490,6 +2501,13 @@ input.form-control.coupon {
 	padding-bottom: 120px;
 }
 
+.content-blog1 .card {
+	border: 1px solid transparent;
+	background: #FFFFFF;
+	box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.15);
+	border-radius: 5px;
+}
+
 .content-blog1 .card .card-body {
 	padding: 69px 45px;
 }
@@ -2510,6 +2528,10 @@ input.form-control.coupon {
 
 .card-img-top {
 	width: 100%;
+}
+
+.blogs2-row .element-item {
+	margin-bottom: 40px
 }
 
 /* Footer */

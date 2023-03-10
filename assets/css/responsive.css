@@ -197,11 +197,11 @@
 	
 	.event-dates {
 		width: 50%;
-		padding-top: 15px;
+		padding: 15px 0px;
 	}
 
 	.event-names {
-		padding-top: 15px;
+		padding: 15px 0px;
 		width: 50%;
 	}
 
@@ -413,6 +413,55 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	/* Join The Network Page */
+
+	.join-network-banner h1 {
+		font-size: 40px;
+    	text-align: center;
+	}
+
+	.join-network-banner p {
+    	text-align: center;
+	}
+
+	.join-network-section h2 {
+		font-size: 25px;
+	}
+
+	.join-network-section .submit-btn {
+		padding: 21px 52px;
+	}
+
+	/* Healtcare Agencies Page */
+
+	.healthcare-banner h1 {
+		font-size: 40px;
+    	text-align: center;
+	}
+
+	.healthcare-banner p {
+    	text-align: center;
+	}
+
+	.healthcare-section .card .card-header h3 {
+		font-size: 25px;
+	}
+
+	/* Blogs Page */
+
+	.blogs-banner h1 {
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.blogs-banner p {
+		text-align: center;
+	}
+
+	.content-blog h3 {
+		font-size: 25px;
 	}
 
 	/* Profile Page */
@@ -772,6 +821,55 @@
 		width: 100%;
 	}
 
+	/* Join The Network Page */
+
+	.join-network-banner h1 {
+		font-size: 50px;
+    	text-align: center;
+	}
+
+	.join-network-banner p {
+    	text-align: center;
+	}
+
+	.join-network-section h2 {
+		font-size: 35px;
+	}
+
+	.join-network-section .submit-btn {
+		padding: 21px 70px;
+	}
+
+	/* Healtcare Agencies Page */
+
+	.healthcare-banner h1 {
+		font-size: 50px;
+    	text-align: center;
+	}
+
+	.healthcare-banner p {
+    	text-align: center;
+	}
+
+	.healthcare-section .card .card-header h3 {
+		font-size: 30px;
+	}
+
+	/* Blogs Page */
+
+	.blogs-banner h1 {
+		font-size: 50px;
+		text-align: center;
+	}
+
+	.blogs-banner p {
+		text-align: center;
+	}
+
+	.content-blog h3 {
+		font-size: 30px;
+	}
+
 	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
 		display: flex;
 		flex-direction: row;
@@ -996,16 +1094,19 @@
 		padding: 21px 70px;
 	}
 
-	.row.element-item.conventions.hosting.networking {
-		width: 100%;
+	/* Events Page */
+
+	.events-banner h1 {
+		font-size: 60px;
+    	text-align: center;
 	}
 
-	.isotop-grid .element-item {
-		width: 100%;
+	.events-banner p {
+		text-align: center;
 	}
 
-	.events-section img {
-		width: 45%;
+	.fc-toolbar-chunk {
+		width: 100%;
 	}
 
 	.tnnh-row h2 {
@@ -1020,6 +1121,87 @@
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.events-section .event-dates {
+		float: left;
+		padding: 120px 10px;
+	}
+
+	.events-section .event-names {
+		float: left;
+		padding: 120px 0px;
+	}
+
+	.row.element-item.conventions.hosting.networking {
+		width: 100%;
+	}
+
+	.isotop-grid .element-item {
+		width: 100%;
+	}
+
+	.tnnh-row h2 {
+		text-align: center;
+	}
+
+	.tnnh-row p {
+		text-align: center;
+	}
+
+	.tnnh-row button {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* Join The Network Page */
+
+	.join-network-banner h1 {
+		font-size: 60px;
+    	text-align: center;
+	}
+
+	.join-network-banner p {
+    	text-align: center;
+	}
+
+	.join-network-section h2 {
+		font-size: 45px;
+	}
+
+	.join-network-section .submit-btn {
+		padding: 21px 70px;
+	}
+
+	/* Healtcare Agencies Page */
+
+	.healthcare-banner h1 {
+		font-size: 60px;
+    	text-align: center;
+	}
+
+	.healthcare-banner p {
+    	text-align: center;
+	}
+
+	.healthcare-section .card .card-header h3 {
+		font-size: 30px;
+	}
+
+	/* Blogs Page */
+
+	.blogs-banner h1 {
+		font-size: 60px;
+		text-align: center;
+	}
+
+	.blogs-banner p {
+		text-align: center;
+	}
+
+	.content-blog h3 {
+		font-size: 30px;
 	}
 
 	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
@@ -1041,12 +1223,12 @@
 	}
 
 	.navbar-expand-xl .navbar-nav .nav-link {
-		padding-right: 13px;
-		padding-left: 13px;
+		padding-right: 9px;
+		padding-left: 9px;
 	}
 
 	.site-navbar .nav-link {
-		font-size: 15px;
+		font-size: 14px;
 	}
 	
 	.site-navbar .logo {
@@ -1286,39 +1468,65 @@
 
 	/* Join The Network Page */
 
-	.join-network-section {
-		margin-top: -170px;
-	}
-
-	.join-network-section button {
-		width: 25%;
-	}
-
 	.join-network-banner h1 {
-		font-size: 100px;
-	}
-
-	.join-network-section h2 {
 		font-size: 80px;
 	}
 
-	.join-network-section .card .card-body {
-		padding: 85px 60px;
+	.join-network-section h2 {
+		font-size: 55px;
+	}
+
+	.join-network-section .submit-btn {
+		padding: 21px 106px;
 	}
 
 	/* Healthcare Agencies Page */
 
 	.healthcare-banner h1 {
-		font-size: 100px;
+		font-size: 80px;
 	}
 
 	.healthcare-section .card .card-header h3 {
-		font-size: 45px;
+		font-size: 40px;
 	}
 
 	.healthcare-section h4 {
 		font-size: 24px;
 	}
+
+	/* Blogs Page */
+
+	.blogs-banner h1 {
+		font-size: 80px;
+	}
+
+	.content-blog h3 {
+		font-size: 30px;
+	}
+
+	.blogs1-row {
+		position: relative;
+	}
+
+	.image-blog1 {
+		position: relative;
+	}
+
+	.image-blog1 img {
+		width: 750px;
+	}
+
+	.content-blog1 {
+		position: absolute;
+		left: 690px;
+		top: 210px;
+	}
+
+	.content-blog1 .card .card-body {
+		padding: 20px 25px;
+	}
+
+	/* Profile Page */
 
 	.profile-section .nav-link {
 		font-size: 25px;
@@ -1539,7 +1747,7 @@
 	/* Membership Page */
 
 	.membership-banner h1 {
-		font-size: 80px;
+		font-size: 90px;
 	}
 
 	.plan-profile {
@@ -1552,7 +1760,7 @@
 	}
 
 	.membership-join h2 {
-		font-size: 60px;
+		font-size: 50px;
 	}
 
 	.plan-rates {
@@ -1590,42 +1798,44 @@
 		padding: 15px 42px 15px 29px;
 	}
 
-	/* Join The Network Page */
-
-	.join-network-section {
-		margin-top: -170px;
-	}
-
-	.join-network-section button {
-		width: 25%;
-	}
-
-	.join-network-banner h1 {
-		font-size: 100px;
-	}
-
-	.join-network-section h2 {
-		font-size: 80px;
-	}
-
-	.join-network-section .card .card-body {
-		padding: 85px 60px;
-	}
-
 	/* Events Page */
 
 	.events-banner h1 {
-		font-size: 100px;
+		font-size: 90px;
+	}
+
+	.events-section .event-dates {
+		float: left;
+    	padding: 30.5px 13px 48.5px;
+	}
+
+	.events-section .event-names {
+		float: left;
+    	padding: 30.5px 13px 48.5px;
 	}
 	
 	.tnnh-row h2 {
 		font-size: 35px;
 	}
 
+	/* Join The Network Page */
+
+	.join-network-banner h1 {
+		font-size: 90px;
+	}
+
+	.join-network-section h2 {
+		font-size: 65px;
+	}
+
+	.join-network-section .submit-btn {
+		padding: 21px 106px;
+	}
+
 	/* Healthcare Agencies Page */
 
 	.healthcare-banner h1 {
-		font-size: 100px;
+		font-size: 90px;
 	}
 
 	.healthcare-section .card .card-header h3 {
@@ -1639,7 +1849,7 @@
 	/* Blogs Pages */
 
 	.blogs-banner h1 {
-		font-size: 100px;
+		font-size: 90px;
 	}
 
 	.blogs1-row {
@@ -1661,7 +1871,7 @@
 	}
 
 	.content-blog h3 {
-		font-size: 45px;
+		font-size: 40px;
 	}
 	
 	.content-blog p {
@@ -2007,6 +2217,20 @@
 
 	.events-banner h1 {
 		font-size: 100px;
+	}
+
+	.events-banner h1 {
+		font-size: 100px;
+	}
+
+	.events-section .event-dates {
+		float: left;
+    	padding: 30.5px 13px 48.5px;
+	}
+
+	.events-section .event-names {
+		float: left;
+    	padding: 30.5px 13px 48.5px;
 	}
 	
 	.tnnh-row h2 {
