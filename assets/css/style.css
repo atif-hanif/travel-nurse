@@ -1750,6 +1750,10 @@ input.form-control.coupon {
 	font-family: var(--font-family2);
 }
 
+.profile-menu-column img {
+	width: 36px;
+}
+
 /* .share-profile {
 	float: right;
 } */
@@ -1777,26 +1781,11 @@ input.form-control.coupon {
 	color: var(--sixth-color);
 }
 
+.mobile-row img {
+	height: 20%;
+}
+
 .mobile-row .fa-phone, .mobile-row .fa-users-gear {
-    font-size: 24px;
-	color: var(--sixth-color);
-}
-
-.edit-btn {
-	background-color: var(--bg-color1);
-	width: 52px;
-	height: 52px;
-	border-radius: 50%;
-	margin-top: -15px;
-    padding: 15px 18px;
-}
-
-.edit-btn i {
-	font-size: 16px;
-	color: var(--sixth-color);
-}
-
-.email-row .fa-envelope, .email-row .fa-users-gear {
     font-size: 24px;
 	color: var(--sixth-color);
 }
@@ -1811,17 +1800,16 @@ input.form-control.coupon {
 	color: var(--sixth-color);
 }
 
+.email-row img {
+	height: 20%;
+}
+
 .member-info hr {
 	margin: 58px 0px;
 }
 
 .birth-date-row {
 	padding-bottom: 30px;
-}
-
-.birth-date-row .fa-cake-candles, .birth-date-row .fa-users-gear {
-    font-size: 24px;
-	color: var(--sixth-color);
 }
 
 .birth-date-row p {
@@ -1834,9 +1822,8 @@ input.form-control.coupon {
 	color: var(--sixth-color);
 }
 
-.birth-year-row .fa-cake-candles, .birth-year-row .fa-users-gear {
-    font-size: 24px;
-	color: var(--sixth-color);
+.birth-date-row img {
+	height: 20%;
 }
 
 .birth-year-row p {
@@ -1849,8 +1836,29 @@ input.form-control.coupon {
 	color: var(--sixth-color);
 }
 
+.birth-year-row img {
+	height: 20%;
+}
+
 .basic-information {
 	border-bottom: 1px solid var(--border-color);
+}
+
+.edit-btn {
+	background-color: var(--bg-color1);
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	margin-top: -15px;
+    padding: 15px 18px;
+}
+
+.edit-btn img {
+	height: 80%;
+}
+
+.cake-icon {
+	margin-top: -10px;
 }
 
 /* About Us Page */
