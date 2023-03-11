@@ -624,7 +624,7 @@
 		font-size: 23px;
 	}
 
-	.member-info h4 {
+	.member-profile h4 {
 		font-size: 22px;
 	}
 
@@ -637,11 +637,6 @@
 		display: inline-block;
 		width: 85%;
 	}
-
-	.mobile-info .fa-users-gear {
-		display: inline-block;
-		margin-top: 20px;
-	}	
 	
 	.mobile-info .edit-btn {
 		display: inline-block;
@@ -657,12 +652,7 @@
 		display: inline-block;
 		width: 85%;
 	}
-	
-	.email-info .fa-users-gear {
-		display: inline-block;
-		margin-top: 20px;
-	}	
-	
+		
 	.email-info .edit-btn {
 		display: inline-block;
 		margin-top: 20px;
@@ -702,7 +692,7 @@
 		margin-top: 20px;
 	}
 
-	.share-profile-content {
+	.member-profile-content {
 		padding: 46px 10px;
 	}
 
@@ -712,11 +702,11 @@
 		width: 100%;
 	}
 
-	.share-profile-content .modal-title {
+	.member-profile-content .modal-title {
 		font-size: 22px;
 	}
 
-	.member-info .card .card-body {
+	.member-profile .card .card-body {
 		padding: 52px 10px;
 	}
 
@@ -726,6 +716,46 @@
 	
 	.notification-content h3 {
 		font-size: 23px;
+	}
+
+	.resume-row .pdf-icon {
+		float: left;
+	}	
+	
+	.resume-info .resume {
+		width: 85%;
+		margin-left: 60px;
+		padding-top: 10px;
+	}
+		
+	.resume-info .edit-btn {
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	.certificate-row .pdf-icon {
+		float: left;
+	}	
+	
+	.certificate-info .certificate {
+		width: 85%;
+		margin-left: 60px;
+		padding-top: 10px;
+	}
+		
+	.certificate-info .edit-btn {
+		display: inline-block;
+		margin-top: 20px;
+	}
+
+	.member-profile-body .pdf-icon {
+		width: 15%;
+		float: left;
+	}
+
+	.member-profile-body .certificate {
+		padding-left: 45px;
+		padding-top: 0px
 	}
 
 	/* Footer */
@@ -1196,6 +1226,11 @@
 		flex-direction: row;
 	}
 
+	.resume-info, .certificate-info {
+		display: flex;
+		flex-direction: row;
+	}
+
 	.user-profile-img {
 		width: 125px;
 		height: 125px;
@@ -1205,11 +1240,11 @@
 		font-size: 33px;
 	}
 
-	.member-info h4 {
+	.member-profile h4 {
 		font-size: 25px;
 	}
 
-	.share-profile-content {
+	.member-profile-content {
 		padding: 46px 10px;
 	}
 
@@ -1223,11 +1258,11 @@
 		padding: 10px 6px;
 	}
 
-	.share-profile-content .modal-title {
+	.member-profile-content .modal-title {
 		font-size: 27px;
 	}
 
-	.member-info .card .card-body {
+	.member-profile .card .card-body {
 		padding: 52px 30px;
 	}
 
@@ -1237,6 +1272,16 @@
 	
 	.notification-content h3 {
 		font-size: 27px;
+	}
+
+	.member-profile-body .pdf-icon {
+		width: 15%;
+		float: left;
+	}
+
+	.member-profile-body .certificate {
+		padding-left: 55px;
+		padding-top: 0px
 	}
 
 	/* Footer */
@@ -1712,6 +1757,11 @@
 		flex-direction: row;
 	}
 
+	.resume-info, .certificate-info {
+		display: flex;
+		flex-direction: row;
+	}
+
 	.share-profile {
 		display: block;
 		margin: 10px auto;
@@ -1727,11 +1777,11 @@
 		font-size: 40px;
 	}
 
-	.member-info h4 {
+	.member-profile h4 {
 		font-size: 27px;
 	}
 
-	.share-profile-content {
+	.member-profile-content {
 		padding: 46px 10px;
 	}
 
@@ -1739,11 +1789,11 @@
 		float: right;
 	}
 
-	.share-profile-content .modal-title {
+	.member-profile-content .modal-title {
 		font-size: 32px;
 	}
 
-	.member-info .card .card-body {
+	.member-profile .card .card-body {
 		padding: 52px 40px;
 	}
 
@@ -1753,6 +1803,15 @@
 	
 	.notification-content h3 {
 		font-size: 32px;
+	}
+
+	.member-profile-body .pdf-icon {
+		float: left;
+	}
+
+	.member-profile-body .certificate {
+		margin-left: 65px;
+		padding-top: 10px;
 	}
 
 	/* Footer */
@@ -2215,13 +2274,18 @@
 		flex-direction: row;
 	}
 
+	.resume-info, .certificate-info {
+		display: flex;
+		flex-direction: row;
+	}
+
 	.share-profile {
 		display: block;
 		margin: 10px auto;
 		text-align: center;
 	}
 
-	.share-profile-body h5 {
+	.member-profile-body h5 {
 		font-size: 22px;
 	}
 
@@ -2234,11 +2298,11 @@
 		font-size: 46px;
 	}
 
-	.member-info h4 {
+	.member-profile h4 {
 		font-size: 32px;
 	}
 
-	.share-profile-content {
+	.member-profile-content {
 		padding: 46px 10px;
 	}
 
@@ -2250,11 +2314,11 @@
 		font-size: 22px;
 	}
 
-	.share-profile-content .modal-title {
+	.member-profile-content .modal-title {
 		font-size: 36px;
 	}
 
-	.member-info .card .card-body {
+	.member-profile .card .card-body {
 		padding: 52px 47px;
 	}
 
@@ -2264,6 +2328,15 @@
 	
 	.notification-content h3 {
 		font-size: 36px;
+	}
+
+	.member-profile-body .pdf-icon {
+		float: left;
+	}
+
+	.member-profile-body .certificate {
+		margin-left: 65px;
+		padding-top: 10px;
 	}
 
 	/* Footer */
@@ -2709,13 +2782,18 @@
 		flex-direction: row;
 	}
 
+	.resume-info, .certificate-info {
+		display: flex;
+		flex-direction: row;
+	}
+
 	.share-profile {
 		display: block;
 		margin: 10px auto;
 		text-align: center;
 	}
 
-	.share-profile-body h5 {
+	.member-profile-body h5 {
 		font-size: 22px;
 	}
 
@@ -2728,11 +2806,11 @@
 		font-size: 54px;
 	}
 
-	.member-info h4 {
+	.member-profile h4 {
 		font-size: 37px;
 	}
 
-	.share-profile-content {
+	.member-profile-content {
 		padding: 46px 10px;
 	}
 
@@ -2744,15 +2822,15 @@
 		font-size: 22px;
 	}
 
-	.share-profile-content .modal-title {
+	.member-profile-content .modal-title {
 		font-size: 36px;
 	}
 
-	.member-info {
+	.member-profile {
 		margin-top: 70px !important;
 	}
 
-	.member-info .card .card-body {
+	.member-profile .card .card-body {
 		padding: 52px 47px;
 	}
 
@@ -2762,6 +2840,15 @@
 	
 	.notification-content h3 {
 		font-size: 41px;
+	}
+
+	.member-profile-body .pdf-icon {
+		float: left;
+	}
+
+	.member-profile-body .certificate {
+		margin-left: 65px;
+		padding-top: 10px;
 	}
 
 	/* Footer */
@@ -3201,13 +3288,18 @@
 		flex-direction: row;
 	}
 
+	.resume-info, .certificate-info {
+		display: flex;
+		flex-direction: row;
+	}
+
 	.share-profile {
 		display: block;
 		margin: 10px auto;
 		text-align: center;
 	}
 
-	.share-profile-body h5 {
+	.member-profile-body h5 {
 		font-size: 22px;
 	}
 
@@ -3220,11 +3312,11 @@
 		font-size: 60px;
 	}
 
-	.member-info h4 {
+	.member-profile h4 {
 		font-size: 45px;
 	}
 
-	.share-profile-content {
+	.member-profile-content {
 		padding: 46px 54px;
 	}
 
@@ -3236,15 +3328,15 @@
 		font-size: 24px;
 	}
 
-	.share-profile-content .modal-title {
+	.member-profile-content .modal-title {
 		font-size: 36px;
 	}
 
-	.member-info {
+	.member-profile {
 		margin-top: 70px !important;
 	}
 
-	.member-info .card .card-body {
+	.member-profile .card .card-body {
 		padding: 52px 47px;
 	}
 
@@ -3270,6 +3362,23 @@
 	
 	.notification-content h3 {
 		font-size: 45px;
+	}
+
+	.resume-row p {
+		font-size: 22px;
+	}
+
+	.certificate-row p {
+		font-size: 22px;
+	}
+
+	.member-profile-body .pdf-icon {
+		float: left;
+	}
+
+	.member-profile-body .certificate {
+		margin-left: 65px;
+		padding-top: 10px;
 	}
 
 	/* Footer */

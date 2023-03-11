@@ -77,10 +77,10 @@
                 <div class="col-md-4 col-lg-3 mt-lg-4 profile-menu-column">
                     <ul class="nav flex-column">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"><img src="assets/images/member-icon-1.png" alt="Member" class="img-fluid pe-2">Member Center</a>
+                            <a class="nav-link" href="#"><img src="assets/images/member-icon-2.png" alt="Member" class="img-fluid pe-2">Member Center</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="assets/images/edit-icon-1.png" alt="Edit" class="img-fluid pe-2">Edit Profile</a>
+                            <a class="nav-link active" href="#"><img src="assets/images/edit-icon-2.png" alt="Edit" class="img-fluid pe-2">Edit Profile</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><img src="assets/images/job-icon-1.png" alt="Edit" class="img-fluid pe-2">Jobs</a>
@@ -114,39 +114,24 @@
                         <div class="col-md-3 col-lg-4 mb-md-3 mt-auto">
                             <!-- <div class="share-profile float-lg-end text-end me-4 me-md-0 text-md-center text-lg-end"></div> -->
                             <div class="share-profile">
-                                <button type="button" class="btn btn-primary share-profile-btn" data-bs-toggle="modal" data-bs-target="#myModal2">
+                                <button type="button" class="btn btn-primary share-profile-btn">
                                     <img src="assets/images/share-icon.png" alt="Send" class="img-fluid pe-2">SHARE
                                 </button>
                             </div>
                         </div>
                     </div>
-                    <div class="row member-info mt-4">
+                    <div class="row member-profile mt-4">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4>Contact Information</h4>
-                                    <div class="row mobile-row">
+                                    <h4>Resume</h4>
+                                    <div class="row resume-row">
                                         <div class="col-12">
-                                            <div class="mobile-info">
-                                                <img src="assets/images/phone-icon.png" alt="Phone" class="img-fluid phone-icon">
-                                                <div class="mobile ps-3">
-                                                    <p class="mb-0">+1 258 485 1569</p>
-                                                    <span>Mobile</span>
-                                                </div>
-                                                <img src="assets/images/users-icon.png" alt="Users" class="img-fluid ms-auto">
-                                                <div class="edit-btn ms-4">
-                                                    <img src="assets/images/edit-icon-3.png" alt="Edit" class="img-fluid">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row email-row">
-                                        <div class="col-12">
-                                            <div class="email-info">
-                                                <img src="assets/images/email-icon.png" alt="Email" class="img-fluid email-icon">
-                                                <div class="email ps-3">
-                                                    <p class="mb-0">alexasmith@outlook.com</p>
-                                                    <span>Email</span>
+                                            <div class="resume-info">
+                                                <img src="assets/images/pdf-icon.png" alt="PDF" class="img-fluid pdf-icon">
+                                                <div class="resume ps-md-3 pt-md-2">
+                                                    <p class="mb-0">Username CV 2023</p>
+                                                    <span>Expiry Jan 2024</span>
                                                 </div>
                                                 <img src="assets/images/users-icon.png" alt="Users" class="img-fluid ms-auto">
                                                 <div class="edit-btn ms-4">
@@ -156,33 +141,18 @@
                                         </div>
                                     </div>
                                     <hr>
-                                    <h4>Basic Info</h4>
-                                    <div class="row birth-date-row">
+                                    <h4>Certificates</h4>
+                                    <div class="row certificate-row">
                                         <div class="col-12">
-                                            <div class="birth-date-info">
-                                                <img src="assets/images/cake-icon.png" alt="Cake" class="img-fluid cake-icon">
-                                                <div class="birth-date ps-3">
-                                                    <p class="mb-0">3 June</p>
-                                                    <span>Birth Date</span>
+                                            <div class="certificate-info">
+                                                <img src="assets/images/pdf-icon.png" alt="PDF" class="img-fluid pdf-icon">
+                                                <div class="certificate ps-md-3 pt-md-2">
+                                                    <p class="mb-0">Tuberculosis Certificate</p>
+                                                    <span>Expiry Jan 2024</span>
                                                 </div>
                                                 <img src="assets/images/users-icon.png" alt="Users" class="img-fluid ms-auto">
                                                 <div class="edit-btn ms-4">
-                                                    <img src="assets/images/edit-icon-3.png" alt="Edit" class="img-fluid">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row birth-year-row">
-                                        <div class="col-12">
-                                            <div class="birth-year-info">
-                                                <img src="assets/images/cake-icon.png" alt="Cake" class="img-fluid cake-icon">
-                                                <div class="birth-year ps-3">
-                                                    <p class="mb-0">1992</p>
-                                                    <span>Birth Year</span>
-                                                </div>
-                                                <img src="assets/images/users-icon.png" alt="Users" class="img-fluid ms-auto">
-                                                <div class="edit-btn ms-4">
-                                                    <img src="assets/images/edit-icon-3.png" alt="Edit" class="img-fluid">
+                                                    <img src="assets/images/edit-icon-3.png" alt="Edit" class="img-fluid" data-bs-toggle="modal" data-bs-target="#myModal5">
                                                 </div>
                                             </div>
                                         </div>
@@ -289,133 +259,81 @@
         </div>
     </footer>
 
-    <div class="modal" id="myModal2">
+    <div class="modal" id="myModal5">
         <div class="modal-dialog modal-lg">
             <div class="modal-content member-profile-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Share Profile</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal">X</button>
+                <div class="modal-header text-center d-block">
+                    <h4 class="modal-title">Add New Document</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 </div>
                 <div class="modal-body member-profile-body">
-                    <div class="row">
-                        <div class="col-xl-6">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h5 class="float-start">Basic Information</h5>
-                                    <div class="float-end">
-                                        <input type="checkbox" class="form-check-input" id="select_all_1" name="option1" value="something"> Select All
-                                    </div>
-                                </div>
-                                <hr class="hr1">
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="float-start">Resume</p>
-                                    <div class="float-end">
-                                        <input class="form-check-input checkbox_1" type="checkbox" name="check[]"> Select
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <p class="float-start">Reference 01</p>
-                                    <div class="float-end">
-                                        <input class="form-check-input checkbox_1" type="checkbox" name="check[]"> Select
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <p class="float-start">Reference 02</p>
-                                    <div class="float-end">
-                                        <input class="form-check-input checkbox_1" type="checkbox" name="check[]"> Select
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <p class="float-start">Award and Honors</p>
-                                    <div class="float-end">
-                                        <input class="form-check-input checkbox_1" type="checkbox" name="check[]"> Select
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <p class="float-start">Other Recognitions</p>
-                                    <div class="float-end">
-                                        <input class="form-check-input checkbox_1" type="checkbox" name="check[]"> Select
-                                    </div>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="inner">
+                                    <label for="document-category" class="form-label">Document Category *:</label>
+                                    <select class="form-select" id="document-category" name="document-category" required>
+                                        <option>Select</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-xl-6">
-                            <div class="row">
-                                <div class="col-12">
-                                    <h5 class="float-start">Credentials</h5>
-                                    <div class="float-end">
-                                        <input type="checkbox" class="form-check-input" id="select_all_2" name="option2" value="something"> Select All
-                                    </div>
-                                </div>
-                                <hr class="hr1">
-                            </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="float-start">Vaccainations</p>
-                                    <div class="float-end">
-                                        <input class="form-check-input checkbox_2" type="checkbox" name="check[]"> Select
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <p class="float-start">Licensure or State designations</p>
-                                    <div class="float-end">
-                                        <input class="form-check-input checkbox_2" type="checkbox" name="check[]"> Select
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <p class="float-start">National Certification</p>
-                                    <div class="float-end">
-                                        <input class="form-check-input checkbox_2" type="checkbox" name="check[]"> Select
-                                    </div>
+                            <div class="col-12 col-md-4 mt-4">
+                                <div class="inner">
+                                    <label for="expiry" class="form-label">Expiry *:</label>
+                                    <select class="form-select" id="expiry-month" name="expiry" required>
+                                        <option>Month</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
                                 </div>
                             </div>
-                            
-                            <div class="row mt-4">
-                                <div class="col-12">
-                                    <h5 class="float-start">Other</h5>
-                                    <div class="float-end">
-                                        <input type="checkbox" class="form-check-input" id="select_all_3" name="option2" value="something"> Select All
-                                    </div>
+                            <div class="col-12 col-md-4 mt-4 mt-md-auto">
+                                <div class="inner">
+                                    <label for="expiry-month" class="form-label"></label>
+                                    <select class="form-select" id="expiry-year" name="expiry" required>
+                                        <option>Year</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
                                 </div>
-                                <hr class="hr1">
                             </div>
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="float-start">Tittle of document</p>
-                                    <div class="float-end">
-                                        <input class="form-check-input checkbox_3" type="checkbox" name="check[]"> Select
-                                    </div>
+                            <div class="col-12 col-md-4 mt-4 mt-md-auto">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" id="no_expire" name="optradio" value="no_expire" checked>No Expiration
+                                    <label class="form-check-label" for="no_expire"></label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-8 mt-4">
+                                <h6>Upload Resume</h6>
+                                <p>Word doc or PDF file under 5mb are accepted</p>
+                            </div>
+                            <div class="col-12 col-md-4 mt-md-4 text-lg-end">
+                                <button type="button" class="btn btn-primary">
+                                    <img src="assets/images/upload-icon-1.png" alt="Upload" class="pe-2">UPLOAD
+                                </button>
+                            </div>
+                            <div class="col-12 col-md-8 mt-4">
+                                <img src="assets/images/pdf-icon.png" alt="PDF" class="img-fluid pdf-icon">
+                                <div class="certificate">
+                                    <p class="mb-0">Tuberculosis Certificate</p>
+                                    <span>Expiry Jan 2024</span>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-4 mt-4">
+                                <p class="text-center text-lg-end pt-lg-2">Remove</p>
+                            </div>
+                            <div class="col-12 mt-4">
+                                <div class="d-grid">
+                                    <button type="button" class="btn btn-primary btn-block">SUBMIT</button>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <hr class="hr2">
-                    <div class="row">
-                        <div class="col-12">
-                            <h5>Attachments</h5>
-                        </div>
-                        <div class="col-12 mt-3">
-                            <a type="button" class="btn download-btn">Resume</a>
-                            <a type="button" class="btn download-btn">Vaccainations</a>
-                            <a type="button" class="btn download-btn">Licensure/State Designations</a>
-                            <a type="button" class="btn download-btn">National Certification</a>
-                            <a type="button" class="btn download-btn">Award & Honors</a>
-                            <a type="button" class="btn download-btn">Other Recognitions</a>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <div class="col-12 col-lg-9">
-                            <div class="inner">
-                                <label for="email_id" class="form-label">Enter email address to share</label>
-                                <input type="email" class="form-control" id="email_id" placeholder="Enter email" name="email_id">
-                            </div>
-                        </div>
-                        <div class="col-12 col-lg-3 mt-auto">
-                            <button type="button" class="btn btn-primary email-submit-btn">SUBMIT</button>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
