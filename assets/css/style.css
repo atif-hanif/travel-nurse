@@ -878,6 +878,7 @@ button#toggle-password:hover {
 /* Membership Tiers Page */
 
 .membership-tiers {
+	padding-top: 30px;
 	padding-bottom: 120px;
 }
 
@@ -917,8 +918,7 @@ button#toggle-password:hover {
 	margin-bottom: 20px;
 }
 
-.membership-tiers ul li {
-	list-style: none;
+.membership-plan ul li {
 	font-weight: 500;
 }
 
@@ -928,6 +928,7 @@ button#toggle-password:hover {
 }
 
 .membership-cost {
+	padding-top: 50px;
 	padding-bottom: 120px;
 }
 
@@ -984,6 +985,10 @@ button#toggle-password:hover {
 
 .membership-cost p span {
 	font-weight: 600;
+}
+
+.why-join-us ul li {
+	list-style: none;
 }
 
 /* Sign Up Page */
@@ -1148,13 +1153,13 @@ button#toggle-password:hover {
 }
 
 .form-register .steps li a .step-number {
-	color: #666;
+	color: var(--secondary-color);
 	font-weight: 400;
 	padding: 17px 0 8px;
 }
 
 .form-register .steps li a .step-text {
-	color: var(--sixth-color);
+	color: var(--secondary-color);
 	padding-top: 15px;
 	padding-bottom: 8px;
 }
@@ -1255,7 +1260,7 @@ button#toggle-password:hover {
 }
 
 .degree-select {
-	width: 50%;
+	/* width: 50%; */
 	height: 50px;
 	background-color: var(--bg-color1);
 	border: 1px solid var(--bg-color1);
@@ -1304,7 +1309,7 @@ button#toggle-password:hover {
 .inner .ui-datepicker-trigger {
 	background: transparent;
 	border: none;
-	color: #666;
+	color: var(--secondary-color);
 	font-size: 19px;
 	position: absolute;
 	cursor: pointer;
@@ -1859,6 +1864,38 @@ input.form-control.coupon {
 
 .cake-icon {
 	margin-top: -10px;
+}
+
+.share-profile-body .hr1 {
+    padding-bottom: 0px;
+    margin-left: 14px;
+    width: 94%;
+}
+
+.download-btn {
+	border: 1px solid var(--secondary-color);
+	color: var(--secondary-color);
+}
+
+.share-profile-btn {
+	padding: 16px 40px;
+}
+
+.email-submit-btn {
+    padding: 12px 36px;
+}
+
+.share-profile-content {
+	padding: 46px 54px;
+}
+
+.share-profile-content .btn-close {
+	width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #DFDFDF;
+    font-size: 24px;
+	font-weight: bold;
 }
 
 /* About Us Page */
@@ -2658,7 +2695,7 @@ footer .ftco-footer-social li a {
 	position: relative;
 } */
 
-.ftco-footer-social li a i {
+/* .ftco-footer-social li a i {
 	position: absolute;
 	font-size: 20px;
 	top: 50%;
@@ -2666,7 +2703,7 @@ footer .ftco-footer-social li a {
 	-webkit-transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-}
+} */
 
 .ftco-footer-social li a:hover {
 	color: var(--white-color);

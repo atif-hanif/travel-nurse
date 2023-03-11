@@ -1,3 +1,21 @@
+/* Show/Hide Password */
+
+$(document).ready(function() {
+    $(".show_hide_password_3 i").on('click', function(event) {
+        event.preventDefault();
+        if($('.show_hide_password_3 input').attr("type") == "text"){
+            $('.show_hide_password_3 input').attr('type', 'password');
+            $('.show_hide_password_3 i').addClass( "fa-eye-slash" );
+            $('.show_hide_password_3 i').removeClass( "fa-eye" );
+        }else if($('.show_hide_password_3 input').attr("type") == "password"){
+            $('.show_hide_password_3 input').attr('type', 'text');
+            $('.show_hide_password_3 i').removeClass( "fa-eye-slash" );
+            $('.show_hide_password_3 i').addClass( "fa-eye" );
+        }
+    });
+});
+
+
 $(function() {
 	// var siteSticky = function() {
 	// 	$(".js-sticky-header").sticky({
@@ -104,19 +122,3 @@ items.forEach((el) => {
     }
 })
 
-/* Show/Hide Password */
-
-$(document).ready(function() {
-    $(".show_hide_password i").on('click', function(event) {
-        event.preventDefault();
-        if($('.show_hide_password input').attr("type") == "text"){
-            $('.show_hide_password input').attr('type', 'password');
-            $('.show_hide_password i').addClass( "fa-eye-slash" );
-            $('.show_hide_password i').removeClass( "fa-eye" );
-        }else if($('.show_hide_password input').attr("type") == "password"){
-            $('.show_hide_password input').attr('type', 'text');
-            $('.show_hide_password i').removeClass( "fa-eye-slash" );
-            $('.show_hide_password i').addClass( "fa-eye" );
-        }
-    });
-});

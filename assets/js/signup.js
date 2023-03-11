@@ -96,7 +96,7 @@ $(function(){
         labels: {
             previous : '',
             next : '<button type="button" class="btn btn-primary continue-btn">Continue</button>',
-            finish : '<button type="button" class="btn btn-primary continue-btn finish-btn">Continue</button',
+            finish : '<button type="button" class="btn btn-primary finish-btn">Continue</button',
             current : ''
         },
         onStepChanging: function (event, currentIndex, newIndex) { 
@@ -156,22 +156,6 @@ $(document).ready(function(){
     
 });
 
-/* Add Remove Fields */
-
-$('.extra-fields-customer').click(function() {
-    $('.customer_records').clone().appendTo('.customer_records_dynamic');
-    $('.customer_records_dynamic .customer_records').addClass('single remove');
-    $('.single .extra-fields-customer').remove();
-    $('.single').append('<a href="#" class="remove-field btn-remove-customer">Remove</a>');
-    $('.customer_records_dynamic > .single').attr("class", "remove");
-  
-});
-  
-$(document).on('click', '.remove-field', function(e) {
-    $(this).parent('.remove').remove();
-    e.preventDefault();
-});
-
 /* Preview Image */
 
 $(document).ready(function(){
@@ -208,7 +192,7 @@ $(document).ready(function () {
         }
     });
 
-    $(wrapper).on("click", ".remove_div_1", function (e) { //user click on remove text
+    $(wrapper_1).on("click", ".remove_div_1", function (e) { //user click on remove text
         e.preventDefault(); $(this).parent('div').remove(); x--;
     })
 });
@@ -227,7 +211,39 @@ $(document).ready(function () {
         }
     });
 
-    $(wrapper).on("click", ".remove_div_2", function (e) { //user click on remove text
+    $(wrapper_2).on("click", ".remove_div_2", function (e) { //user click on remove text
         e.preventDefault(); $(this).parent('div').remove(); x--;
     })
+});
+
+/* Show/Hide Password */
+
+$(document).ready(function() {
+    $(".show_hide_password_1 i").on('click', function(event) {
+        event.preventDefault();
+        if($('.show_hide_password_1 input').attr("type") == "text"){
+            $('.show_hide_password_1 input').attr('type', 'password');
+            $('.show_hide_password_1 i').addClass( "fa-eye-slash" );
+            $('.show_hide_password_1 i').removeClass( "fa-eye" );
+        }else if($('.show_hide_password_1 input').attr("type") == "password"){
+            $('.show_hide_password_1 input').attr('type', 'text');
+            $('.show_hide_password_1 i').removeClass( "fa-eye-slash" );
+            $('.show_hide_password_1 i').addClass( "fa-eye" );
+        }
+    });
+});
+
+$(document).ready(function() {
+    $(".show_hide_password_2 i").on('click', function(event) {
+        event.preventDefault();
+        if($('.show_hide_password_2 input').attr("type") == "text"){
+            $('.show_hide_password_2 input').attr('type', 'password');
+            $('.show_hide_password_2 i').addClass( "fa-eye-slash" );
+            $('.show_hide_password_2 i').removeClass( "fa-eye" );
+        }else if($('.show_hide_password_2 input').attr("type") == "password"){
+            $('.show_hide_password_2 input').attr('type', 'text');
+            $('.show_hide_password_2 i').removeClass( "fa-eye-slash" );
+            $('.show_hide_password_2 i').addClass( "fa-eye" );
+        }
+    });
 });

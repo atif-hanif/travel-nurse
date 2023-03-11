@@ -113,7 +113,7 @@
                         </div>
                         <div class="col-lg-3 mb-3 mt-auto">
                             <div class="share-profile float-lg-end text-end me-4 me-md-0 text-md-center text-lg-end">
-                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal2"><img src="assets/images/share-icon.png" alt="Send" class="img-fluid pe-2">SHARE</button>
+                                <button type="button" class="btn btn-primary share-profile-btn" data-bs-toggle="modal" data-bs-target="#myModal2"><img src="assets/images/share-icon.png" alt="Send" class="img-fluid pe-2">SHARE</button>
                             </div>
                         </div>
                     </div>
@@ -288,63 +288,129 @@
 
     <div class="modal" id="myModal2">
         <div class="modal-dialog modal-lg">
-            <div class="modal-content">
+            <div class="modal-content share-profile-content">
                 <div class="modal-header">
                     <h4 class="modal-title">Share Profile</h4>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal">X</button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body share-profile-body">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-xl-6">
                             <div class="row">
                                 <div class="col-12">
                                     <h5 class="float-start">Basic Information</h5>
-                                        <div class="float-end">
-                                            <input type="checkbox" class="form-check-input" id="select_all" name="option1" value="something"> Select All
-                                        </div>
-                                    <div class="basic-information"></div>
+                                    <div class="float-end">
+                                        <input type="checkbox" class="form-check-input" id="select_all_1" name="option1" value="something"> Select All
+                                    </div>
                                 </div>
+                                <hr class="hr1">
                             </div>
                             <div class="row">
                                 <div class="col-12">
                                     <p class="float-start">Resume</p>
                                     <div class="float-end">
-                                        <input class="form-check-input checkbox" type="checkbox" name="check[]"> Select
+                                        <input class="form-check-input checkbox_1" type="checkbox" name="check[]"> Select
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-12">
                                     <p class="float-start">Reference 01</p>
                                     <div class="float-end">
-                                        <input class="form-check-input checkbox" type="checkbox" name="check[]"> Select
+                                        <input class="form-check-input checkbox_1" type="checkbox" name="check[]"> Select
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-12">
                                     <p class="float-start">Reference 02</p>
                                     <div class="float-end">
-                                        <input class="form-check-input checkbox" type="checkbox" name="check[]"> Select
+                                        <input class="form-check-input checkbox_1" type="checkbox" name="check[]"> Select
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-12">
                                     <p class="float-start">Award and Honors</p>
                                     <div class="float-end">
-                                        <input class="form-check-input checkbox" type="checkbox" name="check[]"> Select
+                                        <input class="form-check-input checkbox_1" type="checkbox" name="check[]"> Select
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
                                 <div class="col-12">
                                     <p class="float-start">Other Recognitions</p>
                                     <div class="float-end">
-                                        <input class="form-check-input checkbox" type="checkbox" name="check[]"> Select
+                                        <input class="form-check-input checkbox_1" type="checkbox" name="check[]"> Select
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5 class="float-start">Credentials</h5>
+                                    <div class="float-end">
+                                        <input type="checkbox" class="form-check-input" id="select_all_2" name="option2" value="something"> Select All
+                                    </div>
+                                </div>
+                                <hr class="hr1">
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="float-start">Vaccainations</p>
+                                    <div class="float-end">
+                                        <input class="form-check-input checkbox_2" type="checkbox" name="check[]"> Select
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <p class="float-start">Licensure or State designations</p>
+                                    <div class="float-end">
+                                        <input class="form-check-input checkbox_2" type="checkbox" name="check[]"> Select
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <p class="float-start">National Certification</p>
+                                    <div class="float-end">
+                                        <input class="form-check-input checkbox_2" type="checkbox" name="check[]"> Select
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row mt-4">
+                                <div class="col-12">
+                                    <h5 class="float-start">Other</h5>
+                                    <div class="float-end">
+                                        <input type="checkbox" class="form-check-input" id="select_all_3" name="option2" value="something"> Select All
+                                    </div>
+                                </div>
+                                <hr class="hr1">
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="float-start">Tittle of document</p>
+                                    <div class="float-end">
+                                        <input class="form-check-input checkbox_3" type="checkbox" name="check[]"> Select
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="hr2">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>Attachments</h5>
+                        </div>
+                        <div class="col-12 mt-3">
+                            <a type="button" class="btn download-btn">Resume</a>
+                            <a type="button" class="btn download-btn">Vaccainations</a>
+                            <a type="button" class="btn download-btn">Licensure/State Designations</a>
+                            <a type="button" class="btn download-btn">National Certification</a>
+                            <a type="button" class="btn download-btn mt-3">Award & Honors</a>
+                            <a type="button" class="btn download-btn mt-3">Other Recognitions</a>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-12 col-xl-9">
+                            <div class="inner">
+                                <label for="email_id" class="form-label">Enter email address to share</label>
+                                <input type="email" class="form-control" id="email_id" placeholder="Enter email" name="email_id">
+                            </div>
+                        </div>
+                        <div class="col-12 col-xl-3 mt-auto">
+                            <button type="button" class="btn btn-primary email-submit-btn">SUBMIT</button>
                         </div>
                     </div>
                 </div>
@@ -360,24 +426,7 @@
     <script src="assets/js/jquery.steps.js"></script>
     <script src="assets/vendors/masked-input/jquery.maskedinput.min.js"></script>
     <script src="assets/js/custom.js"></script>
-
-    <script>
-        $("#select_all").change(function(){  //"select all" change 
-            $(".checkbox").prop('checked', $(this).prop("checked")); //change all ".checkbox" checked status
-        });
-
-        //".checkbox" change 
-        $('.checkbox').change(function(){ 
-            //uncheck "select all", if one of the listed checkbox item is unchecked
-            if(false == $(this).prop("checked")){ //if this item is unchecked
-                $("#select_all").prop('checked', false); //change "select all" checked status to false
-            }
-            //check "select all" if all checkbox items are checked
-            if ($('.checkbox:checked').length == $('.checkbox').length ){
-                $("#select_all").prop('checked', true);
-            }
-        });
-    </script>
+    <script src="assets/js/profile.js"></script>
 
 </body>
 

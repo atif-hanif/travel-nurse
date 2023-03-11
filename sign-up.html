@@ -112,14 +112,14 @@
                                                 </div>
                                                 <div class="col-md-6 mt-4">
                                                     <label for="password" class="form-label">Password *</label>
-                                                    <div class="show_hide_password">
+                                                    <div class="show_hide_password show_hide_password_1">
                                                         <input type="password" placeholder="xxxxxxx" class="form-control" id="password" name="password" required>
                                                         <i class="fa-sharp fa-solid fa-eye-slash" aria-hidden="true"></i>
                                                     </div>
                                                 </div>
                                                 <div class="col-md-6 mt-4">
                                                     <label for="confirm_password" class="form-label">Confirm Password*</label>
-                                                    <div class="show_hide_password">
+                                                    <div class="show_hide_password show_hide_password_2">
                                                         <input type="password" placeholder="xxxxxxx" class="form-control" id="confirm_password" name="confirm_password" required>
                                                         <i class="fa-sharp fa-solid fa-eye-slash" aria-hidden="true"></i>
                                                     </div>
@@ -174,8 +174,8 @@
                                     <section>
                                         <div class="inner">
                                             <div class="row">
-                                                <h3 class="mb-0 w-50">Employment Record</h3>
-                                                <p class="mb-0 text-end w-50">Minimum Two Past Experience Required *</p>
+                                                <h3 class="mb-0 emp-record">Employment Record</h3>
+                                                <p class="mb-0 past-exp">Minimum Two Past Experience Required *</p>
                                             </div>
                                             <div class="employment_record">
                                                 <div class="row mt-5">
@@ -210,7 +210,7 @@
                                                             <div class="col-md-6">
                                                                 <input type="text" placeholder="Month" class="form-control" id="start_month" name="start-date" required>
                                                             </div>
-                                                            <div class="col-md-6">
+                                                            <div class="col-md-6 mt-4 mt-md-0">
                                                                 <input type="text" placeholder="Year" class="form-control" id="start_year" name="start-date" required>
                                                             </div>
                                                         </div>
@@ -221,7 +221,7 @@
                                                             <div class="col-md-6">
                                                                 <input type="text" placeholder="Month" class="form-control" id="end_month" name="end-date" required>
                                                             </div>
-                                                            <div class="col-md-6">
+                                                            <div class="col-md-6 mt-4 mt-md-0">
                                                                 <input type="text" placeholder="Year" class="form-control" id="end_year" name="end-date" required>
                                                             </div>
                                                         </div>
@@ -247,8 +247,8 @@
                                         <hr>
                                         <div class="inner">
                                             <div class="row">
-                                                <h3 class="mb-0 w-50">References</h3>
-                                                <div class=" text-end w-50">
+                                                <h3 class="mb-0 reference">References</h3>
+                                                <div class="reference-check">
                                                     <div class="form-check form-check-inline">
                                                         <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                                         <label class="form-check-label" for="inlineCheckbox1">Personal</label>
@@ -285,9 +285,6 @@
                                                         <label for="mobile_number_2" class="form-label">Mobile Number *</label>
                                                         <input type="tel" placeholder="Enter your number" class="form-control" id="mobile_number_2" name="mobile_number_2" required>
                                                     </div>
-                                                    <div class="col-12 mt-4">
-                                                        <a class="extra-fields-customer" href="#"><i class="fa-solid fa-circle-plus pe-3"></i>Add More Customer</a>
-                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row mt-4">
@@ -307,7 +304,7 @@
                                         <div class="inner">
                                             <h3>Add New Document</h3>
                                             <div class="row">
-                                                <div class="col-12 mt-4">
+                                                <div class="col-md-6 mt-4">
                                                     <label for="degree" class="form-label">Highest Degree Earned *</label>
                                                     <select class="form-select degree-select" id="degree" name="degree" required>
                                                         <option>Select</option>
@@ -450,7 +447,7 @@
                         </div>
                         <div class="mb-3">
                             <label for="pwd">Password:</label>
-                            <div class="show_hide_password">
+                            <div class="show_hide_password show_hide_password_3">
                                 <input type="password" class="form-control" id="password" placeholder="xxxxxxxxxx" name="password">
                                 <i class="fa-sharp fa-solid fa-eye-slash" aria-hidden="true"></i>
                             </div>

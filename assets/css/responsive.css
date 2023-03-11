@@ -105,11 +105,6 @@
 
 @media screen and (max-width: 575px) {
 
-	.wizard-v1-content .wizard-form {
-		padding: 40px 20px;
-		width: auto;
-	}
-
 	/* .form-register .content {
 		padding: 32px 30px 23px 30px;
 	} */
@@ -270,7 +265,7 @@
    	 	display: flex;
 	}
 
-	/* About Us */
+	/* About Us Page */
 
 	.about-banner .are {
 		font-size: 40px;
@@ -464,6 +459,140 @@
 		font-size: 25px;
 	}
 
+	/* Membership Tiers Page */
+
+	.membership-tiers p {
+		text-align: center;
+	}
+
+	.membership-tiers h1 {
+		text-align: center;
+		font-size: 30px;
+	}
+
+	.membership-plan p {
+		text-align: left;
+	}
+
+	.membership-tiers h2 {
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.membership-profile-plan p span {
+		font-size: 16px;
+	}
+
+	.profile-plan {
+		margin-bottom: 0px;
+	}
+
+	/* Membership Cost Page */
+
+	.membership-cost h1 {
+		text-align: center;
+    	font-size: 30px;
+	}
+
+	.membership-cost h3 {
+		font-size: 23px;
+	}
+
+	.membership-cost .profile-card .card-body {
+		padding: 41px 28px;
+	}
+
+	/* Sign Up Page */
+
+	.signup-section h1 {
+		font-size: 30px;
+	}
+
+	.wizard-v1-content .wizard-form {
+		padding: 40px 0px;
+		width: auto;
+	}
+
+	.picture {
+		width: 120px;
+		height: 120px;
+	}
+
+	.file-upload {
+		left: 20px;
+	}
+
+	.image-size {
+		left: 20px;
+	}
+
+	.inner h3 {
+		font-size: 25px;
+	}
+
+	.continue-btn {
+		padding: 20px 60px;
+	}
+
+	.emp-record {
+		width: 100%;
+	}
+
+	.past-exp {
+		width: 100%;
+		text-align: left;
+		padding-top: 20px;
+	}
+
+	.reference {
+		width: 100%;
+	}
+
+	.reference-check {
+		width: 100%;
+		text-align: left;
+		padding-top: 20px;
+	}
+
+	/* Payment Page */
+
+	.payment-section h1 {
+		font-size: 30px;
+	}
+
+	.select-plan-card .form-check {
+		width: 100%;
+	}
+
+	.sub-pay-price {
+		width: 100%;
+		padding-top: 10px;
+		margin-bottom: 0px;
+	}
+
+	.payment-section h3 {
+		text-align: center;
+		font-size: 23px;
+	}
+
+	.payment-section h4 {
+		font-size: 19px;
+	}
+
+	.payment-nav-tabs .nav-link {
+		padding: 8px 12px;
+	}
+
+	.payment-card .card-body {
+		padding: 40px 20px;
+	}
+
+	.paypal-logo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
 	/* Profile Page */
 
 	.profile-menu-column {
@@ -550,6 +679,12 @@
 	.birth-year-info .edit-btn {
 		display: inline-block;
 		margin-top: 20px;
+	}
+
+	/* Footer */
+
+	.ftco-footer-social img {
+		width: 35px;
 	}
 }
 
@@ -870,9 +1005,146 @@
 		font-size: 30px;
 	}
 
+	/* Membership Tiers Page */
+
+	.membership-tiers p {
+		text-align: center;
+	}
+
+	.membership-tiers h1 {
+		text-align: center;
+		font-size: 40px;
+	}
+
+	.membership-plan p {
+		text-align: left;
+	}
+
+	.membership-tiers h2 {
+		font-size: 30px;
+		text-align: center;
+	}
+
+	.membership-profile-plan p span {
+		font-size: 18px;
+	}
+
+	.profile-plan {
+		margin-bottom: 0px;
+	}
+
+	/* Membership Cost */
+
+	.membership-cost h1 {
+		text-align: center;
+    	font-size: 40px;
+	}
+
+	.membership-cost h3 {
+		font-size: 27px;
+	}
+
+	.membership-cost .profile-card .card-body {
+		padding: 41px;
+	}
+
+	/* Sign Up Page */
+
+	.signup-section h1 {
+		font-size: 40px;
+	}
+
+	.wizard-v1-content .wizard-form {
+		padding: 40px 0px;
+		width: auto;
+	}
+
+	.picture {
+		width: 130px;
+		height: 130px;
+	}
+
+	.file-upload {
+		left: 25px;
+	}
+
+	.image-size {
+		left: 25px;
+	}
+
+	.inner h3 {
+		font-size: 30px;
+	}
+
+	.continue-btn {
+		padding: 20px 60px;
+	}
+
+	.emp-record {
+		width: 50%;
+	}
+
+	.past-exp {
+		width: 50%;
+		text-align: right;
+		padding-top: 8px;
+	}
+
+	.reference {
+		width: 50%;
+	}
+
+	.reference-check {
+		width: 50%;
+		text-align: right;
+		padding-top: 8px;
+	}
+
+	/* Payment Page */
+
+	.payment-section h1 {
+		font-size: 40px;
+	}
+
+	.select-plan-card .form-check {
+		width: 50%;
+		float: left;
+	}
+
+	.payment-section h3 {
+		font-size: 27px;
+	}
+
+	.sub-pay-price {
+		width: 50%;
+		margin-bottom: 0px;
+		float: right;
+		text-align: right;
+	}
+
+	.payment-section h4 {
+		font-size: 21px;
+	}
+
+	.payment-nav-tabs .nav-link {
+		padding: 8px 12px;
+	}
+
+	.payment-card .card-body {
+		padding: 40px 20px;
+	}
+
+	/* Profile Page */
+
 	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
 		display: flex;
 		flex-direction: row;
+	}
+
+	/* Footer */
+
+	.ftco-footer-social img {
+		width: 40px;
 	}
 
 }
@@ -1204,9 +1476,139 @@
 		font-size: 30px;
 	}
 
+	/* Membership Tiers Page */
+
+	.membership-tiers h1 {
+		font-size: 50px;
+	}
+
+	.membership-plan p {
+		text-align: left;
+	}
+
+	.membership-tiers h2 {
+		font-size: 40px;
+	}
+
+	.membership-profile-plan p span {
+		font-size: 20px;
+	}
+
+	/* Membership Cost */
+
+	.membership-cost h1 {
+    	font-size: 50px;
+	}
+
+	.membership-cost h3 {
+		font-size: 30px;
+	}
+
+	.membership-cost .profile-card .card-body {
+		padding: 41px;
+	}
+
+	/* Sign Up Page */
+
+	.signup-section h1 {
+		font-size: 50px;
+	}
+
+	.wizard-v1-content .wizard-form {
+		padding: 40px 0px;
+		width: auto;
+	}
+
+	.picture {
+		width: 135px;
+		height: 135px;
+	}
+
+	.file-upload {
+		left: 30px;
+	}
+
+	.image-size {
+		left: 30px;
+	}
+
+	.inner h3 {
+		font-size: 35px;
+	}
+
+	.continue-btn {
+		padding: 20px 70px;
+	}
+
+	.emp-record {
+		width: 50%;
+	}
+
+	.past-exp {
+		width: 50%;
+		text-align: right;
+		padding-top: 8px;
+	}
+
+	.reference {
+		width: 50%;
+	}
+
+	.reference-check {
+		width: 50%;
+		text-align: right;
+		padding-top: 8px;
+	}
+
+	/* Payment Page */
+
+	.payment-section h1 {
+		font-size: 50px;
+	}
+
+	.select-plan-card .form-check {
+		width: 50%;
+		float: left;
+	}
+
+	.payment-section h3 {
+		font-size: 30px;
+	}
+
+	.sub-pay-price {
+		width: 50%;
+		margin-bottom: 0px;
+		float: right;
+		text-align: right;
+	}
+
+	.payment-section h4 {
+		font-size: 23px;
+	}
+
+	.payment-nav-tabs .nav-link {
+		padding: 8px 12px;
+	}
+
+	.payment-card .card-body {
+		padding: 40px 20px;
+	}
+
+	/* Profile Page */
+
+	.profile-plan {
+		margin-bottom: 0px;
+	}
+
 	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
 		display: flex;
 		flex-direction: row;
+	}
+
+	/* Footer */
+
+	.ftco-footer-social img {
+		width: 45px;
 	}
 
 }
@@ -1526,6 +1928,128 @@
 		padding: 20px 25px;
 	}
 
+	/* Membership Tiers Page */
+
+	.membership-tiers h1 {
+		font-size: 60px;
+	}
+
+	.membership-plan p {
+		text-align: left;
+	}
+
+	.membership-tiers h2 {
+		font-size: 50px;
+	}
+
+	.membership-profile-plan p span {
+		font-size: 22px;
+	}
+
+	.membership-profile-plan {
+		margin-bottom: 5px;
+	}
+
+	/* Membership Cost */
+
+	.membership-cost h1 {
+    	font-size: 60px;
+	}
+
+	.membership-cost h3 {
+		font-size: 33px;
+	}
+
+	.membership-cost .profile-card .card-body {
+		padding: 41px;
+	}
+
+	/* Sign Up Page */
+
+	.signup-section h1 {
+		font-size: 60px;
+	}
+
+	.wizard-v1-content .wizard-form {
+		padding: 40px 0px;
+		width: auto;
+	}
+
+	.picture {
+		width: 140px;
+		height: 140px;
+	}
+
+	.file-upload {
+		left: 35px;
+	}
+
+	.image-size {
+		left: 35px;
+	}
+
+	.inner h3 {
+		font-size: 40px;
+	}
+
+	.continue-btn {
+		padding: 20px 80px;
+	}
+
+	.emp-record {
+		width: 50%;
+	}
+
+	.past-exp {
+		width: 50%;
+		text-align: right;
+		padding-top: 8px;
+	}
+
+	.reference {
+		width: 50%;
+	}
+
+	.reference-check {
+		width: 50%;
+		text-align: right;
+		padding-top: 8px;
+	}
+
+	/* Payment Page */
+
+	.payment-section h1 {
+		font-size: 60px;
+	}
+
+	.select-plan-card .form-check {
+		width: 50%;
+		float: left;
+	}
+
+	.payment-section h3 {
+		font-size: 30px;
+	}
+
+	.sub-pay-price {
+		width: 50%;
+		margin-bottom: 0px;
+		float: right;
+		text-align: right;
+	}
+
+	.payment-section h4 {
+		font-size: 25px;
+	}
+
+	.payment-nav-tabs .nav-link {
+		padding: 8px 12px;
+	}
+
+	.payment-card .card-body {
+		padding: 40px 20px;
+	}
+
 	/* Profile Page */
 
 	.profile-section .nav-link {
@@ -1576,6 +2100,12 @@
 
 	.login-body {
 		padding: 84px 74px;
+	}
+
+	/* Footer */
+
+	.ftco-footer-social img {
+		width: 45px;
 	}
 }
 
@@ -1882,53 +2412,130 @@
 		font-size: 88px;
 	}
 
+	/* Membership Tiers Page */
+
 	.membership-tiers h1 {
-		font-size: 80px;
+		font-size: 70px;
+	}
+
+	.membership-plan p {
+		text-align: left;
 	}
 
 	.membership-tiers h2 {
-		font-size: 60px;
+		font-size: 50px;
 	}
+
+	.membership-profile-plan p span {
+		font-size: 24px;
+	}
+
+	.membership-profile-plan {
+		margin-bottom: 10px;
+	}
+
+	.profile-plan {
+		margin-bottom: 5px;
+	}
+
+	/* Membership Cost */
 
 	.membership-cost h1 {
-		font-size: 80px;
-	}
-	
-	.membership-cost h3 {
-		font-size: 40px;
+    	font-size: 70px;
 	}
 
-	.membership-cost p span {
-		font-size: 20px;
+	.membership-cost h3 {
+		font-size: 36px;
+	}
+
+	.membership-cost .profile-card .card-body {
+		padding: 41px 43px;
+	}
+
+	/* Sign Up Page */
+
+	.signup-section h1 {
+		font-size: 70px;
+	}
+
+	.wizard-v1-content .wizard-form {
+		padding: 40px 0px;
+		width: auto;
+	}
+
+	.picture {
+		width: 140px;
+		height: 140px;
+	}
+
+	.file-upload {
+		left: 35px;
+	}
+
+	.image-size {
+		left: 35px;
+	}
+
+	.inner h3 {
+		font-size: 40px;
 	}
 
 	.continue-btn {
-		height: 70px;
-		width: 300px;
-	}	
-
-	.inner h3 {
-		font-size: 45px;
+		padding: 20px 90px;
 	}
 
-	.signup-section h1 {
-		font-size: 80px;
+	.emp-record {
+		width: 50%;
 	}
+
+	.past-exp {
+		width: 50%;
+		text-align: right;
+		padding-top: 8px;
+	}
+
+	.reference {
+		width: 50%;
+	}
+
+	.reference-check {
+		width: 50%;
+		text-align: right;
+		padding-top: 8px;
+	}
+
+	/* Payment Page */
 
 	.payment-section h1 {
-		font-size: 80px;
+		font-size: 70px;
 	}
 
-	.payment-section .form-check-label {
-		font-size: 20px;
+	.select-plan-card .form-check {
+		width: 50%;
+		float: left;
 	}
 
 	.payment-section h3 {
-		font-size: 40px;
+		font-size: 35px;
 	}
-	
+
+	.sub-pay-price {
+		width: 50%;
+		margin-bottom: 0px;
+		float: right;
+		text-align: right;
+	}
+
 	.payment-section h4 {
-		font-size: 30px;
+		font-size: 27px;
+	}
+
+	.payment-nav-tabs .nav-link {
+		padding: 8px 12px;
+	}
+
+	.payment-card .card-body {
+		padding: 40px 20px;
 	}
 
 	.profile-section .nav-link {
@@ -1975,6 +2582,12 @@
 	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
 		display: flex;
 		flex-direction: row;
+	}
+
+	/* Footer */
+
+	.ftco-footer-social img {
+		width: 51px;
 	}
 
 }
@@ -2287,6 +2900,8 @@
 		font-size: 88px;
 	}
 
+	/* Membership Tiers Page */
+
 	.membership-tiers h1 {
 		font-size: 80px;
 	}
@@ -2294,6 +2909,16 @@
 	.membership-tiers h2 {
 		font-size: 60px;
 	}
+
+	.membership-profile-plan p span {
+		font-size: 26px;
+	}
+
+	.profile-plan {
+		margin-bottom: 10px;
+	}
+
+	/* Memebership Cost Page */
 
 	.membership-cost h1 {
 		font-size: 80px;
@@ -2303,37 +2928,90 @@
 		font-size: 40px;
 	}
 
-	.membership-cost p span {
-		font-size: 20px;
-	}
-
-	.continue-btn {
-		height: 70px;
-		width: 300px;
-	}	
-
-	.inner h3 {
-		font-size: 45px;
-	}
+	/* Sign Up Page */
 
 	.signup-section h1 {
 		font-size: 80px;
 	}
 
+	.wizard-v1-content .wizard-form {
+		padding: 40px 0px;
+		width: auto;
+	}
+
+	.picture {
+		width: 150px;
+		height: 150px;
+	}
+
+	.file-upload {
+		left: 35px;
+	}
+
+	.image-size {
+		left: 35px;
+	}
+
+	.inner h3 {
+		font-size: 45px;
+	}
+
+	.continue-btn {
+		padding: 20px 90px;
+	}
+
+	.emp-record {
+		width: 50%;
+	}
+
+	.past-exp {
+		width: 50%;
+		text-align: right;
+		padding-top: 8px;
+	}
+
+	.reference {
+		width: 50%;
+	}
+
+	.reference-check {
+		width: 50%;
+		text-align: right;
+		padding-top: 8px;
+	}
+
+	/* Payment Page */
+
 	.payment-section h1 {
 		font-size: 80px;
 	}
 
-	.payment-section .form-check-label {
-		font-size: 20px;
+	.select-plan-card .form-check {
+		width: 50%;
+		float: left;
 	}
 
 	.payment-section h3 {
 		font-size: 40px;
 	}
-	
+
+	.sub-pay-price {
+		width: 50%;
+		margin-bottom: 0px;
+		float: right;
+		text-align: right;
+	}
+
 	.payment-section h4 {
 		font-size: 30px;
+	}
+
+	.payment-nav-tabs .nav-link {
+		padding: 8px 12px;
+	}
+
+	.payment-card .card-body {
+		padding: 40px 20px;
 	}
 
 	.profile-section .nav-link {
@@ -2382,5 +3060,9 @@
 		flex-direction: row;
 	}
 
+	/* Footer */
 
+	.ftco-footer-social img {
+		width: 51px;
+	}
 }
