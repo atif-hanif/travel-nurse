@@ -157,6 +157,14 @@
 		width: 35px;
 	}
 
+	.login-body {
+		padding: 84px 25px;
+	}
+
+	.login-body h2 {
+		font-size: 25px;
+	}
+
 	/* Home Page */
 
 	.welcome {
@@ -601,14 +609,33 @@
 		-webkit-display: flex;
 	}
 
-	.mobile-info .fa-phone {
+	.user-profile-img {
+		width: 120px;
+		height: 120px;
+	}
+
+	.share-profile {
+		display: block;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	.user-profile h3 {
+		font-size: 23px;
+	}
+
+	.member-info h4 {
+		font-size: 22px;
+	}
+
+	.mobile-row .phone-icon {
 		display: inline-block;
-		width: 10%;
+		margin-top: -20px;
 	}	
 	
 	.mobile-info .mobile {
 		display: inline-block;
-		width: 88%;
+		width: 85%;
 	}
 
 	.mobile-info .fa-users-gear {
@@ -621,14 +648,14 @@
 		margin-top: 20px;
 	}
 
-	.email-info .fa-envelope {
+	.email-info .email-icon {
 		display: inline-block;
-		width: 10%;
+		margin-top: -35px;
 	}	
 	
 	.email-info .email {
 		display: inline-block;
-		width: 88%;
+		width: 85%;
 	}
 	
 	.email-info .fa-users-gear {
@@ -641,27 +668,26 @@
 		margin-top: 20px;
 	}
 
-	.birth-date-info .fa-cake-candles {
+	.birth-date-info .cake-icon {
 		display: inline-block;
 		width: 15%;
 	}	
+
+	.cake-icon {
+		margin-top: -40px;
+	}
 	
 	.birth-date-info .birth-date {
 		display: inline-block;
 		width: 83%;
 	}
 	
-	.birth-date-info .fa-users-gear {
-		display: inline-block;
-		margin-top: 20px;
-	}	
-	
 	.birth-date-info .edit-btn {
 		display: inline-block;
 		margin-top: 20px;
 	}
 
-	.birth-year-info .fa-cake-candles {
+	.birth-year-info .cake-icon {
 		display: inline-block;
 		width: 15%;
 	}	
@@ -670,15 +696,36 @@
 		display: inline-block;
 		width: 83%;
 	}
-	
-	.birth-year-info .fa-users-gear {
-		display: inline-block;
-		margin-top: 20px;
-	}	
-	
+		
 	.birth-year-info .edit-btn {
 		display: inline-block;
 		margin-top: 20px;
+	}
+
+	.share-profile-content {
+		padding: 46px 10px;
+	}
+
+	.email-submit-btn {
+		margin-top: 10px;
+		display: block;
+		width: 100%;
+	}
+
+	.share-profile-content .modal-title {
+		font-size: 22px;
+	}
+
+	.member-info .card .card-body {
+		padding: 52px 10px;
+	}
+
+	.notification-content {
+		padding: 80px 15px;
+	}
+	
+	.notification-content h3 {
+		font-size: 23px;
 	}
 
 	/* Footer */
@@ -702,6 +749,14 @@
 
 	.site-navigation .btn {
 		font-size: 14px;
+	}
+
+	.login-body {
+		padding: 84px 35px;
+	}
+
+	.login-body h2 {
+		font-size: 35px;
 	}
 
 	/* Home Page */
@@ -1141,6 +1196,49 @@
 		flex-direction: row;
 	}
 
+	.user-profile-img {
+		width: 125px;
+		height: 125px;
+	}
+
+	.user-profile h3 {
+		font-size: 33px;
+	}
+
+	.member-info h4 {
+		font-size: 25px;
+	}
+
+	.share-profile-content {
+		padding: 46px 10px;
+	}
+
+	.email-submit-btn {
+		margin-top: 10px;
+		display: block;
+		width: 100%;
+	}
+
+	.share-profile-btn {
+		padding: 10px 6px;
+	}
+
+	.share-profile-content .modal-title {
+		font-size: 27px;
+	}
+
+	.member-info .card .card-body {
+		padding: 52px 30px;
+	}
+
+	.notification-content {
+		padding: 80px 30px;
+	}
+	
+	.notification-content h3 {
+		font-size: 27px;
+	}
+
 	/* Footer */
 
 	.ftco-footer-social img {
@@ -1163,6 +1261,14 @@
 
 	.site-navigation .btn {
 		font-size: 14px;
+	}
+
+	.login-body {
+		padding: 84px 60px;
+	}
+
+	.login-body h2 {
+		font-size: 45px;
 	}
 
 	/* Home Page */
@@ -1594,15 +1700,59 @@
 		padding: 40px 20px;
 	}
 
-	/* Profile Page */
-
 	.profile-plan {
 		margin-bottom: 0px;
 	}
 
+
+	/* Profile Page */
+
 	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
 		display: flex;
 		flex-direction: row;
+	}
+
+	.share-profile {
+		display: block;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	.user-profile-img {
+		width: 125px;
+		height: 125px;
+	}
+
+	.user-profile h3 {
+		font-size: 40px;
+	}
+
+	.member-info h4 {
+		font-size: 27px;
+	}
+
+	.share-profile-content {
+		padding: 46px 10px;
+	}
+
+	.share-profile-btn {
+		float: right;
+	}
+
+	.share-profile-content .modal-title {
+		font-size: 32px;
+	}
+
+	.member-info .card .card-body {
+		padding: 52px 40px;
+	}
+
+	.notification-content {
+		padding: 80px 45px;
+	}
+	
+	.notification-content h3 {
+		font-size: 32px;
 	}
 
 	/* Footer */
@@ -1635,6 +1785,14 @@
 	
 	.site-navbar .logo {
 		width: 200px;
+	}
+
+	.login-body {
+		padding: 84px 74px;
+	}
+
+	.login-body h2 {
+		font-size: 60px;
 	}
 	
 	/* Home Page */
@@ -2052,54 +2210,60 @@
 
 	/* Profile Page */
 
-	.profile-section .nav-link {
-		font-size: 25px;
-		padding-bottom: 30px;
+	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
+		display: flex;
+		flex-direction: row;
 	}
 
-	.profile-section .nav-link i {
-		font-size: 20px;
+	.share-profile {
+		display: block;
+		margin: 10px auto;
+		text-align: center;
+	}
+
+	.share-profile-body h5 {
+		font-size: 22px;
+	}
+
+	.user-profile-img {
+		width: 130px;
+		height: 130px;
 	}
 
 	.user-profile h3 {
-		font-size: 60px;
+		font-size: 46px;
 	}
 
-	.member-info {
-		margin-top: 70px;
+	.member-info h4 {
+		font-size: 32px;
+	}
+
+	.share-profile-content {
+		padding: 46px 10px;
+	}
+
+	.share-profile-btn {
+		float: right;
+	}
+
+	.profile-section .nav-link {
+		font-size: 22px;
+	}
+
+	.share-profile-content .modal-title {
+		font-size: 36px;
 	}
 
 	.member-info .card .card-body {
 		padding: 52px 47px;
 	}
 
-	.member-info h4 {
-		font-size: 40px;
+	.notification-content {
+		padding: 80px 54px;
 	}
-
-	.mobile-row p {
-		font-size: 22px;
-	}
-
-	.email-row p {
-		font-size: 22px;
-	}
-
-	.birth-date-row p {
-		font-size: 22px;
-	}
-
-	.birth-year-row p {
-		font-size: 22px;
-	}
-
-	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
-		display: flex;
-		flex-direction: row;
-	}
-
-	.login-body {
-		padding: 84px 74px;
+	
+	.notification-content h3 {
+		font-size: 36px;
 	}
 
 	/* Footer */
@@ -2124,6 +2288,10 @@
 	.login-body {
 		padding: 84px 74px;
 	}	
+
+	.login-body h2 {
+		font-size: 70px;
+	}
 
 	/* Home Page */
 
@@ -2408,10 +2576,6 @@
 		font-size: 22px;
 	}
 
-	.login-body h2 {
-		font-size: 88px;
-	}
-
 	/* Membership Tiers Page */
 
 	.membership-tiers h1 {
@@ -2538,17 +2702,50 @@
 		padding: 40px 20px;
 	}
 
-	.profile-section .nav-link {
-		font-size: 25px;
-		padding-bottom: 30px;
+	/* Profile Page */
+
+	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
+		display: flex;
+		flex-direction: row;
 	}
 
-	.profile-section .nav-link i {
-		font-size: 20px;
+	.share-profile {
+		display: block;
+		margin: 10px auto;
+		text-align: center;
 	}
-	
+
+	.share-profile-body h5 {
+		font-size: 22px;
+	}
+
+	.user-profile-img {
+		width: 130px;
+		height: 130px;
+	}
+
 	.user-profile h3 {
-		font-size: 60px;
+		font-size: 54px;
+	}
+
+	.member-info h4 {
+		font-size: 37px;
+	}
+
+	.share-profile-content {
+		padding: 46px 10px;
+	}
+
+	.share-profile-btn {
+		float: right;
+	}
+
+	.profile-section .nav-link {
+		font-size: 22px;
+	}
+
+	.share-profile-content .modal-title {
+		font-size: 36px;
 	}
 
 	.member-info {
@@ -2559,29 +2756,12 @@
 		padding: 52px 47px;
 	}
 
-	.member-info h4 {
-		font-size: 40px;
+	.notification-content {
+		padding: 80px 60px;
 	}
-
-	.mobile-row p {
-		font-size: 22px;
-	}
-
-	.email-row p {
-		font-size: 22px;
-	}
-
-	.birth-date-row p {
-		font-size: 22px;
-	}
-
-	.birth-year-row p {
-		font-size: 22px;
-	}
-
-	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
-		display: flex;
-		flex-direction: row;
+	
+	.notification-content h3 {
+		font-size: 41px;
 	}
 
 	/* Footer */
@@ -2606,6 +2786,10 @@
 
 	.login-body {
 		padding: 84px 74px;
+	}
+
+	.login-body h2 {
+		font-size: 80px;
 	}	
 
 	/* Home Page */
@@ -2896,10 +3080,6 @@
 		font-size: 22px;
 	}
 
-	.login-body h2 {
-		font-size: 88px;
-	}
-
 	/* Membership Tiers Page */
 
 	.membership-tiers h1 {
@@ -3014,17 +3194,50 @@
 		padding: 40px 20px;
 	}
 
-	.profile-section .nav-link {
-		font-size: 25px;
-		padding-bottom: 30px;
+	/* Profile Page */
+
+	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
+		display: flex;
+		flex-direction: row;
 	}
 
-	.profile-section .nav-link i {
-		font-size: 20px;
+	.share-profile {
+		display: block;
+		margin: 10px auto;
+		text-align: center;
 	}
-	
+
+	.share-profile-body h5 {
+		font-size: 22px;
+	}
+
+	.user-profile-img {
+		width: 130px;
+		height: 130px;
+	}
+
 	.user-profile h3 {
 		font-size: 60px;
+	}
+
+	.member-info h4 {
+		font-size: 45px;
+	}
+
+	.share-profile-content {
+		padding: 46px 54px;
+	}
+
+	.share-profile-btn {
+		float: right;
+	}
+
+	.profile-section .nav-link {
+		font-size: 24px;
+	}
+
+	.share-profile-content .modal-title {
+		font-size: 36px;
 	}
 
 	.member-info {
@@ -3033,10 +3246,6 @@
 
 	.member-info .card .card-body {
 		padding: 52px 47px;
-	}
-
-	.member-info h4 {
-		font-size: 40px;
 	}
 
 	.mobile-row p {
@@ -3055,9 +3264,12 @@
 		font-size: 22px;
 	}
 
-	.mobile-info, .email-info, .birth-date-info, .birth-year-info {
-		display: flex;
-		flex-direction: row;
+	.notification-content {
+		padding: 80px 64px;
+	}
+	
+	.notification-content h3 {
+		font-size: 45px;
 	}
 
 	/* Footer */
