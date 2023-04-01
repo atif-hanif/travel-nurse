@@ -582,12 +582,22 @@ a {
 
 /* Home */
 
-.banner {
+/* .banner {
 	background-image: url(../images/home-banner.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-top: 180px;
 	padding-bottom: 60px;
+} */
+
+.owl-img {
+	width: 100%;
+}
+
+.owl-text-overlay {
+	position: absolute;
+	top: 180px;
+	left: 160px;
 }
 
 .welcome {
@@ -619,9 +629,9 @@ button.owl-prev, button.owl-next {
 
 .banner-slider .owl-dots {
 	text-align: left;
-    position: relative;
-    top: 17px;
-    left: 40px;
+    position: absolute;
+    bottom: 100px;
+	left: 220px;
 	width: 100px;
 }
 
@@ -638,8 +648,8 @@ button.owl-prev, button.owl-next {
 
 .banner-slider .owl-nav button.owl-prev, .banner-slider .owl-nav button.owl-prev, .banner-slider button.owl-dot.owl-nav {
     position: absolute;
-    left: 15px;
-    top: 100%;
+    left: 180px;
+    bottom: 58px;
     background-color: transparent;
     display: block;
     padding: 0 .3em !important;
@@ -655,8 +665,8 @@ button.owl-prev, button.owl-next {
 
 .banner-slider .owl-nav button.owl-next, .banner-slider .owl-nav button.owl-next, .banner-slider button.owl-dot.owl-nav {
     position: absolute;
-    left: 150px;
-    top: 100%;
+    left: 340px;
+    bottom: 58px;
     background-color: transparent;
     display: block ;
     padding: 0 .3em !important;
@@ -674,10 +684,20 @@ button.owl-prev, button.owl-next {
 	color: var(--white-color);
 }
 
+.banner-slider .owl-nav [class*=owl-]:hover {
+	background: transparent;
+}
+
 .fa-chevron-down {
 	color: var(--white-color);
 	font-size: 50px;
 	padding-top: 100px;
+}
+
+.arrow-row {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
 }
 
 .home-events {
@@ -689,6 +709,11 @@ button.owl-prev, button.owl-next {
 	font-weight: 900;
 	font-family: var(--font-family2);
 	margin-bottom: 20px;
+}
+
+.home-events ul li button {
+	border-color: transparent;
+	background-color: transparent;
 }
 
 .event-img {
