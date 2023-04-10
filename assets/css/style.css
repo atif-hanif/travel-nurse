@@ -602,12 +602,6 @@ a {
 	width: 100%;
 }
 
-.owl-text-overlay {
-	position: absolute;
-	top: 180px;
-	left: 160px;
-}
-
 .welcome {
 	color: var(--white-color);
 	margin-bottom: 0px;

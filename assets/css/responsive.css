@@ -167,6 +167,12 @@
 
 	/* Home Page */
 
+	.owl-text-overlay {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+
 	.welcome {
 		font-size: 40px;
 		text-align: center;
@@ -791,6 +797,60 @@
 
 	/* Home Page */
 
+	.owl-text-overlay {
+		position: absolute;
+		top: 10px;
+		left: 0px;
+	}
+
+	.banner-slider .owl-dots {
+		text-align: left;
+		position: absolute;
+		bottom: 33px;
+		left: 43%;
+		width: 100px;
+	}
+
+	.banner-slider .owl-nav button.owl-prev, .banner-slider .owl-nav button.owl-prev, .banner-slider button.owl-dot.owl-nav {
+		position: absolute;
+		left: 285px;
+    	bottom: -10px;
+		background-color: transparent;
+		display: block;
+		padding: 0 .3em !important;
+		font-size: 3em;
+		margin: 0;
+		cursor: pointer;
+		color: var(--white-color) !important;
+		transform: translate(-50%, -50%);
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+	
+	.banner-slider .owl-nav button.owl-next, .banner-slider .owl-nav button.owl-next, .banner-slider button.owl-dot.owl-nav {
+		position: absolute;
+		left: 450px;
+		bottom: -10px;
+		background-color: transparent;
+		display: block ;
+		padding: 0 .3em !important;
+		font-size: 3em ;
+		margin: 0;
+		cursor: pointer;
+		color: var(--white-color) !important;
+		transform: translate(-50%, -50%);
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+
+	.arrow-row {
+		position: absolute;
+		left: 50%;
+		bottom: -4px;
+	}
+
 	.welcome {
 		font-size: 50px;
 		text-align: center;
@@ -1317,6 +1377,60 @@
 	}
 
 	/* Home Page */
+
+	.owl-text-overlay {
+		position: absolute;
+		top: 60px;
+		left: 0px;
+	}
+
+	.banner-slider .owl-dots {
+		text-align: left;
+		position: absolute;
+		bottom: 95px;
+    	left: 46%;
+		width: 100px;
+	}
+
+	.banner-slider .owl-nav button.owl-prev, .banner-slider .owl-nav button.owl-prev, .banner-slider button.owl-dot.owl-nav {
+		position: absolute;
+		left: 425px;
+    	bottom: 55px;
+		background-color: transparent;
+		display: block;
+		padding: 0 .3em !important;
+		font-size: 3em;
+		margin: 0;
+		cursor: pointer;
+		color: var(--white-color) !important;
+		transform: translate(-50%, -50%);
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+	
+	.banner-slider .owl-nav button.owl-next, .banner-slider .owl-nav button.owl-next, .banner-slider button.owl-dot.owl-nav {
+		position: absolute;
+		left: 580px;
+		bottom: 55px;
+		background-color: transparent;
+		display: block ;
+		padding: 0 .3em !important;
+		font-size: 3em ;
+		margin: 0;
+		cursor: pointer;
+		color: var(--white-color) !important;
+		transform: translate(-50%, -50%);
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+
+	.arrow-row {
+		position: absolute;
+		left: 50%;
+		bottom: 40px;
+	}
 
 	.welcome {
 		font-size: 60px;
@@ -1856,6 +1970,60 @@
 	
 	/* Home Page */
 
+	.owl-text-overlay {
+		position: absolute;
+		top: 60px;
+		left: 100px;
+	}
+
+	.banner-slider .owl-dots {
+		text-align: left;
+		position: absolute;
+		bottom: 202px;
+    	left: 12%;
+		width: 100px;
+	}
+
+	.banner-slider .owl-nav button.owl-prev, .banner-slider .owl-nav button.owl-prev, .banner-slider button.owl-dot.owl-nav {
+		position: absolute;
+		left: 9%;
+    	bottom: 160px;
+		background-color: transparent;
+		display: block;
+		padding: 0 .3em !important;
+		font-size: 3em;
+		margin: 0;
+		cursor: pointer;
+		color: var(--white-color) !important;
+		transform: translate(-50%, -50%);
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+	
+	.banner-slider .owl-nav button.owl-next, .banner-slider .owl-nav button.owl-next, .banner-slider button.owl-dot.owl-nav {
+		position: absolute;
+		left: 21%;
+		bottom: 160px;
+		background-color: transparent;
+		display: block ;
+		padding: 0 .3em !important;
+		font-size: 3em ;
+		margin: 0;
+		cursor: pointer;
+		color: var(--white-color) !important;
+		transform: translate(-50%, -50%);
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+	}
+
+	.arrow-row {
+		position: absolute;
+		left: 50%;
+		bottom: 20px;
+	}
+
 	.welcome {
 		font-size: 80px;
 	}
@@ -2367,6 +2535,12 @@
 	}
 
 	/* Home Page */
+
+	.owl-text-overlay {
+		position: absolute;
+		top: 180px;
+		left: 160px;
+	}
 
 	.banner-slider .owl-dots {
 		text-align: left;
