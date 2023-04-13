@@ -20,51 +20,67 @@
 <body>
 
     <header class="site-navbar site-navbar-target bg-white">
-        <div class="container">
-            <nav class="navbar navbar-expand-xl">
-                <img src="assets/images/logo.png" alt="Logo" class="img-fluid d-xl-none">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="active">
-                            <a href="index.html" class="nav-link">Home</a>
-                        </li>
-                        <li>
-                            <a href="" class="nav-link">Resource Directory</a>
-                        </li>
-                        <li>
-                            <a href="" class="nav-link">Community</a>
-                        </li>
-                        <li>
-                            <a href="" class="nav-link">Rental Services</a>
-                        </li>   
-                    </ul>
+        <section class="top-bar d-block d-md-none">
+            <div class="row text-center">
+                <div class="col-12">
+                    <img src="assets/images/facebook-side-icon.png" alt="Facebook" class="img-fluid" width="40">
+                    <img src="assets/images/twitter-side-icon.png" alt="Twitter" class="img-fluid" width="40">
+                    <img src="assets/images/linkedin-side-icon.png" alt="Linkedin" class="img-fluid" width="40">
+                    <img src="assets/images/message-side-icon.png" alt="Membership" class="img-fluid" width="40">
+                    <img src="assets/images/instagram-side-icon.png" alt="Instagram" class="img-fluid" width="40">
+                    <img src="assets/images/pinterest-side-icon.png" alt="Pinterest" class="img-fluid" width="40">
+                    <img src="assets/images/youtube-side-icon.png" alt="Youtube" class="img-fluid" width="40">
                 </div>
-                <img src="assets/images/logo.png" alt="Logo" class="img-fluid d-none d-xl-block">
-                <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li>
-                            <a href="events.html" class="nav-link">Events</a>
-                        </li>
-                        <li>
-                            <a href="contact-us.html" class="nav-link">Contact Us</a>
-                        </li>
-                        <li>
-                            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#myModal"><img src="assets/images/user.png" alt="User" class="img-fluid pe-3">Join / Login</button>
-                        </li>
-                        <li>
-                            <img src="assets/images/search.png" alt="Search" class="img-fluid ps-xl-3 mt-3 mt-xl-0">
-                         </li> 
-                    </ul>
-                </div>
-            </nav>
-        </div>
+            </div>
+        </section>
+
+        <section class="main-menu pt-2">
+            <div class="container">
+                <nav class="navbar navbar-expand-xl">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="Logo" class="img-fluid d-xl-none"></a>
+                    <button class="navbar-toggler d-block ms-auto d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <!-- <li class="active">
+                                <a href="index.html" class="nav-link">Home</a>
+                            </li> -->
+                            <li>
+                                <a href="" class="nav-link">Resource Directory</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-link">Community</a>
+                            </li>
+                            <li>
+                                <a href="" class="nav-link">Rental Services</a>
+                            </li>   
+                        </ul>
+                    </div>
+                    <a href="index.html"><img src="assets/images/logo.png" alt="Logo" class="img-fluid logo d-none d-xl-block"></a>
+                    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li>
+                                <a href="events.html" class="nav-link">Events</a>
+                            </li>
+                            <li>
+                                <a href="contact-us.html" class="nav-link">Contact Us</a>
+                            </li>
+                            <li>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#myModal"><img src="assets/images/user.png" alt="User" class="img-fluid pe-3">Join / Login</button>
+                            </li>
+                            <li>
+                                <img src="assets/images/search.png" alt="Search" class="img-fluid ps-xl-3 mt-3 mt-xl-0">
+                             </li> 
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </section>
     </header>
 
     <section class="about-banner">
-        <nav class="floating-menu">
+        <nav class="floating-menu d-none d-md-block">
             <ul class="main-menu">
                 <li>
                     <a href="#" class="ripple">
@@ -326,7 +342,7 @@
                             <button type="submit" class="btn btn-primary btn-block">Submit</button>
                         </div>
                         <div class="mt-3 text-center">
-                            <p>Don't have an account? <span>JOIN NOW</span></p>
+                            <p>Don't have an account? <span><a href="sign-up.html">JOIN NOW</a></span></p>
                         </div>
                     </form>
                 </div>
